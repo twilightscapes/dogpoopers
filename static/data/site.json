@@ -33,7 +33,7 @@
       "showSwipe": false
     },
     "proOptions": {
-      "showModals": true,
+      "showModals": false,
       "showContact": true,
       "showBranding": false,
       "ShowDisclaimer": false,

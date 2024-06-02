@@ -26,7 +26,7 @@ export function MenuInc({ bodyClass }) {
   return (
     <>
       {menuLinks.map((menuItem, index) => (
-        <li key={index}>{menuItem}</li>
+        <li className="" key={index}>{menuItem}</li>
       ))}
     </>
   );

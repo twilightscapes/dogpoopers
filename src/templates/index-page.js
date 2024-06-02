@@ -669,8 +669,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
   )}
   <div style={{display:'flex', justifyContent:'center'}}>
-<Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1vh .5vw', maxWidth:'250px', }}>1 or 2 dogs</Link>
-    <Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1vh .5vw', maxWidth:'250px', }}>3 or more</Link>
+<Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', }}>1 or 2 dogs</Link>
+    <Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', }}>3 or more</Link>
 </div>
 
   {showSocial ? (
