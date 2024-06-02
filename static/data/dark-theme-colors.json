@@ -4,7 +4,7 @@
   "headerColor": "rgba(0, 0, 0, .1)",
   "headerColorText": "yellow",
   "siteBackground": "hsl(133, 28%, 23%)",
-  "text": "#ddd",
+  "text": "#DFFFFC",
   "textShadow": "rgba(0, 0, 0, .6)",
   "borderColor": "#333",
   "borderRadius": "3px",
