@@ -4,7 +4,7 @@
   "headerColor": "hsl(147, 56%, 22%)",
   "headerColorText": "yellow",
   "siteBackground": "hsl(146, 23%, 82%)",
-  "text": "#444",
+  "text": "hsl(147, 56%, 22%)",
   "textShadow": "rgba(0, 0, 0, .3)",
   "borderColor": "#888",
   "borderRadius": "0",
