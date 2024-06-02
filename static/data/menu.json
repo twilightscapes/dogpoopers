@@ -3,6 +3,10 @@
     {
       "menutitle": "How It Works",
       "url": "/contact"
+    },
+    {
+      "menutitle": "Pricing",
+      "url": "/pricing"
     }
   ]
 }

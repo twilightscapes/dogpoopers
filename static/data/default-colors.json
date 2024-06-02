@@ -1,10 +1,10 @@
 {
-  "siteColor": "hsl(147, 55%, 30%)",
+  "siteColor": "hsl(133, 47%, 54%)",
   "siteColorText": "yellow",
-  "headerColor": "hsl(147, 56%, 22%)",
+  "headerColor": "hsl(147, 61%, 26%)",
   "headerColorText": "yellow",
   "siteBackground": "hsl(146, 23%, 82%)",
-  "text": "hsl(147, 56%, 22%)",
+  "text": "hsl(147, 61%, 26%)",
   "textShadow": "rgba(0, 0, 0, .3)",
   "borderColor": "#888",
   "borderRadius": "0",
