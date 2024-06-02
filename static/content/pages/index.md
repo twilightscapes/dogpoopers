@@ -49,7 +49,7 @@ cta:
   ctaLink: /thanks
   showCTA: false
 homecount: 5
-addressText2: How many dogs do you own?
+addressText2: How many dogs do you have?
 pagePW: ""
 skillsTitle: ""
 svgImage: /assets/transparent.png
