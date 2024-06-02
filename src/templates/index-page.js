@@ -595,7 +595,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', textWrap:'balance' }}>{frontmatter.profTitle}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', textWrap:'balance' }}>{frontmatter.profTitle}</h1>
       <h2 className="tagline1" style={{ fontSize: 'clamp(1.2rem, 1.8vw, 3.2rem)', textWrap:'balance' }}>
         {frontmatter.tagline}
       </h2>
@@ -611,7 +611,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
       <div className="flexcheek mob2 print" style={{position:'', top:'0', minWidth:'500px', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'var(--theme-ui-colors-borderRadius)',
       }}>
-{SecondaryImage ? (
+{/* {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Profile Image"}
@@ -620,7 +620,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
             />
           ) : (
             ""
-          )}
+          )} */}
 <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   paddingTop:'', 
@@ -668,7 +668,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   ) : (
     ""
   )}
-  
+  <div style={{display:'flex', justifyContent:'center'}}>
+<Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1vh .5vw', maxWidth:'250px', }}>1 or 2 dogs</Link>
+    <Link state={{modal: true}} to="contact" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1vh .5vw', maxWidth:'250px', }}>3 or more</Link>
+</div>
 
   {showSocial ? (
     <Social />

@@ -1,11 +1,11 @@
 ---
-profileName: Your Profile Name
+profileName: Get Started Now!
 profileSocial: false
-addressText: This is your profile
+addressText: ""
 date: 2023-10-01 09:00
 youtube: 
  youtuber: ""
- youtuber2: https://youtu.be/rdB13lFexNk?si=Q3XoBTwNpWsnnDEm
+ youtuber2: ""
  youtubeshoworiginal: false
  youtubersuggestion1: "null"
  youtubersuggestion2: "null"
@@ -28,10 +28,10 @@ youtube:
 showPageNav: false
 showZoom: false
 showPostContact: false
-profText: 
-profTitle: Welcome to Pirate
-tagline: Check Your Email For An Invitation
-featuredImage: /assets/default-og-image.webp
+profText: <p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p>
+profTitle: They Poop - We Scoop!
+tagline: Gulf Coast Mississippi's one-and-only animal waste removal service
+featuredImage: /assets/dogpoopers-nosey-header.webp
 secondaryImage: /assets/default-user.webp
 scrollable: false
 portfolio:
@@ -42,21 +42,21 @@ slug: /
 
 excludeFromRSS: true
 skillsText: 
-underlayImage: /assets/transparent.png
+underlayImage: /assets/dogpoopers-nosey-header.webp
 bumpertext: x
 cta:
   ctaText: Your Call To Action
   ctaLink: /thanks
   showCTA: false
 homecount: 5
-addressText2: You can change this in your settings 
+addressText2: How many dogs do you own?
 pagePW: ""
 skillsTitle: ""
 svgImage: /assets/transparent.png
 template: index-page
 title: Home Page Title
 postLimit: "4"
-description: PIRATE - social media for the people by the people
+description: Gulf Coast Mississippi's one-and-only animal waste removal service
 svgzindex: x
 coverletter:
   coverText: About Me
@@ -82,9 +82,7 @@ draft: true
 spotlight: false
 comments: false
 shareable: false
-externalLink: https://piratesocial.org
+externalLink: https://dogpoopers.com
 ---
-The email you used to sign up, should have received an invitation to join your new site. Upon accepting the invitation you will be able to set your password and login to the Pirate CMS.
-
-Once logged in, you can go to site settings and make posts appear here instead, or the Pirate Video interface. You can also configure navigation, colors, font, etc...
+<p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p>
 
