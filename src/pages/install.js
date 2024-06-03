@@ -51,15 +51,56 @@ function Install() {
  alignContent:'center', display:'grid', textAlign:'center', placeContent:'center', verticalAlign:'center',
   color:'#fff',
   fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  textShadow:'0 2px 7px #000'
+  textShadow:'0 2px 3px #000'
 }}>
 
-<h3>STEP ONE (1 of 3)</h3>
+<h3 style={{fontSize:'130%'}}>Weekly Services</h3>
 
-<br />Create YOUR Personal Web App (PWA)<br />
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
+
+
+<div className="flexcheek" style={{width:'50%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Weekly Service</h3>
+
+<div style={{}}>A technician walks and cleans your yard <br /><strong className="highlight" style={{fontSize:'110%'}}>Once per week</strong>. 
+  <br />
 <br />
-Get ready to sail the open seas
+
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Get Deluxe (only $4.99 more)</a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
+  
+ </div>
+
+</div>
+
+<div className="flexcheek" style={{width:'50%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>2X Weekly Service</h3>
+<div style={{}}>A technician walks and cleans your yard
+<br />
+<strong className="highlight" style={{fontSize:'110%'}}>Twice per week</strong>. 
+  <br />
+<br />
+
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Get Deluxe (only $4.99 more)</a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>
+
+ </div>
+</div>
+
+
+
+</div>
 
 {/* <ul className="bulletlist">
   <li>You will need a valid email address to create your GitHub</li>
@@ -76,7 +117,7 @@ Simply follow the prompts and ignore the scary jargon
 Setup Account
 </a> */}
 
-<div style={{display:'', alignItems:'center'}}>
+{/* <div style={{display:'', alignItems:'center'}}>
 
 
 
@@ -93,7 +134,7 @@ Become a PIRATE!
   <input type="hidden" name="currency_code" value="USD" />
   <button className="" type="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" >Donate To Developer</button>
 </form>
-</div>
+</div> */}
 
 
 {/* <Link className="button" state={{modal: true}} to="/install2" rel="nofollow">

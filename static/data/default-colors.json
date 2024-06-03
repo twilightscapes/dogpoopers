@@ -2,12 +2,12 @@
   "siteColor": "hsl(133, 47%, 54%)",
   "siteColorText": "#EDFF0C",
   "headerColor": "hsl(147, 61%, 26%)",
-  "headerColorText": "#EDFF0C",
+  "headerColorText": "#eee",
   "siteBackground": "hsl(146, 23%, 82%)",
-  "text": "hsl(147, 61%, 26%)",
+  "text": "hsl(133, 39%, 34%)",
   "textShadow": "rgba(0, 0, 0, .3)",
   "borderColor": "#888",
-  "borderRadius": "0",
+  "borderRadius": "6px",
   "siteFont": "Luckiest Guy"
 }
 

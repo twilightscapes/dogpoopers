@@ -1040,7 +1040,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   }
 
 
-body.homepage footer{display:none !important;}
+body.homepage footer{display:none !important; color:hsl(133, 39%, 34%)}
 
 
   /* .grid-container {margin:0 auto 0 auto ; padding-top:16vh; } */
