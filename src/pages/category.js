@@ -35,6 +35,7 @@ const CategoryIndex = ({ data, pageContext }) => {
 
       <div className="magicisland">
         <div className="cattags font panel">
+          
         <select
           className=""
           style={{ background: 'var(--theme-ui-colors-siteColor)', borderRadius: 'var(--theme-ui-colors-borderRadius)', padding: '2px', width:'380px', display:'block', margin:'0 1%', overflow:'hidden', height:'34px', lineHeight:'100%', color:'var(--theme-ui-colors-siteColorText)' }}
@@ -51,6 +52,7 @@ const CategoryIndex = ({ data, pageContext }) => {
             </option>
           ))}
         </select>
+        
         {/* <div style={{ position: 'absolute', right: '10px', top: '8px', height: '100%', color: '#fff', zIndex: '-1', fontSize: '30px' }}><AiFillDownSquare /></div> */}
       </div>
 </div>

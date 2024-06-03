@@ -44,7 +44,10 @@ const GalleryPage = () => {
       </Helmet>
       <SimpleReactLightbox>
         <SRLWrapper options={options}>
+          <br />
+        <h3 className="headline">How It Works</h3>
       <div className="scroll-area" id="posttop" name="posttop" style={{minHeight:'100dvh', width:'100vw'}}>
+        
         <SearchPosts isSliderVisible={isSliderVisible} />
       </div>
       </SRLWrapper>

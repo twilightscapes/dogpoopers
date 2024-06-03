@@ -331,7 +331,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 /> */}
 
 
-<StaticImage src="../../static/assets/dogpoopers-nosey-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
+<StaticImage src="../../static/assets/dogpoopers-nosey-deluxe-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
 
 <section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
@@ -369,7 +369,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Standard Weekly Service</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 

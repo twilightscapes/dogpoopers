@@ -29,7 +29,7 @@ Thank you for visiting this web site. This privacy policy tells you how we use p
 
 <p>Your personally identifiable information is kept secure. Only authorized employees, agents and contractors (who have agreed to keep information secure and confidential) have access to this information. All emails and newsletters from this site allow you to opt out of further mailings.</p>
 <br />
-<p>If you have any questions, concerns, or comments about my privacy policy you may contact us using the contact form.</p>
+<p>If you have any questions, concerns, or comments about the privacy policy you may contact us using the contact form.</p>
 
 <p>We reserve the right to make changes to this policy. Any changes to this policy will be posted.</p>
 			
