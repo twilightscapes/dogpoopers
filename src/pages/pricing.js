@@ -375,15 +375,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>One-Time Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>One-Time Service</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
  <br />
  <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
   
-  <br /> (Includes Deluxe)
+  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
   <br />
   </div>
  </div>
@@ -391,16 +391,16 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Weekly Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
 <br />
 
- <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+ <div style={{textDecoration:'underline', textAlign:'center',}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
   <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Get Deluxe (only $4.99 more)</a>
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
 
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
@@ -410,15 +410,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>2X Weekly Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Twice Weekly</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
 
  <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
   <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Get Deluxe (only $4.99 more)</a>
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
 
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>
@@ -443,47 +443,54 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>XL One-Time Service</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>.
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) One-Time Service</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
  <br />
- <div style={{textDecoration:'', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
   
+  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
+  <br />
   </div>
  </div>
-<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time<br /> (Includes Deluxe)</p>
+<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>XL Weekly Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
+<br />
 
- <br />
- <div style={{textDecoration:'', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
-  
-  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$45.99</strong> per week</p>
+ <div style={{textDecoration:'underline', textAlign:'center',}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$45.99</strong> per week</p>
+  
  </div>
 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>2X XL Weekly Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Twice Weekly</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
+<br />
 
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
   <br />
- <div style={{textDecoration:'', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight"></strong> Order Now</a>
-  
-  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$55.99</strong> per week</p>
-
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$59.99</strong> per week</p>
+
  </div>
 </div>
 
