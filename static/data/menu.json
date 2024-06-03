@@ -2,11 +2,15 @@
   "menuItems": [
     {
       "menutitle": "How It Works",
-      "url": "/contact"
+      "url": "/how"
     },
     {
       "menutitle": "Pricing",
       "url": "/pricing"
+    },
+    {
+      "menutitle": "Contact",
+      "url": "/contact"
     }
   ]
 }

@@ -24,7 +24,7 @@
       "showSearch": false,
       "showDates": false,
       "showTitles": true,
-      "showfooter": false,
+      "showfooter": true,
       "showSocial": false,
       "showVideoPlayer": true,
       "showHomePosts": false,
@@ -33,11 +33,11 @@
       "showSwipe": false
     },
     "proOptions": {
-      "showModals": false,
+      "showModals": true,
       "showContact": true,
       "showBranding": false,
-      "ShowDisclaimer": false,
-      "showLegal": false,
+      "ShowDisclaimer": true,
+      "showLegal": true,
       "showConsent": false,
       "startUrl": "/",
       "showFeature": true,
