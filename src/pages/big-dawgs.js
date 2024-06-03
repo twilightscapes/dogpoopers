@@ -14,7 +14,7 @@ import { AiOutlineAudioMuted } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 
-const XLPage = () => {
+const BigDawgPage = () => {
   const { language, featureOptions, proOptions  } = useSiteMetadata();
   const { showSocial } = featureOptions
   const { showProfile } = proOptions
@@ -331,7 +331,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 /> */}
 
 
-<StaticImage src="../../static/assets/dogpoopers-xl-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
+<StaticImage src="../../static/assets/dogpoopers-big-dawgs-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
 
 <section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
@@ -374,7 +374,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <br />
 <p style={{fontSize:'150%', textAlign:'center'}}>
-<strong>XL Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
+<strong>Big Dawgs Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 
 
 
@@ -384,7 +384,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) One-Time Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawgs One-Time</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
@@ -400,7 +400,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawgs Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
@@ -419,7 +419,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Twice Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawgs Twice Weekly</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
@@ -750,4 +750,4 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   )
 }
 
-export default XLPage
+export default BigDawgPage

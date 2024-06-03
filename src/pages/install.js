@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 import React from "react";
 import useSiteMetadata from "../hooks/SiteMetadata"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // import {Link} from "gatsby"
 import { Link } from "gatsby"
 import Layout from "../components/siteLayout"
@@ -47,12 +47,16 @@ function Install() {
   {/* </div> */}
 
 
-<section style={{ height:'100dvh', maxHeight:'', margin:'0 auto', padding:'0 0 0 0', position:'relative',
- alignContent:'center', display:'grid', textAlign:'center', placeContent:'center', verticalAlign:'center',
-  color:'#fff',
-  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  textShadow:'0 2px 3px #000'
-}}>
+<StaticImage src="../../static/assets/dogpoopers-grid-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
+
+
+
+<section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
+
+
+      <div className="container" style={{padding: '0 3%', color:''}}>
+
+
 
 <h3 style={{fontSize:'130%'}}>Weekly Services</h3>
 
@@ -146,6 +150,7 @@ You will need a valid email
 {/* <ContactForm /> */}
 
 {/* <Link style={{display:'grid', placeContent:'center', margin:'0 auto 0 auto'}} state={{modal: true}} className="button" to="/contact">Tell us about yourself</Link> */}
+</div>
 </section>
 
 

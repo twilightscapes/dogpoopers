@@ -42,7 +42,7 @@ slug: /
 
 excludeFromRSS: true
 skillsText: 
-underlayImage: /assets/dogpoopers-nosey-header.webp
+underlayImage: /assets/dogpoopers-header.webp
 bumpertext: x
 cta:
   ctaText: Your Call To Action

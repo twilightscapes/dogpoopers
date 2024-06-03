@@ -1,15 +1,15 @@
 {
   "menuItems": [
     {
-      "menutitle": "Order Now",
-      "url": "/pricing"
+      "menutitle": "Get Started",
+      "url": "/get-started"
     },
     {
       "menutitle": "How It Works",
       "url": "/photo"
     },
     {
-      "menutitle": "Contact",
+      "menutitle": "Contact Us",
       "url": "/contact"
     }
   ]

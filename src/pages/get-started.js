@@ -443,7 +443,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <br />
 <p style={{fontSize:'150%', textAlign:'center'}}>
-<strong>XL Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
+<strong>Big Dawg Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 
 
 
@@ -453,7 +453,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) One-Time Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg One-Time Service</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
@@ -469,7 +469,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
@@ -488,7 +488,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Twice Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg Twice Weekly</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
