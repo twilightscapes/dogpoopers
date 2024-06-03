@@ -14,7 +14,7 @@ import { AiOutlineAudioMuted } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 
-const PricePage = () => {
+const XLPage = () => {
   const { language, featureOptions, proOptions  } = useSiteMetadata();
   const { showSocial } = featureOptions
   const { showProfile } = proOptions
@@ -179,7 +179,7 @@ const PricePage = () => {
   return (
     <Layout className="page">
       <Helmet>
-        <body id="body" className="utilitypage" />
+        <body id="body" className="install" />
       </Helmet>
       <Seo title={frontmatter.title} description={excerpt} />
 
@@ -331,8 +331,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 /> */}
 
 
-
-<StaticImage src="../../static/assets/dogpoopers-nosey-deluxe-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0', zIndex:'0'}} />
+<StaticImage src="../../static/assets/dogpoopers-xl-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
 
 <section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
@@ -360,14 +359,6 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
               </div> */}
 
 
-
-
-
-
-
-
-
-
 <h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>
   Cancel anytime - <u>NO</u> contracts required.
@@ -375,70 +366,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<p style={{fontSize:'150%', textAlign:'center'}}>
-  <strong>Standard Packages</strong>: 1-2 Dogs, Up to 1/4 Acre Yard 
-</p> 
 
 
 
-{/* First row */}
-<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>One-Time Service</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
-  <br />
-{/* Pay only when your site uses a LOT of data.<br />  */}
- <br />
- <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
-  
-  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
-  <br />
-  </div>
- </div>
-<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$39.99</strong> One Time</p>
-</div>
-
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Weekly</h3>
-
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
-  <br />
-<br />
-
- <div style={{textDecoration:'underline', textAlign:'center',}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
-  <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
-  </div>
-
-  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
-  
- </div>
-
-</div>
-
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Twice Weekly</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
-  <br />
-<br />
-
- <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
-  <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
-  </div>
-
-  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>
-
- </div>
-</div>
-
-
-
-</div>
 
 
 <br />
@@ -468,7 +399,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>(XL) Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
@@ -551,23 +482,13 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<section id="" order="" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
-
-
-      <div className="container" style={{padding: '0 3%', color:''}}>
-
-<div style={{position:'', top:'', zIndex:''}}>
-<p className="font" style={{fontSize:'300%', textAlign:'center', color:'yellow'}}>Our Deluxe plans offer </p>
-<p>Our Stain Remover &amp; Odor Suppressant Treatment is an environmentally-friendly solution used to freshen your lawn and yard.
-</p>
-
- <p>It is an animal safe, 100% organic spray, formulated to remove stains and eliminate ammonia and odors emitted from pet urine and feces. Left untreated, these odors can result in health problems for animals and humans alike.</p>
-</div>
 
 
 
-</div>
-</section>
+
+
+
+
 
 
 
@@ -829,4 +750,4 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   )
 }
 
-export default PricePage
+export default XLPage
