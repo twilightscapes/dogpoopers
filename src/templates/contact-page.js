@@ -64,7 +64,7 @@ const Contact = ({ data }) => {
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
 
-      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "5vh" }}>
+      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "5vh", background: 'rgba(0,0,0,0.30)' }}>
 
         <div style={{ padding: "3vh 6% 0 6%", textAlign:'center' }} dangerouslySetInnerHTML={{ __html: html }} />
 

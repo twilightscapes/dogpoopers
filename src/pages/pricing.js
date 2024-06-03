@@ -359,9 +359,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
               </div> */}
 
 
-<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Dog Poopers Pick Up The Poop</h2>
+<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>
-  Choose your plan - <u>NO</u> contracts required.
+  Cancel anytime - <u>NO</u> contracts required.
 </p> 
 
 
