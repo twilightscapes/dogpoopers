@@ -945,6 +945,7 @@ button:disabled{
 @media(max-width:48rem) {
   .mobilehide{display:none}
 
+  .mobile{border:0 solid red; height:69px; display:block;}
 
   #profiletop .nameblock {order:2 !important;}
   
@@ -1039,7 +1040,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   }
 
 
-
+body.homepage footer{display:none !important;}
 
 
   /* .grid-container {margin:0 auto 0 auto ; padding-top:16vh; } */
