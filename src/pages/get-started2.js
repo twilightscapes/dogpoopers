@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
 
 
-function GetStarted() {
+function GetStarted2() {
   const { showNav } = useSiteMetadata()
 
   
@@ -59,12 +59,12 @@ function GetStarted() {
 
 
 
-      <h3 style={{fontSize:'150%', textAlign:'center'}}>How many dogs do you have?</h3><br />
+      <h3 style={{fontSize:'130%', textAlign:'center'}}>How large is your yard?</h3><br />
 <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
 
-<Link state={{modal: true}} to="/get-started2" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1 or 2 dogs</Link>
+<Link state={{modal: true}} to="../standard" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1/4 Acre or smaller</Link>
 -OR-
-    <Link state={{modal: true}} to="../big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px',fontSize:'130%' }}>3 or more dogs</Link>
+    <Link state={{modal: true}} to="../big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px',fontSize:'130%' }}>Over a 1/4 Acre</Link>
 </div>
 
 {/* <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
@@ -187,6 +187,6 @@ You will need a valid email
   );
 }
 
-export default GetStarted;
+export default GetStarted2;
 
 

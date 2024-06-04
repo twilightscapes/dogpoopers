@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
-import GoBack from "../components/goBack"
+// import GoBack from "../components/goBack"
 // import Footer from "../components/footer"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Social from "../components/social"
@@ -14,7 +14,7 @@ import { AiOutlineAudioMuted } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 
-const AboutPage = () => {
+const PricePage = () => {
   const { language, featureOptions, proOptions  } = useSiteMetadata();
   const { showSocial } = featureOptions
   const { showProfile } = proOptions
@@ -184,7 +184,7 @@ const AboutPage = () => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-        {/* <div className="spacer2" style={{ height: "60px", border: "0px solid yellow" }}></div> */}
+        <div className="spacer mobile" style={{ height: "", border: "0px solid yellow" }}></div>
 
 
 
@@ -321,62 +321,21 @@ const AboutPage = () => {
 
 
 
-<section id="SecondaryInfo8" order="6" className="nameblock" style={{margin:'1vh auto 10vh auto', padding:'2vh 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
-  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  // background:'rgba(0,0,0,0.50)',
-  backdropFilter:'blur(8px)',
-  borderRadius:'10px',
-  // textShadow:'0 2px 7px #000',
-  maxWidth:'100%',
-
-  background:'var(--theme-ui-colors-background)', color:'var(--theme-ui-colors-text)',
-   }}>
-
-
-{/* <p>Ready to set sail on your own social media voyage? Joining the Pirate Social revolution is as easy as hoisting your flag. Click on the 'Sign Up' button to embark on your journey. You'll be taken through a simple process where you'll establish your own personal galleon - your unique website that serves as your profile in the Pirate Social fleet.</p>
-
-<p>Upon signing up, you'll gain access to the Netlify CMS and Netlify Identity, the wind in your sails that will allow you to customize your profile, post your own content, and chart your course in the vast digital sea. Remember, your voice and content are your own on Pirate Social. So, get ready to make some waves, captain!</p> */}
-
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '2vh 3vw', margin:'2vh auto', maxHeight: '', fontSize: 'clamp(1rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color: '', background: 'var(--theme-ui-colors-headerColor)', backdropFilter: 'blur(12px)', borderRadius: '10px' }}>
-    <h2>No Compromise - No-Quarter!</h2>
-  </div>
-  
-  <div className="flexbutt1" style={{gap:'10vw', display:'flex'}}>
-<div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around', width:'100%'}}>
-    <p>Pirate is a revolutionary new social media platform with NO central authority. A decentralized network where each user hosts their own personal website app or "Galleon", which also transforms into their own social media profile.</p>
-    
-    <p>These website apps, or 'Galleons' as we like to call them, are hosted for free on platforms like Netlify and GitHub, offering a decentralized network powered by the spirit of digital freedom.</p>
-
-  <p>Your voice matters. Every post you make is an entry, a testament to your individuality, and a piece of content that remains unequivocally yours.</p> 
-    
-    <p>The Pirate platform encourages active content curation, where 'liking' a website contributes to a custom timeline, offering a personalized journey through the digital world.</p>
-      
-      
-      <p>We proudly hoist our black and white Jolly Roger as a symbol of our commitment to stand against corporate influence, central ownership, and censorship.</p>
-
-
-      </div>
-
-
-      <div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-around', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', width:'200px', alignItems:'center'}}> 
-
-<StaticImage src="../../static/assets/anti1.webp" alt="Default Image" style={{height:'auto', maxWidth:'150px', position:'relative', zIndex:'0', top:'0', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-
-<StaticImage src="../../static/assets/anti2.webp" alt="Default Image" style={{height:'auto', maxWidth:'150px', position:'relative', zIndex:'0', top:'0', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-
-<StaticImage src="../../static/assets/anti3.webp" alt="Default Image" style={{height:'auto', maxWidth:'150px', position:'relative', zIndex:'0', top:'0', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-
-<StaticImage src="../../static/assets/anti4.webp" alt="Default Image" style={{height:'auto', maxWidth:'150px', position:'relative', zIndex:'0', top:'0', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-
-</div>
-
-
-      </div>
-</section>
+{/* <GatsbyImage
+image={FrontImage}
+alt={frontmatter.title + " - Featured image"}
+className="featuredimage"
+placeholder="blurred"
+loading="eager"
+style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}}
+/> */}
 
 
 
-<section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'10vh auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
+<StaticImage src="../../static/assets/dogpoopers-nosey-deluxe-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0', zIndex:'0'}} />
+
+
+<section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
 
 
       <div className="container" style={{padding: '0 3%', color:''}}>
@@ -401,42 +360,152 @@ const AboutPage = () => {
               </div> */}
 
 
-<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Pirate Runs Free Of Cost</h2>
-<p style={{fontSize:'150%', textAlign:'center'}}>Pirates have <u>NO</u> monthly costs.
 
+
+
+
+
+
+
+
+<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
+<p style={{fontSize:'150%', textAlign:'center'}}>
+  Cancel anytime - <u>NO</u> contracts required.
 </p> 
 
 
 
+<p style={{fontSize:'150%', textAlign:'center'}}>
+  <strong>Standard Packages</strong>: 1-2 Dogs, Up to 1/4 Acre Yard 
+</p> 
+
+
+
+{/* First row */}
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 
-
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Cloud Hosting</h3>
-
-<div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE or low cost</strong>. 
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>One-Time Service</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
-Pay only when your site uses a LOT of data.<br /> 
+{/* Pay only when your site uses a LOT of data.<br />  */}
  <br />
- <div style={{textDecoration:'underline', textAlign:'center'}}><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View  <strong className="highlight"></strong> Hosting Plan</a></div>
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
+  
+  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
+  <br />
+  </div>
+ </div>
+<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$39.99</strong> One Time</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Weekly</h3>
+
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
+  <br />
+<br />
+
+ <div style={{textDecoration:'underline', textAlign:'center',}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
+  
  </div>
 
 </div>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Analytics</h3>
-<p>Complete integration with Google Analytics. Simply paste your account tracking code into the CMS settings. 
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Twice Weekly</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
-  <br />Track your website performance for <strong className="highlight">FREE</strong>!</p>
+<br />
+
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>
+
+ </div>
+</div>
+
+
+
+</div>
+
+
+<br />
+<p style={{fontSize:'150%', textAlign:'center'}}>
+<strong>Big Dawg Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
+</p> 
+
+
+
+
+{/* Second row */}
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
+
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg One-Time Service</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
+  <br />
+{/* Pay only when your site uses a LOT of data.<br />  */}
+ <br />
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
+  
+  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
+  <br />
+  </div>
+ </div>
+<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>E-Commerce</h3>
-<p>Complete Shopify API integration with Shopify shopping cart built-in.
-Get FULL Shopify functionality directly inside your site.
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg Weekly</h3>
+
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
+  <br />
 <br />
-   <br />Shopify API costs <strong className="highlight">$8.99mo</strong>.</p>
+
+ <div style={{textDecoration:'underline', textAlign:'center',}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$45.99</strong> per week</p>
+  
+ </div>
+
 </div>
+
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg Twice Weekly</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
+  <br />
+<br />
+
+ <div style={{textDecoration:'underline', textAlign:'center'}}>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
+  <br />
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  </div>
+
+  <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$59.99</strong> per week</p>
+
+ </div>
+</div>
+
+
+
 </div>
 
 
@@ -449,7 +518,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className="flexbutt hover" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px', color:'#fff'}}>
+{/* <div className="flexbutt hover" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px', color:'#fff'}}>
 
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -464,10 +533,7 @@ Get FULL Shopify functionality directly inside your site.
   <br /><br />AdFree YouTube <strong className="highlight">FREE!</strong></p>
 </div>
 
-{/* <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext">NFT Features</h3>
-<p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
-</div> */}
+
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Comments</h3>
 <p>We use CommentBox.io and with their generous 100 comments a month.
@@ -476,7 +542,7 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 
 
-</div>
+</div> */}
 
 
 
@@ -485,30 +551,33 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
+<section id="" order="" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
+
+
+      <div className="container" style={{padding: '0 3%', color:''}}>
+
+<div style={{position:'', top:'', zIndex:''}}>
+<p className="font" style={{fontSize:'300%', textAlign:'center', color:'yellow'}}>Our Deluxe plans offer </p>
+<p>Our Stain Remover &amp; Odor Suppressant Treatment is an environmentally-friendly solution used to freshen your lawn and yard.
+</p>
+
+ <p>It is an animal safe, 100% organic spray, formulated to remove stains and eliminate ammonia and odors emitted from pet urine and feces. Left untreated, these odors can result in health problems for animals and humans alike.</p>
+</div>
+
+
+
+</div>
+</section>
 
 
 
 
 
-
-
-
-
-
-
-
-<section id="features" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 2%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
+{/* <section id="features" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 2%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
 
 
   
-  {/* <div style={{position:'relative', display:'grid', margin:'0 auto 3vh auto', placeContent:'center', right:'', height:'100vh', width:'100vw', color:'#fff' }}>
 
-<h2 id="" style={{fontSize:'clamp(1vw, 7.5vw, 9.5vw)', textShadow:'1px 2px 0px #111', position:'relative'}}>Pirate Galleons</h2>
-<h3 style={{fontSize:'clamp(1vw, 4.5vw, 9.5vw)', textShadow:'1px 2px 0px #111', position:'relative', textAlign:'center'}}>(Your website app)</h3>
-
-    <StaticImage style={{height:'auto', width:'100vw', height:'100vh', overflow:'', position:'absolute', margin:'0 auto', zIndex:'-1', objectFit:'cover', border:'0px solid red', background:'transparent',}} src="../../static/assets/shipbg.webp" alt="Lighthouse Scores for VidSocks" width="100%" height="auto" className="rounded" />
-
-</div> */}
 
 
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2vh', alignItems:'baseline', position:'relative', gap:'30px', color:'', width:'95vw'}}>
@@ -614,7 +683,7 @@ Get FULL Shopify functionality directly inside your site.
   <div className="flexcheek hover">
     <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px'}}>
-        {/* <h2 className="vartext txtshadow">Pirate Features:</h2> */}
+
         <h2
   className="title1 txtshadow-header"
   style={{
@@ -657,7 +726,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 <li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
-{/* <li>Auction Timers - Make posts disappear when your auction expires</li> */}
+
 
 </ul>
       </div>
@@ -670,62 +739,13 @@ Get FULL Shopify functionality directly inside your site.
 
   
 </div>
-</section>
+</section> */}
 
 
 
 
 
 
-<section id="SecondaryInfo4" order="7" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'2% 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
-  color:'var(--theme-ui-colors-text)',
-  border:'0px solid red', 
-  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  background:'var(--theme-ui-colors-cardBg)',
-  backdropFilter:'blur(8px)',
-  // border:'1px solid #333',
-  borderRadius:'10px',
-  // textShadow:'0 2px 0px #000',
-  maxWidth:'95%' ,
-  // border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px'
-  }}>
-
-
-
-  <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color: '', background: 'var(--theme-ui-colors-headerColor)', backdropFilter: 'blur(12px)', borderRadius: '10px' }}>
-    <h2>How It Works</h2>
-  </div>
-
-
-
-
-<div className="flexbutt" style={{gap:'10vw'}}>
-<div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Set Sail:</h2> <p>At Pirate, your personal website is your Galleon in the digital sea. Your Galleon does double duty working as both your homepage, resume, and blog, as well as acting as your Helm to another world of Social Media. You're no landlubber, you're a Captain, steering your own course through the Social Media Seas.</p>
-
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Chart Your Course:</h2> <p>Your homepage, profile and timeline become your Captain's Log and your personal flag, flying high above the digital waves. Your posts are more than mere messages in a bottle, they're personal tales of your adventures in the vast sea of the internet.</p>
-
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Spyglass View:</h2> <p>Every ship you spot and "Plunder" enhances your view of the digital horizon. Your custom timeline transforms your voyage into a grand exploration of the treasures you've chosen to seek out.</p>
-
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>High Seas Freedom:</h2> <p>Pirate is a haven from the corporate armada, from central rule, and from censorship. Every word you scribe and every tale you tell is unequivocally yours. It's about sailing under your own flag, following your own chart, and staking your claim in the digital world.</p>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Shipmates Unite:</h2> <p>This platform is about building your crew on your terms. Your content is free from the manipulations of corporate quartermasters, allowing you to forge alliances based on authenticity and shared quests.</p>
-</div>
-
-<div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
-
-<StaticImage src="../../static/assets/action3.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Control your website and social media together in one app - easily installs onto your device so you have it with you at all times, even if you're offline.
-<StaticImage src="../../static/assets/action6.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Scan your timelines faster and the way you want. Featuring a unique swipe OR scroll interface, your choice.
-<StaticImage src="../../static/assets/action5.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Customize all aspects of your website in the app. Just love purple? Great, you can always be you!
-<StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-You control your timeline (and everything else), not some billionaire appeasing stockholders or their bottomline. 
-</div>
-</div>
-
-
-</section>
 
 
 
@@ -746,11 +766,11 @@ You control your timeline (and everything else), not some billionaire appeasing 
  
 
 
-<section id="SecondaryInfo5" order="7" className="nameblock" style={{margin:'0 auto 0 auto', padding:'1vh 2vh',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+{/* <section id="SecondaryInfo5" order="7" className="nameblock" style={{margin:'0 auto 0 auto', padding:'1vh 2vh',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   border:'0px solid red', 
   fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  background:'#222',
+  background:'rgba(0,0,0,0.50)',
   backdropFilter:'blur(8px)',
   // border:'1px solid #333',
   borderRadius:'10px',
@@ -759,11 +779,11 @@ You control your timeline (and everything else), not some billionaire appeasing 
 
 
 
-  <div className="nameblock" style={{position:'', top:'0', marginTop: '', width:'100%', padding: '0 2rem 0 2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color: '#fff', background: 'rgba(0,0,0,0.50)', backdropFilter: 'blur(12px)', borderRadius: '10px' }}>
+  <div className="nameblock" style={{position:'', top:'0', marginTop: '', width:'100%', padding: '1rem 2rem 0 2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color: '#fff', background: 'rgba(0,0,0,0.10)', backdropFilter: 'blur(12px)', borderRadius: '10px', justifyContent:'center', alignItems:'center' }}>
     <h2>Technology Stack</h2>
   </div>
 
-  <div className="nameblock" style={{position:'', top:'0', marginTop: '', width:'100%', padding: '2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 2vw, 3.2rem)', textAlign:'left', textShadow: '0 2px 3px #000', background: 'var(--theme-ui-colors-cardBg)', backdropFilter: 'blur(12px)', borderRadius: '10px', color:'#fff' }}>
+  <div className="nameblock" style={{position:'', top:'0', marginTop: '', width:'100%', padding: '2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 2vw, 3.2rem)', textAlign:'left', textShadow: '0 2px 3px #000', background: 'var(--theme-ui-colors-cardBg)', backgroundColor:'rgba(0,0,0,0.10)', backdropFilter: 'blur(12px)', borderRadius: '10px', color:'#fff' }}>
 
 
     <p>Pirate is built on industry leading technologies, and is designed from the ground up, using the best, most secure and modern development technology available today.</p>
@@ -781,7 +801,7 @@ You control your timeline (and everything else), not some billionaire appeasing 
 
 <StaticImage src="../../static/assets/partner4.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
-{/* <StaticImage src="../../static/assets/partner6.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
+
 
 </div>
 <div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'row', justifyContent:'space-around', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', width:'100%', alignItems:'center'}}> 
@@ -792,13 +812,13 @@ You control your timeline (and everything else), not some billionaire appeasing 
 
 <StaticImage src="../../static/assets/partner8.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
-{/* <StaticImage src="../../static/assets/partner7.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
+
 
 </div>
 </div>
-</section>
+</section> */}
 
-        <GoBack />
+        {/* <GoBack /> */}
         
       </div>
 
@@ -809,4 +829,4 @@ You control your timeline (and everything else), not some billionaire appeasing 
   )
 }
 
-export default AboutPage
+export default PricePage

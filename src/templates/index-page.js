@@ -669,7 +669,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
   )}
   <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-<Link state={{modal: true}} to="install" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1 or 2 dogs</Link>
+  <Link state={{modal: true}} to="/get-started2" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1 or 2 dogs</Link>
 -OR-
     <Link state={{modal: true}} to="big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px',fontSize:'130%' }}>3 or more</Link>
 </div>

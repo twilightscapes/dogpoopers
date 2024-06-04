@@ -1,12 +1,12 @@
 {
   "menuItems": [
     {
-      "menutitle": "Get Started",
-      "url": "/get-started"
-    },
-    {
       "menutitle": "How It Works",
       "url": "/howitworks"
+    },
+    {
+      "menutitle": "Get Started",
+      "url": "/get-started"
     },
     {
       "menutitle": "Contact Us",
