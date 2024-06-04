@@ -11,7 +11,7 @@
     "title": "They Poop - We Scoop!",
     "image": "",
     "description": "Gulf Coast Animal Waste Removal",
-    "icon512": "/assets/pirate-icon.svg",
+    "icon512": "/assets/dogpooper-icon.svg",
     "defaultCollection": "",
     "showCollectionTitles": false,
     "navOptions": {
@@ -39,7 +39,7 @@
       "ShowDisclaimer": false,
       "showLegal": true,
       "showConsent": false,
-      "startUrl": "/",
+      "startUrl": "/get-started",
       "showFeature": true,
       "showResume": false,
       "showLocation": false,

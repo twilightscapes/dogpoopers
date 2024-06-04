@@ -3,13 +3,21 @@ import Seo from "../components/seo";
 import Layout from "../components/siteLayout";
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
+import { Helmet } from "react-helmet"
 
-
-const Thanks = () => {
+const Driver = () => {
       return (
 
  <Layout className="thanks-page">
+
+<Helmet>
+
+  
+<body id="body" className="install homepage " />
+</Helmet>
+
  <Seo title={`Thanks for being a Pirate!`} />
+
 
 <section className="outer section section--gradient" >
       <div className="container" style={{padding: '30px 0', minHeight:'100dvh'}}>
@@ -61,4 +69,4 @@ Huntington Beach, CA 92649<br />
   );
 };
 
-export default Thanks;
+export default Driver;
