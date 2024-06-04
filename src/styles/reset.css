@@ -38,7 +38,7 @@ samp {
 a {
   background-color: transparent;
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 abbr[title] {
   border-bottom: none;

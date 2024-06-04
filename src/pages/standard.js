@@ -14,9 +14,9 @@ import { Helmet } from "react-helmet"
 
 
 function Install() {
-  const { showNav } = useSiteMetadata()
+  const { featureOptions  } = useSiteMetadata();
 
-  
+  const { showNav } = featureOptions
 
 
   return (
@@ -28,11 +28,13 @@ function Install() {
         <body id="body" className="install " />
       </Helmet>
 
-      {showNav ? (
-        <div id="top" className="spacer" style={{ height: "0px", border: "0px solid yellow" }}></div>
+      {/* {showNav ? (
+        <div id="top" className="spacer" style={{ height: "0", border: "0px solid yellow" }}></div>
       ) : (
         ""
-      )}
+      )} */}
+
+<div id="top" className="spacer3" style={{ height: "70px", border: "0px solid yellow" }}></div>
 
 <div className="scroll-container">
 
@@ -146,7 +148,7 @@ You will need a valid email
 </Link> */}
 <br />
 
-
+<p style={{textAlign:'center'}}><Link className="" to="/plans" > <strong className="highlight">Explore All Plans</strong></Link></p>
 {/* <ContactForm /> */}
 
 {/* <Link style={{display:'grid', placeContent:'center', margin:'0 auto 0 auto'}} state={{modal: true}} className="button" to="/contact">Tell us about yourself</Link> */}

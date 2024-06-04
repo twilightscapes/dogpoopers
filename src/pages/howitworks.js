@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Seo from "../components/seo";
 import Layout from "../components/siteLayout";
 import SearchPosts from "../components/SearchPosts";
-
+import { Helmet } from "react-helmet"
 const Search = () => {
   // Check if localStorage is available
   const isLocalStorageAvailable = typeof window !== "undefined" && window.localStorage;
@@ -36,7 +36,11 @@ const Search = () => {
   }, [isLocalStorageAvailable]);
 
   return (
+
     <Layout className="search">
+      <Helmet>
+<body id="body" className="homepage " />
+</Helmet>
       <Seo title="Search" />
 
       <div className="post-container" id="posttop">

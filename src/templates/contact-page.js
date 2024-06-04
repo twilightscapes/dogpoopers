@@ -30,7 +30,7 @@ export const pageQuery = graphql`
 `;
 
 const Contact = ({ data }) => {
-  const { language, proOptions } = useSiteMetadata();
+  const { language, proOptions, showNav } = useSiteMetadata();
   const { dicName, dicEmail, dicMessage, dicSubmit, dicPhone } = language;
   const { showContact } = proOptions;
 
@@ -57,17 +57,24 @@ const Contact = ({ data }) => {
   return (
     <Layout className="contact-page">
       <Helmet>
-        <body className="contactpage utilitypage" />
+        <body className="contactpage" />
       </Helmet>
       <Seo
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
 
+<div className="scroll-container">
 
 
+{showNav ? (
+        <div id="top" className="spacer" style={{ height: "60px", border: "0px solid yellow" }}></div>
+      ) : (
+        ""
+      )}
 
 
+<br /><br /><br />
 
 <StaticImage src="../../static/assets/dogpoopers-contact-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
@@ -148,6 +155,8 @@ const Contact = ({ data }) => {
         ) : (
           "Please Upgrade to Plus"
         )}
+      </div>
+
       </div>
     </Layout>
   );

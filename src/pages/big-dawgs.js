@@ -475,8 +475,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 </div> */}
 
-
-
+<br />
+<p style={{textAlign:'center'}}><Link className="" to="/plans" > <strong className="highlight">Explore All Plans</strong></Link></p>
       </div>
 </section>
 
@@ -740,6 +740,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </section> */}
 
         {/* <GoBack /> */}
+
+
         
       </div>
 

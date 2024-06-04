@@ -59,12 +59,12 @@ function GetStarted2() {
 
 
 
-      <h3 style={{fontSize:'130%', textAlign:'center'}}>How large is your yard?</h3><br />
+      <h3 style={{fontSize:'clamp(1.8rem, 3vw, 3.2rem)', textAlign:'center'}}>How large is your yard?</h3><br />
 <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
 
-<Link state={{modal: true}} to="../standard" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1/4 Acre or smaller</Link>
--OR-
-    <Link state={{modal: true}} to="../big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px',fontSize:'130%' }}>Over a 1/4 Acre</Link>
+<Link state={{modal: true}} to="../standard" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh .5vw', maxWidth:'250px', fontSize:'130%', display:'grid', placeContent:'center', textAlign:'center' }}>1/4 Acre or smaller</Link>
+<div>OR</div>
+    <Link state={{modal: true}} to="../big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.5vh 1vw', maxWidth:'250px',fontSize:'130%', display:'grid', placeContent:'center', textAlign:'center' }}>Over a 1/4 Acre</Link>
 </div>
 
 {/* <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
