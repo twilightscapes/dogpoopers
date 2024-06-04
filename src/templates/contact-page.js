@@ -4,7 +4,7 @@ import Seo from "../components/seo";
 import Layout from "../components/siteLayout";
 import useSiteMetadata from "../hooks/SiteMetadata"
 import { Helmet } from "react-helmet";
-
+import { StaticImage } from "gatsby-plugin-image"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -63,6 +63,8 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
+
+<StaticImage src="../../static/assets/dogpoopers-contact-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
       <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "5vh", background: 'rgba(0,0,0,0.30)' }}>
 
