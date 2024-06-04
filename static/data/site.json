@@ -20,7 +20,7 @@
       "showFooterMenu": false
     },
     "featureOptions": {
-      "showArchive": false,
+      "showArchive": true,
       "showSearch": false,
       "showDates": false,
       "showTitles": true,
@@ -33,10 +33,10 @@
       "showSwipe": false
     },
     "proOptions": {
-      "showModals": true,
+      "showModals": false,
       "showContact": true,
       "showBranding": false,
-      "ShowDisclaimer": true,
+      "ShowDisclaimer": false,
       "showLegal": true,
       "showConsent": false,
       "startUrl": "/",
