@@ -396,7 +396,7 @@ bottom: 10px !important;
 }
 
 
-
+body.blogpost footer{display:none !important;}
 .blogpost article a{text-decoration: underline;}
 
 .grid-container article{ flex-wrap: none; display: grid;}
