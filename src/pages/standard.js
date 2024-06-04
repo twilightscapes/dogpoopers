@@ -59,8 +59,14 @@ function Install() {
       <div className="container" style={{padding: '0 3%', color:''}}>
 
 
-
-<h3 style={{fontSize:'130%'}}>Weekly Services</h3>
+      <h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
+<p style={{fontSize:'150%', textAlign:'center'}}>
+  Cancel anytime - <u>NO</u> contracts required.
+</p> 
+<br />
+<p style={{fontSize:'150%', textAlign:'center'}}>
+<strong>Pooper Packages</strong>:<br />1 or 2 Dogs, Up to 1/4 Acre Yard 
+</p> 
 
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
 

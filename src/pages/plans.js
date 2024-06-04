@@ -366,8 +366,6 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-
-
 <h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>
   Cancel anytime - <u>NO</u> contracts required.
@@ -376,7 +374,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <p style={{fontSize:'150%', textAlign:'center'}}>
-  <strong>Standard Packages</strong>: 1-2 Dogs, Up to 1/4 Acre Yard 
+  <strong>Pooper Packages</strong>: 1-2 Dogs, Up to 1/4 Acre Yard 
 </p> 
 
 

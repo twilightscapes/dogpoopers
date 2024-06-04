@@ -374,7 +374,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <br />
 <p style={{fontSize:'150%', textAlign:'center'}}>
-<strong>Big Dawgs Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
+<strong>Big Dawgs Packages</strong>:<br />3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 
 
 
