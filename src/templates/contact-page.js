@@ -67,14 +67,12 @@ const Contact = ({ data }) => {
 <div className="scroll-container">
 
 
-{showNav ? (
-        <div id="top" className="spacer" style={{ height: "60px", border: "0px solid yellow" }}></div>
-      ) : (
-        ""
-      )}
+
+        <div id="top" className="spacer" style={{ height: "", border: "0px solid yellow" }}></div>
 
 
-<br /><br /><br />
+
+
 
 <StaticImage src="../../static/assets/dogpoopers-contact-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
