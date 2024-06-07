@@ -1556,7 +1556,7 @@ margin: 0 auto;
   overscroll-behavior: contain;
   scroll-snap-align: center;
   transition:transform .8s;
-  margin:8vh 20vw 0 0 ;
+  margin:0 20vw 0 0 ;
   padding:4vh 5vw 0 30vw;
   overflow-x: scroll;
   overflow-y: hidden;

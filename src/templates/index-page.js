@@ -502,9 +502,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {/* show feature */}
 
-{isRunningStandalone() ? (
-  ""
-) : (
+
   <>
   {showFeature ? (   
 <section id="feature" name="feature" className="print scroll-area" style={{  
@@ -570,15 +568,12 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   ""
 )}
   </>
-)} 
+
 {/* end show feature */}
 
 
 
 {/* show profile */}
-{isRunningStandalone() ? (
-  ""
-) : (
   <>
 {showProfile ? (
   <section className="scroll-area panel" id="profile" name="profile" style={{ display:'', height:'', minHeight:'', position:'relative', overflow:'hidden', margin:'0 auto 0 auto', padding:'0 0 60px 0', background:'var(--theme-ui-colors-background)', color:'var(--theme-ui-colors-text)', width:'100vw', borderRadius:'var(--theme-ui-colors-borderRadius)', }}>
@@ -699,7 +694,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
 )}
 </>
-)}
+
 {/* end show profile */}
 
 
