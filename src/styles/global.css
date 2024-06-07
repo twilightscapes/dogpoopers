@@ -1011,7 +1011,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
 
 
   .topmenu {gap:1vw ; padding:0 ;}
-  .topmenu li {margin-top:2vh ;}
+  .topmenu li {margin-top:2vh; }
 
   .missioncontrol{
     padding:0;
@@ -1174,7 +1174,13 @@ iframe.virtualtour{
 #resume span div{display:block;width:100%}
 .nameblock{background:transparent;color:inherit;}
 #gobacker{position:fixed; top:70vh ; right:1vw; z-index:11;}
+
+.topmenu li {margin-top:0; font-size:clamp(1.4rem, 2vw, 3.2rem) !important;}
+
+.topmenu {padding:0 !important;}
+
 }
+
 
 
 
