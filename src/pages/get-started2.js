@@ -25,7 +25,7 @@ function GetStarted2() {
 <Helmet>
 
   
-        <body id="body" className="install " />
+        <body id="body" className=" " />
       </Helmet>
 
       {showNav ? (
@@ -54,7 +54,7 @@ function GetStarted2() {
 <section id="SecondaryInfo" order="6" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
 
 
-      <div className="container" style={{padding: '0 3%', minHeight:'50vh', display:'grid', placeContent:'center'}}>
+      <div className="container" style={{padding: '0 3%', minHeight:'50vh', minWidth:'100vw', display:'grid', placeContent:'center'}}>
 
 
 

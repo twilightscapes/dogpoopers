@@ -179,12 +179,12 @@ const BigDawgPage = () => {
   return (
     <Layout className="page">
       <Helmet>
-        <body id="body" className="install" />
+        <body id="body" className="" />
       </Helmet>
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-        <div className="spacer mobile" style={{ height: "", border: "0px solid yellow" }}></div>
+        {/* <div className="spacer mobile" style={{ height: "", border: "0px solid yellow" }}></div> */}
 
 
 

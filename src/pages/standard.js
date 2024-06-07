@@ -25,7 +25,7 @@ function Install() {
 <Helmet>
 
   
-        <body id="body" className="install " />
+        <body id="body" className=" " />
       </Helmet>
 
       {/* {showNav ? (
