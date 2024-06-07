@@ -77,13 +77,13 @@ function Install() {
 {/* Pay only when your site uses a LOT of data.<br />  */}
  <br />
  <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
+  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/ncp/payment/3WQU5K29X664L" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
   
   <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
   <br />
   </div>
  </div>
-<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$39.99</strong> One Time</p>
+<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -94,9 +94,9 @@ function Install() {
 <br />
 
  <div style={{textDecoration:'underline', textAlign:'center',}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2XM00365T0303471RMZRGI4A" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff'}}> Order Now</strong></a>
   <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8BS82929AS9038505MZRGKKQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
 
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
@@ -112,9 +112,9 @@ function Install() {
 <br />
 
  <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
+  <a className="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-03203141SA2517416MZRGL2Y" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700', fontSize:'', textAlign:'center'}}> Order Now</strong></a>
   <br />
-  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8NG870567P558582PMZN6LVQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
+  <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-39208942DN521971UMZRGNLY" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
 
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>

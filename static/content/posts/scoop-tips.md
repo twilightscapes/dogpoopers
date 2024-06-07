@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: How Dog Poopers works your yard
+title: How Dog Poopers work your yard
 slug: /how-we-doo-it
 date: 2023-10-01 09:00
-description: Experience the thrill of PIRATE
+description: How Dog Poopers work your yard
 featuredImage: /assets/dogpoopers-nosey-deluxe-header.webp
 showPageNav: true
 tags:
