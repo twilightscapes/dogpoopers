@@ -27,7 +27,7 @@
       "showfooter": true,
       "showSocial": false,
       "showVideoPlayer": false,
-      "showHomePosts": false,
+      "showHomePosts": true,
       "showProfile": true,
       "showDefault": false,
       "showSwipe": false
