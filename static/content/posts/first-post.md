@@ -10,19 +10,24 @@ tags:
  - test
  - poop
 youtube:
- youtubeshoworiginal: false
- youtubestart: ""
- youtubeend: ""
- youtubemute: false
- youtubecontrols: false
- youtubeautostart: false
- youtubeloop: false
- clicktoplay: false
- showVidOnly: false
- customcontrols: false
- audioend: ""
- audiotitle: ""
- audiostart: ""
+  showVidOnly: false
+  audiotitle: ""
+  audioend: ""
+  youtubeloop: true
+  customcontrols: true
+  audiostart: ""
+  youtuber: https://youtu.be/7Jy891_B6LQ?si=NlhmKr-MAKIeSJjG
+  youtubeautostart: false
+  youtubeshoworiginal: false
+  clicktoplay: false
+  youtubeend: "111"
+  youtubecontrols: false
+  youtubemute: true
+  youtubestart: "52"
+mediawarnings:
+  marate: "DD"
+  marating1: "Doggy Doo"
+  viewerwarning: "This content may contain doggy doo"
 shareable: false
 
 ---

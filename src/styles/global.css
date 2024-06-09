@@ -600,7 +600,7 @@ body.homepage .resp-sharing-button__icon svg{height:5vh;width:5vw}
 .spotlight{color:#fff;cursor:pointer;
   position:absolute;
   display:flex;
-  top:40%;
+  top:20%;
   justify-content: center;
   z-index:1;
   padding:0;pointer-events:pointer;
@@ -964,7 +964,7 @@ button:disabled{
   }
 
 
-  #bigbox {flex-wrap: wrap;}
+  #bigbox {flex-wrap: wrap; color:rgba(35, 117, 62, 0.6)}
 
   /* .player-wrapper .menusnapp{top:72% !important;} */
 
