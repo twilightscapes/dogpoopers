@@ -401,7 +401,7 @@ body.blogpost footer{display:none !important;}
 
 .grid-container article{ flex-wrap: none; display: grid;}
 
-.spacer{display:block; height:0 !important;}
+.spacer{display:block; height:0 ;}
 
 .sliderSpacer{display:none;}
 .slider .sliderSpacer{display:block ; height:50% ; }
@@ -960,6 +960,7 @@ button:disabled{
     box-shadow: none !important;
     margin:0 auto !important;
     /* height: 100% !important; */
+    .tagline1, .title1{text-align: center !important;}
   }
 
 
@@ -989,12 +990,12 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   .hover .flexcheek:hover{ background: rgba(0,0,0,0.70) !important}
   .featurelist li:hover { background: rgba(0,0,0,0.80) !important}
   body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer{
-    height:80px !important;
+    height:80px ;
   }
 
   .flexcheek{width:100% !important; position:inherit; top:inherit;}
 
-  body .spacer{height:65px !important;}
+  /* body .spacer{height:85px ;} */
 
   body:has(.tagpage, .category, .searchpage) .spacer{
     display:block;
@@ -1011,7 +1012,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
 
 
   .topmenu {gap:1vw ; padding:0 ;}
-  .topmenu li {margin-top:2vh; }
+  .topmenu li {margin-top:2vh; line-height: 1; }
 
   .missioncontrol{
     padding:0;
@@ -1179,6 +1180,9 @@ iframe.virtualtour{
 
 .topmenu {padding:0 !important;}
 /* .slider {padding-left:300px !important;} */
+
+.spacer{display:block; height:46px !important;}
+
 }
 
 

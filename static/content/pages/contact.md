@@ -8,7 +8,7 @@ contactname: true
 contactphone: true
 contactupload: true
 scrollable: false
-uploadtext: JPG preferred - (1600px wide)
+uploadtext: ""
 excludeFromRSS: true
 ---
 Contact Us!

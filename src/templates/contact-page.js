@@ -76,9 +76,9 @@ const Contact = ({ data }) => {
 
 <StaticImage src="../../static/assets/dogpoopers-contact-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
-      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "5vh", background: 'rgba(0,0,0,0.30)' }}>
+      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "0", background: 'rgba(0,0,0,0.30)' }}>
 
-        <div style={{ padding: "3vh 6% 0 6%", textAlign:'center' }} dangerouslySetInnerHTML={{ __html: html }} />
+        {/* <div style={{ padding: "3vh 6% 0 6%", textAlign:'center' }} dangerouslySetInnerHTML={{ __html: html }} /> */}
 
         {showContact ? (
           <div className="wrapper flexbutt" style={{ padding: "0 10% 10vh 10%", maxWidth: "", margin: "0 auto", display: "flex", flexDirection: "", justifyContent: "center" }}>
