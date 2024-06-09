@@ -629,7 +629,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 }}>
   <br />
 {frontmatter.profileName ? (
-    <span style={{margin:'2vh auto', fontSize:'160%'}}>{frontmatter.profileName}</span>
+    <span style={{margin:'2vh auto', fontSize:'clamp(2rem, 3vw, 2.8rem)'}}>{frontmatter.profileName}</span>
   ) : (
     ""
   )}
@@ -643,11 +643,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
   )}
   <br /><br />
+  <div style={{fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>
   {frontmatter.addressText2 ? (
+    
     frontmatter.addressText2
+  
   ) : (
     ""
   )}
+  </div>
   <br />
 
   {frontmatter.cta.showCTA ? (
@@ -665,9 +669,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
   )}
   <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-  <Link state={{modal: true}} to="/get-started2" className="button print" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1vw', maxWidth:'250px', fontSize:'130%' }}>1 or 2 dogs</Link>
+  <Link state={{modal: true}} to="/get-started2" className="button print" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'250px', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}>1 or 2 dogs</Link>
 -OR-
-    <Link state={{modal: true}} to="big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.8vh 1vw', maxWidth:'250px',fontSize:'130%' }}>3 or more</Link>
+    <Link state={{modal: true}} to="big-dawgs" className="button print" style={{ display: 'flex', justifyContent: 'center', padding:'1.8vh 1.2vw', maxWidth:'250px',fontSize:'130%' }}>3 or more</Link>
 </div>
 
   {showSocial ? (
