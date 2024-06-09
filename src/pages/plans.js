@@ -368,13 +368,13 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>Choose Your Plan:</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>
-  Cancel anytime - <u>NO</u> contracts required.
+  <u>NO</u> contracts required - Cancel any time
 </p> 
 
 
 
 <p style={{fontSize:'150%', textAlign:'center'}}>
-  <strong>Pooper Packages</strong>: 1-2 Dogs, Up to 1/4 Acre Yard 
+  <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
 </p> 
 
 
@@ -441,7 +441,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <br />
 <p style={{fontSize:'150%', textAlign:'center'}}>
-<strong>Big Dawg Packages</strong>: 3 or More Dogs, Up to 1/2 Acre Yard 
+<strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 
 
 

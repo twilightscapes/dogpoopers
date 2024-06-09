@@ -9,6 +9,10 @@
       "url": "/get-started"
     },
     {
+      "menutitle": "Our Plans",
+      "url": "/plans"
+    },
+    {
       "menutitle": "Contact Us",
       "url": "/contact"
     }
