@@ -28,9 +28,9 @@ youtube:
 showPageNav: false
 showZoom: false
 showPostContact: false
-profText: <p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p>
-profTitle: They Poop - We Scoop!
-tagline: Gulf Coast Mississippi's one-and-only animal waste removal service
+profText: <p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p><p>Start enjoying your yard again - your dog will thank you for it</p>
+profTitle: We come and pick up the poop
+tagline: Pet Waste Removal Service
 featuredImage: /assets/dogpoopers-nosey-header.webp
 secondaryImage: /assets/default-user.webp
 scrollable: false
