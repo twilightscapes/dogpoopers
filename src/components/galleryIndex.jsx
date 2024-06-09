@@ -136,7 +136,7 @@ const GalleryIndex = ({ isSliderVisible }) => {
   alt={title}
   className="featured-image1 galleryimage"
   loading="lazy" // Add lazy loading
-  fadeIn={true} // Add fade-in effect
+  fadein='true' // Add fade-in effect
 />
                     
                     <div className="post-content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', height: '', position: 'relative', background: '', padding: '', margin: '0 auto 0 auto', textAlign: 'center', overFlow: 'hidden' }}>
