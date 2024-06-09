@@ -549,7 +549,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<section id="" order="" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
+{/* <section id="" order="" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'1% 4%',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center', }}>
 
 
       <div className="container" style={{padding: '0 3%', color:''}}>
@@ -565,6 +565,39 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 </div>
+</section> */}
+
+
+
+
+<section id="" order="7" className="nameblock" style={{margin:'0 auto 20vh auto', padding:'2% 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+  color:'#fff',
+  border:'0px solid red', 
+  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
+  background: 'rgba(35, 117, 62, 0.6)', padding:'0 1rem ', backdropFilter: 'blur(4px)',
+  backdropFilter:'blur(8px)',
+  // border:'1px solid #333',
+  borderRadius:'10px',
+  textShadow:'0 2px 7px #000',
+  maxWidth:'75%' }}>
+
+
+
+  <div className="nameblock" style={{position:'sticky', top:'0', marginTop: '', width:'100%', padding: '1rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 5px #000', color: '#fff', background: 'rgba(0,0,0,0.60)', backdropFilter: 'blur(4px)', borderRadius: '10px', color:'yellow' }}>
+    <h2>Our Deluxe plans offer</h2>
+  </div>
+
+  <div className="nameblock" style={{position:'sticky', top:'0', marginTop: '', width:'100%', padding: '2rem', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1rem, 2vw, 3.2rem)', textAlign:'left', textShadow: '0 2px 3px #000', background: 'rgba(0,0,0,0.60)', backdropFilter: 'blur(12px)', borderRadius: '10px' }}>
+
+
+  <p>Our Stain Remover &amp; Odor Suppressant Treatment is an environmentally-friendly solution used to freshen your lawn and yard.
+</p>
+
+ <p>It is an animal safe, 100% organic spray, formulated to remove stains and eliminate ammonia and odors emitted from pet urine and feces. Left untreated, these odors can result in health problems for animals and humans alike.</p>
+  </div>
+
+
+
 </section>
 
 
