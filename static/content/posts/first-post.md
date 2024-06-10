@@ -4,7 +4,7 @@ title: Great Service - Great Results
 slug: /first-post
 date: 2023-10-01 09:00
 description: Experience the thrill of PIRATE
-featuredImage: /assets/dogpoopers-grid-header.webp
+featuredImage: /assets/grid-tech-header.webp
 showPageNav: true
 tags:
  - test

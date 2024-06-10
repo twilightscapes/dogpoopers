@@ -4,7 +4,7 @@ title: Deluxe Service Includes Spraying
 slug: /first-post2
 date: 2023-10-01 09:00
 description: Experience the thrill of PIRATE
-featuredImage: /assets/dogpoopers-nosey-deluxe-header.webp
+featuredImage: /assets/spray-tech-header.webp
 showPageNav: true
 tags:
  - test
