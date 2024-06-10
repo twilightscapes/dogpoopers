@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Great Service - Great Results
+title: How we doo what we doo
 slug: /first-post
 date: 2023-10-01 09:00
 description: Experience the thrill of PIRATE
