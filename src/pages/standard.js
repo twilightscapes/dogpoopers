@@ -34,9 +34,9 @@ function Install() {
         ""
       )} */}
 
-<div id="top" className="spacer" style={{ height: "", border: "0px solid yellow" }}></div>
 
-<div className="scroll-container">
+
+<div className="scroll-container panel" style={{maxWidth:'100vw', overFlowY:'hidden', paddingTop: showNav ? '60px' : '',}}>
 
 
 {/* <div style={{display:'grid', justifyContent:'start', alignItems:'start', position:'relative', left:'', top:'', cursor:''}}> */}

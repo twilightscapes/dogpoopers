@@ -11,6 +11,7 @@ import Theme from "./theme"
 import SearchIcon from "../../src/img/search"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import { RiArrowUpFill } from "react-icons/ri"
+import { BsLayoutSidebarInsetReverse } from "react-icons/bs";
 import GoBack from "../components/goBack"
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
 import Menu from "../components/menu"
@@ -188,7 +189,19 @@ const Layout = ({ children }) => {
 
 {(showNav === false || socialMenuPages.some(page => currentPage.startsWith(page)) || showNav !== false) ? (
 
-<div id="missioncontrol2" className="missioncontrol sitecontrols" style={{position:'fixed', top:'0', right:'2%', zIndex:'10', display: 'flex', justifyContent: 'space-around', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '3vw', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px' }}>
+<div id="missioncontrol2" className="sitecontrols" style={{position:'fixed', top:'0', right:'0', zIndex:'10', display: 'flex', justifyContent: 'space-around', color:'#fff', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '3vw', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px', paddingRight:'80px' }}>
+
+{showSearch ? (
+                <div className="searchIcon">
+                  <Link state={showModals ? { modal: true } : {}} aria-label="Search" to="/search/" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center' }}>
+                    <SearchIcon style={{ height: '30px' }} />
+                    <span className="themetext">{dicSearch}</span>
+                  </Link>
+                </div>
+              ) : (
+                ""
+              )}
+
 
 <div>
   <Theme style={{}} />
@@ -324,15 +337,18 @@ const Layout = ({ children }) => {
           <>{/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}</>
           <label htmlFor="openSidebarMenu" className="backdrop1"></label>
 
-          <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle bug">
-            <div style={{ textAlign: 'center', opacity: '1', maxWidth: '500px', color: 'var(--theme-ui-colors-headerColorText)', fontWeight: 'bold' }}>
-              {iconimage ? (
-                <img className="" src={iconimage} alt={companyname} width="120" height="60" style={{ maxHeight: '60px', maxWidth: '120px', border: 'none' }} />
-              ) : (
-                <div className="fire" style={{ opacity: '.6', fontWeight: '', color: '', border: '0px solid blue', padding: '1vh 2vw', marginRight: '4px', boxShadow: '0px 0px 0px 0px var(--theme-ui-colors-headerColorText)' }}>{companyname}</div>
-              )}
-            </div>
+          <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle  " style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center', color:'#fff', height:'' }}>
+          <BsLayoutSidebarInsetReverse style={{ height: '30px', width:'30px', color:'#fff' }} />
+          <span className="themetext">Menu</span>
+
           </label>
+
+          <div className="searchIcon">
+                  <Link state={showModals ? { modal: true } : {}} aria-label="Search" to="/search/" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center' }}>
+                    <SearchIcon style={{ height: '30px' }} />
+                    <span className="themetext">{dicSearch}</span>
+                  </Link>
+                </div>
 
           <div id="sidebarMenu" style={{ minWidth: '', width: '', }}>
 

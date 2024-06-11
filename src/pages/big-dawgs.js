@@ -16,7 +16,7 @@ import { Helmet } from "react-helmet"
 
 const BigDawgPage = () => {
   const { language, featureOptions, proOptions  } = useSiteMetadata();
-  const { showSocial } = featureOptions
+  const { showSocial, showNav } = featureOptions
   const { showProfile } = proOptions
   const { dicProfileAudioText, dicProfileAudioActionText} = language;
 
@@ -193,7 +193,7 @@ const BigDawgPage = () => {
 
 
 
-      <div className="container panel" style={{ maxWidth: "100dvw", margin: "0 auto", padding: "0", overFlowX:'hidden' }}>
+      <div className="container panel" style={{maxWidth:'100vw', overFlowY:'hidden', paddingTop: showNav ? '60px' : '',}}>
 
 
 

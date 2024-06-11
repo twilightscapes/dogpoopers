@@ -64,11 +64,11 @@ const Contact = ({ data }) => {
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
 
-<div className="scroll-container">
+<div className="scroll-container" style={{maxWidth:'100vw', overFlowY:'hidden', paddingTop: showNav ? '60px' : '',}}>
 
 
 
-        <div id="top" className="spacer" style={{ height: "", border: "0px solid yellow" }}></div>
+
 
 
 

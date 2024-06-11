@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet"
 const PricePage = () => {
   const { language, featureOptions, proOptions  } = useSiteMetadata();
   const { showSocial } = featureOptions
-  const { showProfile } = proOptions
+  const { showProfile, showNav } = proOptions
   const { dicProfileAudioText, dicProfileAudioActionText} = language;
 
 
@@ -184,7 +184,7 @@ const PricePage = () => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-        <div className="spacer mobile" style={{ height: "", border: "0px solid yellow" }}></div>
+        {/* <div className="spacer mobile" style={{ height: "", border: "0px solid yellow" }}></div> */}
 
 
 
@@ -193,7 +193,7 @@ const PricePage = () => {
 
 
 
-      <div className="container panel" style={{ maxWidth: "100dvw", margin: "0 auto", padding: "0", overFlowX:'hidden' }}>
+      <div className="container panel" style={{maxWidth:'100vw', overFlowY:'hidden', paddingTop: showNav ? '60px' : '',}}>
 
 
 
