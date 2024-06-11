@@ -191,7 +191,7 @@ const Layout = ({ children }) => {
 
 <div id="missioncontrol2" className="sitecontrols" style={{position:'fixed', top:'0', right:'0', zIndex:'10', display: 'flex', justifyContent: 'space-around', color:'#fff', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '3vw', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px', paddingRight:'80px' }}>
 
-{showSearch ? (
+{/* {showSearch ? (
                 <div className="searchIcon">
                   <Link state={showModals ? { modal: true } : {}} aria-label="Search" to="/search/" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center' }}>
                     <SearchIcon style={{ height: '30px' }} />
@@ -200,7 +200,7 @@ const Layout = ({ children }) => {
                 </div>
               ) : (
                 ""
-              )}
+              )} */}
 
 
 <div>
@@ -343,12 +343,7 @@ const Layout = ({ children }) => {
 
           </label>
 
-          <div className="searchIcon">
-                  <Link state={showModals ? { modal: true } : {}} aria-label="Search" to="/search/" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center' }}>
-                    <SearchIcon style={{ height: '30px' }} />
-                    <span className="themetext">{dicSearch}</span>
-                  </Link>
-                </div>
+
 
           <div id="sidebarMenu" style={{ minWidth: '', width: '', }}>
 
