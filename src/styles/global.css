@@ -652,13 +652,14 @@ body.homepage .pleaseshare{display:none}
 .homepage .sidebarIconToggle div span{animation-delay:4s;border-radius:var(--theme-ui-colors-borderRadius);color:var(--primary-color)}
 
 
-/* .sidebarMenuInner{
-  background-color:var(--theme-ui-colors-headerColor);
+.sidebarMenuInner{
+  /* background-color:var(--theme-ui-colors-headerColor); */
+  background-color:rgba(0, 0, 0, 0.3);
   filter:brightness(.99);
-} */
+}
 
 .sidebarMenuInner li{
-  color:#aaa !important;
+  color:#fff !important;
   filter:brightness(.99);
   text-shadow: 0 0px 1px var(--theme-ui-colors-textShadow) !important;
 }
