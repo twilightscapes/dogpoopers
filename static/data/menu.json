@@ -1,10 +1,6 @@
 {
   "menuItems": [
     {
-      "menutitle": "Get Started",
-      "url": "/get-started"
-    },
-    {
       "menutitle": "Our Plans",
       "url": "/plans"
     },

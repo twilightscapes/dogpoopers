@@ -203,9 +203,9 @@ const Layout = ({ children }) => {
               )} */}
 
 
-{/* <div>
+<div>
   <Theme style={{}} />
-</div> */}
+</div>
 
 {showSwipe === true || socialMenuPages.some(page => currentPage.startsWith(page)) || showSwipe !== false ? (
   <Switch />
@@ -338,7 +338,7 @@ const Layout = ({ children }) => {
           <label htmlFor="openSidebarMenu" className="backdrop1"></label>
 
           <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle  " style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center', color:'#fff', height:'' }}>
-          <BsLayoutSidebarInsetReverse style={{ height: '40px', width:'40px', color:'#fff', filter:'drop-shadow(0px 1px 0px var(--theme-ui-colors-textShadow))' }} />
+          <BsLayoutSidebarInsetReverse style={{ height: '30px', width:'30px', color:'#fff', filter:'drop-shadow(0px 1px 0px var(--theme-ui-colors-textShadow))' }} />
           <span className="themetext">Menu</span>
 
           </label>

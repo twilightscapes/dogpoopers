@@ -24,7 +24,7 @@ import { ImPlay } from "react-icons/im"
 // import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineAudioMuted } from 'react-icons/ai';
 // import { StaticImage } from "gatsby-plugin-image"
-
+import Faqs from "../components/services"
 
 
 
@@ -572,6 +572,30 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 {/* end show feature */}
 
 
+<section id="" order="" className="nameblock2" style={{margin:'0vh auto 0 auto', padding:'0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+   color:'var(--theme-ui-colors-text)',
+  // border:'0px solid red', 
+  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
+  // background:'#222',
+  // backdropFilter:'blur(8px)',
+  // border:'1px solid #333',
+  // borderRadius:'10px',
+  // textShadow:'0 2px 7px #000',
+  maxWidth:'100vw' }}>
+          {/* <h2 id="costs" className="letter" style={{fontSize:'140%', textAlign:'center'}}>Get Started</h2> */}
+
+          
+{/* <p style={{fontSize:'100%', textAlign:'center'}}>
+  <u>NO</u> contracts required - Cancel any time
+</p>  */}
+    <Faqs />
+
+
+
+
+  </section>
+
+
 
 {/* show profile */}
   <>
@@ -608,7 +632,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
       <div className="flexcheek mob2 print" style={{position:'', top:'0', minWidth:'500px', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'var(--theme-ui-colors-borderRadius)',
       }}>
-{/* {SecondaryImage ? (
+{SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Profile Image"}
@@ -617,8 +641,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
             />
           ) : (
             ""
-          )} */}
-<div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+          )}
+{/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
@@ -635,8 +659,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     ""
   )}
 
-  {/* <span style={{margin:'10px auto', fontSize:'160%'}}>{companyname}</span> */}
-    {/* <span style={{margin:'10px auto', fontSize:'160%'}}>Become a Pirate!</span> */}
+  
   
   {frontmatter.addressText ? (
     frontmatter.addressText
@@ -689,7 +712,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   
 
 
-</div>
+</div> */}
 
 
 </div>
