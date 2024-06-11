@@ -652,13 +652,14 @@ body.homepage .pleaseshare{display:none}
 .homepage .sidebarIconToggle div span{animation-delay:4s;border-radius:var(--theme-ui-colors-borderRadius);color:var(--primary-color)}
 
 
-.sidebarMenuInner{
+/* .sidebarMenuInner{
   background-color:var(--theme-ui-colors-headerColor);
-  /* filter:brightness(.7); */
-}
+  filter:brightness(.99);
+} */
 
 .sidebarMenuInner li{
   color:#aaa !important;
+  filter:brightness(.99);
   text-shadow: 0 0px 1px var(--theme-ui-colors-textShadow) !important;
 }
 
@@ -679,13 +680,15 @@ body.homepage .pleaseshare{display:none}
 .react-tabs__tab-list{clear:both;display:flex;justify-content:space-between;margin:0;padding:0}
 .row{display:flex}
 .sideRow{align-items:center;flex-direction:row}
-.sidebarIconToggle{border:0 solid #fff;bottom:30vh;color:#999;cursor:pointer;display:flex;flex-direction:column;justify-self:flex-start;position:fixed;right:0;text-align:center;z-index:10}
+.sidebarIconToggle{border:0 solid #fff;top:5px;color:#999;cursor:pointer;display:flex;flex-direction:column;justify-self:flex-start;position:fixed;right:10%;text-align:center;z-index:10}
 .sidebarIconToggle div span1{animation-delay:1.5s;bottom:0;right:0;z-index:3}
 .sidebarIconToggle div span1,.sidebarIconToggle span{flex-direction:column;justify-content:center;text-align:center;width:200px}
 .sidebarIconToggle span{border:0 solid var(--primary-color);content:" ";display:flex;height:200px;left:-70px;position:absolute;top:-15px;z-index:5}
 .sidebarIconToggle,input[type=checkbox]{box-sizing:border-box;transition:all .3s}
 .sidebarIconToggle:hover{color:var(--primary);text-shadow:0 2px 1px var(--theme-ui-colors-textShadow);}
-.sidebarMenuInner{ color:var(--theme-ui-colors-headerColorText); background-size:140% 200%;border-left:1px solid hsla(0,0%,100%,.1);border-radius:12px 0 0 12px;display:flex;flex-direction:column;justify-content:space-between;margin:0;min-width:220px;overflow:hidden;padding:0;transition:all .8s ease-in-out}
+.sidebarMenuInner{ 
+  color:var(--theme-ui-colors-headerColorText);
+   background-size:140% 200%; border-left:1px solid hsla(0,0%,100%,.1);border-radius:12px 0 0 12px;  display:flex;flex-direction:column;justify-content:space-between;margin:0;min-width:220px;overflow:hidden;padding:0;transition:all .8s ease-in-out}
 .sidebarMenuInner li{border-bottom:1px solid hsla(0,0%,100%,.1);color:var(--theme-ui-colors-headerColorText);font-weight:700;list-style:none;padding:5px 20px}
 
 .missioncontrol li{border-bottom:0px solid hsla(0,0%,100%,.1);}

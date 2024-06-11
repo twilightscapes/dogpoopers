@@ -15,8 +15,8 @@
     "defaultCollection": "",
     "showCollectionTitles": false,
     "navOptions": {
-      "showNav": true,
-      "showNav2": false,
+      "showNav": false,
+      "showNav2": true,
       "showFooterMenu": false
     },
     "featureOptions": {
