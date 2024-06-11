@@ -111,7 +111,7 @@ const Layout = ({ children }) => {
       {({ modal, closeTo }) => (
 <>
   {modal ? (
-<div style={{display:'flex', justifyContent: 'center', color: '#ccc',  position:'fixed', top:'60px', right:'1vw', padding:'0px', fontSize:'', opacity:'1 !important', zIndex:'12',}}>
+<div style={{display:'flex', justifyContent: 'center', color: '#ccc',  position:'fixed', top:'90px', right:'1vw', padding:'0px', fontSize:'', opacity:'1 !important', zIndex:'12',}}>
 <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
 <button className="button" style={{ display: 'flex', justifyContent: 'center', padding:'0 .5vw' }}><span className="icon -left" style={{ paddingRight: '' }}><BiLeftArrow /></span> {" "}{dicGoBack}</button>
 </Link>
@@ -203,9 +203,9 @@ const Layout = ({ children }) => {
               )} */}
 
 
-<div>
+{/* <div>
   <Theme style={{}} />
-</div>
+</div> */}
 
 {showSwipe === true || socialMenuPages.some(page => currentPage.startsWith(page)) || showSwipe !== false ? (
   <Switch />
@@ -338,7 +338,7 @@ const Layout = ({ children }) => {
           <label htmlFor="openSidebarMenu" className="backdrop1"></label>
 
           <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle  " style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center', color:'#fff', height:'' }}>
-          <BsLayoutSidebarInsetReverse style={{ height: '30px', width:'30px', color:'#fff' }} />
+          <BsLayoutSidebarInsetReverse style={{ height: '40px', width:'40px', color:'#fff', filter:'drop-shadow(0px 1px 0px var(--theme-ui-colors-textShadow))' }} />
           <span className="themetext">Menu</span>
 
           </label>
@@ -358,10 +358,10 @@ const Layout = ({ children }) => {
                   )}
                 </AnchorLink>
               </li>
-
+              <li><Link aria-label="Home" to="/" >Home</Link></li>
               {/* <Menu id="sidechick" /> */}
               <Menu id="sidechick" />
-
+              
               <li>
                 <ul className="missioncontrol sitecontrols" style={{ display: 'flex', justifyContent: 'space-around', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px' }}>
 

@@ -1132,7 +1132,7 @@ body.homepage footer{display:none !important; color:hsl(133, 39%, 34%)}
 }
 
 
-#gobacker{position:fixed; top:60px ; right:1vw; z-index:11;}
+#gobacker{position:fixed; top:80px ; right:1vw; z-index:11;}
 
 
 iframe.virtualtour{
@@ -1182,7 +1182,10 @@ iframe.virtualtour{
 #resume span{display:flex;flex-direction:column;gap:20px;position:-webkit-sticky;position:sticky;top:0}
 #resume span div{display:block;width:100%}
 .nameblock{background:transparent;color:inherit;}
-#gobacker{position:fixed; top:70vh ; right:1vw; z-index:11;}
+/* #gobacker{position:fixed; top:70vh ; right:1vw; z-index:11;} */
+#gobacker{position:fixed; top:90px ; right:1vw; z-index:11;}
+
+body {padding-top:40px !important;}
 
 .topmenu li {margin-top:0; font-size:clamp(1.4rem, 2vw, 3.2rem) !important;}
 
