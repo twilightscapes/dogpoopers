@@ -272,7 +272,7 @@ export default function Footer() {
 {/* <Install /> */}
 
 { showContact ? (
-  <Link id="footercontact" state={{modal: true}} to="/contact/" className="button  font" style={{margin:'2rem', textDecoration:'none', padding:'1vh 2rem', }}>{dicContact}</Link>
+  <Link id="footercontact" state={{modal: false}} to="/contact/" className="button  font" style={{margin:'2rem', textDecoration:'none', padding:'1vh 2rem', }}>{dicContact}</Link>
 ) : (
   ""
 )}
@@ -305,7 +305,7 @@ export default function Footer() {
       
         <div style={{width:'100vw', textAlign: 'center', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', display:'grid', margin:'1rem auto'}}>
 { showLegal ? (
-<div style={{display:'flex', justifyContent:'center', gap:'4%', width:'100%', minWidth:'380px' }}><Link state={{modal: true}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: true}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: true}} to="/terms/">{dicTerms}</Link></div>
+<div style={{display:'flex', justifyContent:'center', gap:'4%', width:'100%', minWidth:'380px' }}><Link state={{modal: false}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: false}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: false}} to="/terms/">{dicTerms}</Link></div>
 ) : (
 ""
   )}
