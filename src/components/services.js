@@ -118,7 +118,7 @@ const NFTDetails = () => (
     </TabPanel>
 
         <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
-        <br />
+
 <p style={{fontSize:'150%', textAlign:'center'}}>
 <strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 

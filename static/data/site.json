@@ -9,7 +9,7 @@
     "homecount": 3,
     "titleTemplate": "%s",
     "title": "They Poop - We Scoop!",
-    "image": "",
+    "image": "/assets/pawprints.svg",
     "description": "Gulf Coast Animal Waste Removal",
     "icon512": "/assets/dogpooper-icon.svg",
     "defaultCollection": "",
