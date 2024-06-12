@@ -32,7 +32,7 @@ profText: <p>Dog Poopers are skilled at removing unsightly and unhealthy dog was
 profTitle: We come and pick up the poop!
 tagline: Pet Waste Removal Service Gulf Coast Mississippi
 featuredImage: /assets/dogpoopers-nosey-header.webp
-secondaryImage: /assets/default-user.webp
+secondaryImage: /assets/thankyou.webp
 scrollable: false
 portfolio:
   openText: ""
