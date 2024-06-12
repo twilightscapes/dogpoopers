@@ -39,7 +39,7 @@
       "ShowDisclaimer": false,
       "showLegal": true,
       "showConsent": false,
-      "startUrl": "/driver",
+      "startUrl": "/",
       "showFeature": true,
       "showResume": false,
       "showLocation": false,
