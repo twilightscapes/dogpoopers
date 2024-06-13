@@ -792,15 +792,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="flexbutt" style={{gap:'10vw'}}>
 <div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as you wish.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as you wish.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers will sanitize and deoderize wherever your dog poops.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers will sanitize and deoderize wherever your dog poops.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Rest Assured:</h2> <p>Dog Poopers will monitor your dog's feces and let you know if there was blood or worms present when they picked up.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers will monitor your dog's feces and let you know if there was blood or worms present when they picked up.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard again:</h2> <p>It's about time for you to start enjoying your back yard again!</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard:</h2> <p>It's about time for you to start enjoying your back yard again!</p>
 </div>
 
 <div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
@@ -840,20 +840,20 @@ You control your timeline (and everything else), not some billionaire appeasing 
   <input type="checkbox" id="question1" name="q"  className="questions" />
   <div className="plus">+</div>
   <label for="question1" className="question">
-    This is the question that will be asked?
+    Do you still pick up with heavy rains or storms?
   </label>
   <div className="answers">
-This is the answer of the question.. keep it short.</div>
+Yes, we usually tough it out and do our pick ups in adverse weather.</div>
 </div>
 
 <div>
   <input type="checkbox" id="question2" name="q" className="questions" />
   <div className="plus">+</div>
   <label for="question2" className="question">
-    Short?
+    What if I have a locked gate or gate code?
   </label>
   <div className="answers">
-    short!
+    No problem! You can either provide a key, tell us where the key is, or provide the gate code. 
   </div>
 </div>
   
@@ -861,10 +861,11 @@ This is the answer of the question.. keep it short.</div>
   <input type="checkbox" id="question3" name="q" className="questions" />
   <div className="plus">+</div>
   <label for="question3" className="question">
-    Keep answers short. But in case of...If the question is long, the text wraps.  
+  Can you clean with our dogs in the yard?
   </label>
   <div className="answers">
-    This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! 
+  
+  Our team loves dogs and would be happy to clean your property with them outside as long as they are friendly and allow us to do our job unimpeded. If they aren’t as friendly or simply make our job more difficult, we would prefer if you kept them inside until our services are complete.
   </div>
 </div>
 </div>
