@@ -1,7 +1,7 @@
 
 import * as React from "react"
 // import styled from "styled-components"
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import { CgInfo, CgRatio  } from "react-icons/cg"
 // import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
@@ -179,6 +179,7 @@ const NFTDetails = () => (
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$59.99</strong> per week</p>
 
  </div>
+
 </div>
 
 
@@ -323,8 +324,8 @@ Custom Domain names available
 
 
 
-   
-
+<Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'0 auto' }}>Questions? Contact Us</Link>
+<br />
   </Tabs>
 
 

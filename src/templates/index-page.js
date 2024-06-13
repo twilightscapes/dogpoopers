@@ -23,7 +23,7 @@ import { ImPlay } from "react-icons/im"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineAudioMuted } from 'react-icons/ai';
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import Faqs from "../components/services"
 
 
@@ -589,10 +589,6 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <u>NO</u> contracts required - Cancel any time
 </p>  */}
     <Faqs />
-
-
-
-
   </section>
 
 
@@ -725,6 +721,70 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 </>
 
 {/* end show profile */}
+
+
+
+
+
+<section id="SecondaryInfo4" order="7" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'0 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+  color:'var(--theme-ui-colors-text)',
+  border:'0px solid red', 
+  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
+  background:'var(--theme-ui-colors-cardBg)',
+  backdropFilter:'blur(8px)',
+  // border:'1px solid #333',
+  borderRadius:'10px',
+  // textShadow:'0 2px 0px #000',
+  maxWidth:'95%' ,
+  // border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px'
+  }}>
+
+
+
+  <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background: 'var(--theme-ui-colors-headerColor)', backdropFilter: 'blur(12px)', borderRadius: '10px', color:'#fff' }}>
+    <h2>How It Works</h2>
+  </div>
+
+
+
+
+<div className="flexbutt" style={{gap:'10vw'}}>
+<div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.</p>
+
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as you wish.</p>
+
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers will sanitize and deoderize wherever your dog poops.</p>
+
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Rest Assured:</h2> <p>Dog Poopers will monitor your dog's feces and let you know if there was blood or worms present when they picked up.</p>
+
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard again:</h2> <p>It's about time for you to start enjoying your back yard again!</p>
+</div>
+
+<div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
+
+<StaticImage src="../../static/assets/plans.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+You're in control - start and stop your service as you need.
+<StaticImage src="../../static/assets/dog-poop1.jpg" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+Dog Poopers will scan your yard for hidden "bundles of joy", removing all the waste and leaving both you and your pet happy!
+<StaticImage src="../../static/assets/happy-yard.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+Happy pets that will thank you for keeping their yard clean! You get to have company over again and not be embarrassed. 
+{/* <StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+You control your timeline (and everything else), not some billionaire appeasing stockholders or their bottomline.  */}
+</div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
 
 
 {showHomePosts ? (
