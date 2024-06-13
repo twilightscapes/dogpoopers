@@ -61,8 +61,8 @@ const NFTDetails = () => (
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'4vw', color:'#fff', width:'100%'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>One-Time Service</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
+<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">one single cleaning</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
  <br />
@@ -77,7 +77,7 @@ const NFTDetails = () => (
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Weekly</h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
@@ -96,7 +96,7 @@ const NFTDetails = () => (
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Twice Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Twice Weekly</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
@@ -119,7 +119,7 @@ const NFTDetails = () => (
 
         <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
 
-<p style={{fontSize:'150%', textAlign:'center'}}>
+<p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
 <strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
 </p> 
 
@@ -130,7 +130,7 @@ const NFTDetails = () => (
 <div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'4vw', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg<br /> One-Time Service</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>Big Dawg<br /> <span style={{fontFamily:'inherit', fontSize:'clamp(1.4rem, 3vw, 3.2rem)'}}>Single Clean</span></h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once</strong>. 
   <br />
 {/* Pay only when your site uses a LOT of data.<br />  */}
@@ -146,7 +146,7 @@ const NFTDetails = () => (
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg<br /> Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>Big Dawg<br /> <span style={{fontFamily:'inherit', fontSize:'clamp(1.4rem, 3vw, 3.2rem)'}}>Weekly</span></h3>
 
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
@@ -165,7 +165,7 @@ const NFTDetails = () => (
 </div>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg<br /> Twice Weekly</h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>Big Dawg<br /> <span style={{fontFamily:'inherit', fontSize:'clamp(1.4rem, 3vw, 3.2rem)'}}>Twice Weekly</span></h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
@@ -324,7 +324,7 @@ Custom Domain names available
 
 
 
-<Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'0 auto' }}>Questions? Contact Us</Link>
+<Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'0 auto', borderBottom:'1px solid #fff' }}>Got Questions? Contact Us</Link>
 <br />
   </Tabs>
 

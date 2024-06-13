@@ -628,7 +628,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
       <div className="flexcheek mob2 print" style={{position:'', top:'0', minWidth:'500px', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'var(--theme-ui-colors-borderRadius)',
       }}>
-{SecondaryImage ? (
+{/* {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Profile Image"}
@@ -637,7 +637,24 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
             />
           ) : (
             ""
-          )}
+          )} */}
+
+
+<ul className="tags">
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 0', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
+    <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
+  </div>
+<li className="tag">Pass Christian</li>
+  <li className="tag">Biloxi</li>
+  <li className="tag">Long Beach</li>
+  <li className="tag">Gulfport</li>
+  <li className="tag">Ocean Springs</li>
+  <li className="tag">Bay St. Louis</li>
+  <li className="tag">D'Iberville</li>
+  <li className="tag">Orange Grove</li>
+  <li className="tag">Saucier</li>
+  <li className="tag">Gautier</li>
+</ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   paddingTop:'', 
@@ -741,7 +758,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-  <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.80)', backdropFilter:'blur(12px)', borderRadius: '10px', color:'#fff' }}>
+  <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', borderRadius: '10px', color:'#fff' }}>
     <h2>How It Works</h2>
   </div>
 
