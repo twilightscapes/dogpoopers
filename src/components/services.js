@@ -43,7 +43,7 @@ const NFTDetails = () => (
 
     <Tab></Tab>
 
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>1 or 2 Dogs</span><span>Up to 1/4 Acre Yard</span></div></Tab>
+    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>1 or 2 Dogs</span><span>Up to 1/4 Acre Yard</span></div></Tab>
     <div style={{width:'50px'}}>-OR-</div>
     <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>3 + Dogs</span><span>Up to 1/2 Acre Yard</span></div></Tab>
     
@@ -58,7 +58,7 @@ const NFTDetails = () => (
 <p style={{fontSize:'150%', textAlign:'center'}}>
   <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
 </p> 
-<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'1vw', color:'#fff', width:'100%'}}>
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'4vw', color:'#fff', width:'100%'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>One-Time Service</h3>
@@ -127,7 +127,7 @@ const NFTDetails = () => (
 
 
 {/* Second row */}
-<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px', color:'#fff'}}>
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'4vw', color:'#fff'}}>
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'130%', textAlign:'center'}}>Big Dawg<br /> One-Time Service</h3>

@@ -27,7 +27,7 @@ body.install .topmenu{visibility: hidden;}
 /* body.homepage footer{display: none !important;} */
 
 
-#menu,.menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.slider:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special,.button{font-family:var(--theme-ui-colors-siteFont);}
+#menu,.menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.slider:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special{font-family:var(--theme-ui-colors-siteFont);}
 
 
 
@@ -676,7 +676,7 @@ body.homepage .pleaseshare{display:none}
 
 .modal-btn{box-shadow:none}
 .modal-btn:hover{background:#222}
-.react-tabs__tab{border:0 solid #ccc;border-radius:var(--theme-ui-colors-borderRadius);color:#fff;cursor:pointer;display:inline-block;letter-spacing:1px;margin-bottom:10px;padding:12px 5px;text-decoration:underline;text-transform:uppercase;transition:all .3s}
+.react-tabs__tab{border:0 solid #ccc;border-radius:var(--theme-ui-colors-borderRadius);color:#fff;cursor:pointer;display:inline-block;letter-spacing:1px;margin-bottom:10px;padding:12px 5px;text-transform:uppercase;transition:all .3s}
 .react-tabs__tab,.react-tabs__tab--selected{background:transparent;border:none;color:inherit}
 .react-tabs__tab-list{clear:both;display:flex;justify-content:space-between;margin:0;padding:0}
 .row{display:flex}
@@ -1710,6 +1710,9 @@ min-width: 80vw;
     justify-content: center;
     flex: 0 0 33.3333%;
   }
+
+
+  .post-card1 h2{font-family: inherit !important; font-weight: bold;}
 
 .magicshell .grid-container{
 padding-top: 12vh;

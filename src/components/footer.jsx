@@ -212,7 +212,8 @@ export default function Footer() {
   <>
 
     {showfooter ? (
-      <footer className="panel" style={{display:'flex', flexDirection:'column', zIndex:'', justifyContent:'end', padding:'0 0 60px 0', marginTop:'0', width:'100vw',textAlign:'center', color:'#fff', background:'var(--theme-ui-colors-headerColor)', paddingTop: showFooterMenu ? '100px' : '0'}}>
+      <footer className="panel" style={{display:'flex', flexDirection:'column', zIndex:'', justifyContent:'end', padding:'0 0 60px 0', marginTop:'0', width:'100vw',textAlign:'center', color:'#fff', background:'rgba(0,0,0,0.80)',
+        backdropFilter:'blur(8px)', paddingTop: showFooterMenu ? '100px' : '0'}}>
 
 {showConsent ? (
     <Consent />
@@ -343,7 +344,8 @@ export default function Footer() {
     </footer>
 
     ) : (
-      <footer className="" style={{display:'flex', flexDirection:'column', zIndex:'1', justifyContent:'end', padding:'0', marginTop:'0', width:'100vw',textAlign:'center'}}>
+      <footer className="" style={{display:'flex', flexDirection:'column', zIndex:'1', justifyContent:'end', padding:'0', marginTop:'0', width:'100vw',textAlign:'center', background:'rgba(0,0,0,0.50)',
+        backdropFilter:'blur(8px)',}}>
           { showBranding ? (
       <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
     <a href="https://pirateweb.org" rel="noreferrer">{dicPirate}</a> &nbsp; | &nbsp; <a href={speedIt} rel="noreferrer">{dicSiteReport}</a>
