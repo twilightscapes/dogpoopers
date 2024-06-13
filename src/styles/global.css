@@ -1078,6 +1078,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   border:1px solid;
   color:#1a5f3c;
   font-weight:bold;
+  border-radius: var(--theme-ui-colors-borderRadius);
 }
 /*Answer*/
 .answers {
@@ -1095,6 +1096,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   transition: .3s ease;
   -webkit-backdrop-filter:blur(54px);
   backdrop-filter:blur(54px);
+  border-radius: var(--theme-ui-colors-borderRadius);
 }
 
 .questions:checked ~ .answers{

@@ -726,7 +726,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<section id="SecondaryInfo4" order="7" className="nameblock" style={{margin:'0 auto 10vh auto', padding:'0 4%',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+<section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
   color:'var(--theme-ui-colors-text)',
   border:'0px solid red', 
   fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
@@ -778,15 +778,22 @@ You control your timeline (and everything else), not some billionaire appeasing 
 </section>
 
 
+<section id="" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+  color:'var(--theme-ui-colors-text)',
+  border:'0px solid red', 
+  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
 
+  // border:'1px solid #333',
+  borderRadius:'10px',
+  // textShadow:'0 2px 0px #000',
+  maxWidth:'95%' ,
+  // border:'10px double var(--theme-ui-colors-buttonHoverBg)', borderRadius:'12px'
+  }}>
 <h2 id="costs" className="letter" style={{fontSize:'clamp(1.4rem,2.9vw,3rem)', textAlign:'center'}}>Frequently Asked Questions</h2>
 
           
-{/* <p style={{fontSize:'100%', textAlign:'center'}}>
-  <u>NO</u> contracts required - Cancel any time
-</p>  */}
 
-<div className="faqblock" style={{width:'80%', display:'grid', placeContent:'center', margin:'0 auto' }}>
+<div className="faqblock" style={{width:'80%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto' }}>
 <div>
   <input type="checkbox" id="question1" name="q"  className="questions" />
   <div className="plus">+</div>
@@ -815,11 +822,11 @@ This is the answer of the question.. keep it short.</div>
     Keep answers short. But in case of...If the question is long, the text wraps.  
   </label>
   <div className="answers">
-    This is the answer!
+    This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! This is the answer! 
   </div>
 </div>
 </div>
-
+</section>
 
 
 
