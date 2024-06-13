@@ -1062,8 +1062,82 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   .horizontal-scroll{margin:0 auto 0 auto ;  padding-right:9vh;} */
   .slider .loadmore{height:40vh; width:40vw;}
 
-
 /* .horizontal-scroll .post-card1 {padding-top:20vh;} */
+
+
+
+/*Question*/
+.question {
+  position: relative;
+  background: rgba(249, 249, 249, 0.58);
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  border:1px solid;
+  color:#1a5f3c;
+  font-weight:bold;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-backdrop-filter:blur(54px);
+  backdrop-filter:blur(54px);
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  color:#1a5f3c;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+
+
+
 
   .grid-container .inlime{
     min-width: 280px;

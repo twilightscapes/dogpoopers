@@ -779,9 +779,46 @@ You control your timeline (and everything else), not some billionaire appeasing 
 
 
 
+<h2 id="costs" className="letter" style={{fontSize:'clamp(1.4rem,2.9vw,3rem)', textAlign:'center'}}>Frequently Asked Questions</h2>
 
+          
+{/* <p style={{fontSize:'100%', textAlign:'center'}}>
+  <u>NO</u> contracts required - Cancel any time
+</p>  */}
 
+<div className="faqblock" style={{width:'80%', display:'grid', placeContent:'center', margin:'0 auto' }}>
+<div>
+  <input type="checkbox" id="question1" name="q"  className="questions" />
+  <div className="plus">+</div>
+  <label for="question1" className="question">
+    This is the question that will be asked?
+  </label>
+  <div className="answers">
+This is the answer of the question.. keep it short.</div>
+</div>
 
+<div>
+  <input type="checkbox" id="question2" name="q" className="questions" />
+  <div className="plus">+</div>
+  <label for="question2" className="question">
+    Short?
+  </label>
+  <div className="answers">
+    short!
+  </div>
+</div>
+  
+<div>
+  <input type="checkbox" id="question3" name="q" className="questions" />
+  <div className="plus">+</div>
+  <label for="question3" class="question">
+    Keep answers short. But in case of...If the question is long, the text wraps.  
+  </label>
+  <div className="answers">
+    This is the answer!
+  </div>
+</div>
+</div>
 
 
 
