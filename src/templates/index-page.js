@@ -767,7 +767,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+    <h2>How It Works</h2>
+  </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
   color:'var(--theme-ui-colors-text)',
   border:'0px solid red', 
@@ -783,9 +785,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-  <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', borderRadius: '10px', color:'#fff' }}>
-    <h2>How It Works</h2>
-  </div>
+
 
 
 
@@ -871,7 +871,11 @@ This is the answer of the question.. keep it short.</div>
 </section>
 
 
-<h2 id="referrals" className="letter" style={{fontSize:'clamp(1.4rem,2.9vw,3rem)', textAlign:'center'}}>Some of our happy customers</h2>
+
+
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+    <h2>Some of our happy customers</h2>
+  </div>
 
 <div className="slider"
 style={{height:'', border:'0px solid', }}
@@ -880,40 +884,48 @@ ref={scrollRef}
 >
 
 <div className="quotecard" style={{marginLeft:'-25vw'}}>
-  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+<div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/twitch.jpg" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Twitch
+</div>
+
+  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my back yard, back! I do my happy dance now!</blockquote>
+
+
+</div>
+
+
+<div className="quotecard" style={{width:''}}>
+
+<div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/lexy.jpg" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Lexy
+</div>
+
+  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+
+</div>
+
+<div className="quotecard" style={{width:''}}>
 
   <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+    <StaticImage src="../../static/assets/buddy.jpg" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Buddy
+</div>
+
+<blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+</div>
+
+<div className="quotecard" style={{width:''}}>
+  
+  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/rex.png" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
   Rex
 </div>
-</div>
 
-
-<div className="quotecard" style={{width:''}}>
-  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
-
-  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
-  Fred
-</div>
-</div>
-
-<div className="quotecard" style={{width:''}}>
-  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
-
-  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
-  Fido
-</div>
-</div>
-
-<div className="quotecard" style={{width:''}}>
-  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
-
-  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
-  Zack
-</div>
+<blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
 </div>
 
 </div>
@@ -923,8 +935,14 @@ ref={scrollRef}
 
 {showHomePosts ? (
   <>
-  <h4 id="" className="letter" style={{fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh'}}>Our Latest News</h4>
-    <HomePosts isSliderVisible={isSliderVisible} className="scroll-area" id="posttop" name="posttop" style={{minHeight:'100dvh', width:'100vw'}} />
+
+
+  <br /><br />
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '',fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+    <h2>Our Latest News</h2>
+  </div>
+
+    <HomePosts isSliderVisible={isSliderVisible} className="scroll-area" id="posttop" name="posttop" style={{minHeight:'', width:'100vw'}} />
     </>
     ) : (
       ""
