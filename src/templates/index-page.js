@@ -57,7 +57,8 @@ const HomePage = ({ data, location }) => {
     // Extract video ID
     const videoId = extractVideoId(videoUrlParam);
   
-  
+
+    
   
     return (
 
@@ -188,7 +189,31 @@ const playerRef = useRef(null);
   // };
   
 
+  const scrollRef = useRef(null);
+
+  const handleScroll = (e) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft += e.deltaY;
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Your scroll handling logic
+    };
   
+    const currentScrollRef = scrollRef.current;
+  
+    if (currentScrollRef) {
+      currentScrollRef.addEventListener("scroll", handleScroll);
+    }
+  
+    return () => {
+      if (currentScrollRef) {
+        currentScrollRef.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [scrollRef]);
   
   const Svg = frontmatter.svgImage;
   
@@ -835,7 +860,7 @@ This is the answer of the question.. keep it short.</div>
 <div>
   <input type="checkbox" id="question3" name="q" className="questions" />
   <div className="plus">+</div>
-  <label for="question3" class="question">
+  <label for="question3" className="question">
     Keep answers short. But in case of...If the question is long, the text wraps.  
   </label>
   <div className="answers">
@@ -846,10 +871,61 @@ This is the answer of the question.. keep it short.</div>
 </section>
 
 
+<h2 id="referrals" className="letter" style={{fontSize:'clamp(1.4rem,2.9vw,3rem)', textAlign:'center'}}>Some of our happy customers</h2>
+
+<div className="slider"
+style={{height:'', border:'0px solid', }}
+onWheel={handleScroll}
+ref={scrollRef}
+>
+
+<div className="quotecard" style={{marginLeft:'-25vw'}}>
+  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Rex
+</div>
+</div>
+
+
+<div className="quotecard" style={{width:''}}>
+  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Fred
+</div>
+</div>
+
+<div className="quotecard" style={{width:''}}>
+  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Fido
+</div>
+</div>
+
+<div className="quotecard" style={{width:''}}>
+  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+
+  <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
+    <StaticImage src="../../static/assets/default-user.webp" alt="Default Image" style={{height:'100px', width:'100px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+  Zack
+</div>
+</div>
+
+</div>
+
+
 
 
 {showHomePosts ? (
+  <>
+  <h4 id="" className="letter" style={{fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh'}}>Our Latest News</h4>
     <HomePosts isSliderVisible={isSliderVisible} className="scroll-area" id="posttop" name="posttop" style={{minHeight:'100dvh', width:'100vw'}} />
+    </>
     ) : (
       ""
   )}
