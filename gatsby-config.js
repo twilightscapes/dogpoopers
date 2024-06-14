@@ -372,10 +372,10 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: false,
         publicPath: `admin`,
-        htmlTitle: `PIRATE CMS`,
+        htmlTitle: `DogPoopers CMS`,
         htmlFavicon: `src/img/logo.svg`,
         includeRobots: false,
-        logo_url: 'https://pirateweb.org/assets/logo.svg'
+        logo_url: 'https://dogpoopers.com/assets/logo.svg'
       },
     },
 
@@ -466,7 +466,7 @@ background_color: `transparent`,
 lang: `en`,
 theme_color: `transparent`,
 display: `standalone`,
-icon: `static${settings.meta.icon512}`, // path is relative to the root of the site.
+icon: `static/${settings.meta.icon512}`, // path is relative to the root of the site.
 crossOrigin: `use-credentials`,
 theme_color_in_head: false,
 icon_options: {
