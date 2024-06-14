@@ -299,7 +299,8 @@ const [playingIndex, setPlayingIndex] = useState(null);
       ref={scrollRef}
       style={{ 
         // paddingTop: showNav ? '8vw' : '8vw'
-        padding:''
+        paddingBottom:'0'
+
     }}
       >
 
@@ -421,8 +422,8 @@ const [playingIndex, setPlayingIndex] = useState(null);
 
 {showTitles ? (
 <>
-      <div className="panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', alignContent:'center', margin: '10px auto', maxWidth: '', gap: '.4vw', maxHeight: '74px', textAlign: 'left', padding: '10px 5%', fontSize: 'clamp(.7rem,.8vh,12px)', outline:'0px solid #444', overFlow:'hidden', lineHeight:'2.5vh', borderRadius:'var(--theme-ui-colors-borderRadius)', background: showTitles ? 'var(--theme-ui-colors-headerColor)' : 'transparent', color:'var(--theme-ui-colors-headerColorText)' }}>
-        
+      <div className="panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', alignContent:'center', margin: '10px auto', maxWidth: '', gap: '.4vw', maxHeight: '74px', textAlign: 'left', padding: '10px 5%', fontSize: 'clamp(.7rem,.8vh,12px)', outline:'0px solid #444', overFlow:'hidden', lineHeight:'2.5vh', borderRadius:'var(--theme-ui-colors-borderRadius)', background: showTitles ? 'rgba(0,0,0,0.50)' : 'transparent', color:'var(--theme-ui-colors-headerColorText)', backdropFilter:'blur(12px)' }}>
+
           <h2 className="title1" style={{maxWidth:'', }}>{node.frontmatter.title}</h2>
   
 

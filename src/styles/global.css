@@ -1752,7 +1752,7 @@ min-width: 80vw;
   }
 
   .grid-container .post-card1 {
-    min-height:  30vh;
+    /* min-height:  30vh; */
     max-height: 30vh;
     display: grid;
     place-content: start;

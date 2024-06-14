@@ -666,7 +666,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <ul className="tags">
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 0', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '0 2vw', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
     <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
   </div>
 <li className="tag">Pass Christian</li>
@@ -679,6 +679,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <li className="tag">Orange Grove</li>
   <li className="tag">Saucier</li>
   <li className="tag">Gautier</li>
+  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5vw', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today ⇰</Link></div>
 </ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
@@ -796,7 +797,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as you wish.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers will sanitize and deoderize wherever your dog poops.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers can deodorize and sanitize to get rid of foul odors and helps with fly control.</p>
 
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers will monitor your dog's feces and let you know if there was blood or worms present when they picked up.</p>
 
@@ -809,6 +810,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 You're in control - start and stop your service as you need.
 <StaticImage src="../../static/assets/dog-poop1.jpg" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Dog Poopers will scan your yard for hidden "bundles of joy", removing all the waste and leaving both you and your pet happy!
+
+<StaticImage src="../../static/assets/report-card.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+We will give your dog a Report Card, keep you involved with your pet's health.
+
 <StaticImage src="../../static/assets/happy-yard.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Happy pets that will thank you for keeping their yard clean! You get to have company over again and not be embarrassed. 
 {/* <StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
@@ -900,11 +905,11 @@ ref={scrollRef}
 <div className="quotecard" style={{width:''}}>
 
 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/lexy.jpg" alt="Default Image" style={{height:'150px', width:'150px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+    <StaticImage src="../../static/assets/Lexy.jpg" alt="Default Image" style={{height:'150px', width:'150px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
   Lexy
 </div>
 
-  <blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+  <blockquote style={{width:'25vw'}}>My hooman loves me and always make sure my yard is clean every week. <br /> - Poopless in Gulfport</blockquote>
 
 
 </div>
@@ -916,7 +921,7 @@ ref={scrollRef}
   Buddy
 </div>
 
-<blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+<blockquote style={{width:'25vw'}}>The grossest part of having a dog is now gone. Thanks Dog Poopers!</blockquote>
 </div>
 
 <div className="quotecard" style={{width:''}}>
@@ -926,7 +931,7 @@ ref={scrollRef}
   Rex
 </div>
 
-<blockquote style={{width:'25vw'}}>Dog Poopers has gotten my yard back!</blockquote>
+<blockquote style={{width:'25vw'}}>I like to bark a lot about Dog Poopers. Their service makes me happy and allows me to use my yard again!</blockquote>
 </div>
 
 </div>
@@ -938,7 +943,7 @@ ref={scrollRef}
   <>
 
 
-  <br /><br />
+  
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '',fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>Our Latest News</h2>
   </div>
