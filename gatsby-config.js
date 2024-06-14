@@ -466,7 +466,7 @@ background_color: `transparent`,
 lang: `en`,
 theme_color: `transparent`,
 display: `standalone`,
-icon: `static/${settings.meta.icon512}`, // path is relative to the root of the site.
+icon: `static/dogpooper-icon.svg`, // path is relative to the root of the site.
 crossOrigin: `use-credentials`,
 theme_color_in_head: false,
 icon_options: {
