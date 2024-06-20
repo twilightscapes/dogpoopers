@@ -666,7 +666,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <ul className="tags">
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '0 2vw', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '0 2%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
     <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
   </div>
 <li className="tag">Pass Christian</li>
@@ -679,7 +679,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <li className="tag">Orange Grove</li>
   <li className="tag">Saucier</li>
   <li className="tag">Gautier</li>
-  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5vw', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today ⇰</Link></div>
+  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5vw', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
 </ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
@@ -793,29 +793,36 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="flexbutt" style={{gap:'10vw'}}>
 <div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.<br /><br /><Link style={{display:'block', bottom:'0', right:'0', padding:'1rem 0', textAlign:'center'}}>Interested in longer 💩 plans?</Link></p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as long as you wish.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as long as you wish. <br /></p>
 
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers can deodorize and sanitize to get rid of foul odors and helps with fly control.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers will monitor your dog's feces and let you know if there was blood or worms present when they picked up.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard:</h2> <p>It's about time for you to start enjoying your back yard again!</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers provides a Poopers Report Card that will let you know when we did our business, as well as monitor your dog's business and let you know if there was blood or worms present when we picked up.</p>
+
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard:</h2> <p>It's about time for you to start enjoying your back yard again!<br /><br />
+With the poop gone, you can enjoy a clean, fresh yard without the hassle.
+<br /><br />Our trained technicians thoroughly search your yard and remove all dog waste. We don’t miss a single pile!</p>
 </div>
 
 <div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
 
 <StaticImage src="../../static/assets/plans.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-You're in control - start and stop your service as you need.
+You're in control - start and stop your service as needed with easy transactions using your safe and secure PayPal.
 <StaticImage src="../../static/assets/dog-poop1.jpg" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 Dog Poopers will scan your yard for hidden "bundles of joy", removing all the waste and leaving both you and your pet happy!
 
+<StaticImage src="../../static/assets/deluxe-promo.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+Go Deluxe - you deserve it!
+
+
 <StaticImage src="../../static/assets/report-card.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-We will give your dog a Report Card, keep you involved with your pet's health.
+Dog Poopers provides a Poopers Report Card on each visit, keeping you involved with your pet's health.
 
 <StaticImage src="../../static/assets/happy-yard.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
-Happy pets that will thank you for keeping their yard clean! You get to have company over again and not be embarrassed. 
+Happy pets that will thank you for keeping their yard clean AND you can have company over again and not be embarrassed! 
 {/* <StaticImage src="../../static/assets/action2.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 You control your timeline (and everything else), not some billionaire appeasing stockholders or their bottomline.  */}
 </div>
