@@ -635,7 +635,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'center' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', textWrap:'balance' }}>{frontmatter.tagline}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', textWrap:'balance', lineHeight:'1' }}>{frontmatter.tagline}</h1>
 
       <h2 className="tagline1" style={{ fontSize: 'clamp(1.6rem, 1.5vw, 1.8rem)', textWrap:'balance' }}>
         {frontmatter.profTitle}
@@ -665,8 +665,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
           )} */}
 
 
-<ul className="tags" style={{maxWidth:'500px', padding: '2%'}}>
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
+<ul className="tags" style={{maxWidth:'clamp(380px, 90%, 600px)', padding: '2%'}}>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.4vw, 2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
     <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
   </div>
   
@@ -682,7 +682,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <li className="tag">Saucier</li>
   <li className="tag">Pass Christian</li>
   <li className="tag">Gautier</li>
-  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5%', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
+  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5%', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
 </ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
