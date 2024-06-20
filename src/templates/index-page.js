@@ -916,7 +916,7 @@ ref={scrollRef}
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw', position:'relative'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - <div style={{position:'absolute', bottom:'0', right:'2rem'}}>Poopless in Biloxi</div></blockquote>
+  <blockquote style={{width:'30vw', position:'relative'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<span>- Poopless in Biloxi</span></blockquote>
 
 
 </div>
@@ -929,7 +929,7 @@ ref={scrollRef}
   Lexy
 </div>
 
-  <blockquote style={{width:'25vw'}}>My hooman loves me and always make sure my yard is clean every week. <br /> - Poopless in Gulfport</blockquote>
+  <blockquote style={{width:'25vw'}}>My hooman loves me and always make sure my yard is clean every week. <span>- Turd free in Gulfport</span></blockquote>
 
 
 </div>
@@ -941,7 +941,7 @@ ref={scrollRef}
   Buddy
 </div>
 
-<blockquote style={{width:'25vw'}}>Dog Poopers has transformed our yard. The service is consistent, thorough, and a great value. I recommend them to every dog owner I know<br /> - Poopless in Long Beach</blockquote>
+<blockquote style={{width:'25vw'}}>Dog Poopers has transformed our yard. The service is consistent, thorough, and a great value. I recommend them to every dog owner I know <span>- Clean and fresh in Long Beach</span></blockquote>
 </div>
 
 <div className="quotecard" style={{width:''}}>
@@ -951,7 +951,7 @@ ref={scrollRef}
   Rex
 </div>
 
-<blockquote style={{width:'25vw'}}>With three dogs, keeping the yard clean was a constant challenge. Dog Poopers made it easy and stress-free. Their team is friendly, and the results speak for themselves<br /> - Poopless in Woolmarket</blockquote>
+<blockquote style={{width:'25vw'}}>With three dogs, keeping the yard clean was a constant challenge. Dog Poopers made it easy and stress-free. Their team is friendly, and the results speak for themselves<span>- Happy dogs in Woolmarket</span></blockquote>
 </div>
 
 </div>
