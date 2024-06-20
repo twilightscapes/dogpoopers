@@ -851,6 +851,20 @@ You control your timeline (and everything else), not some billionaire appeasing 
 Yes, we usually tough it out and do our pick ups in adverse weather.</div>
 </div>
 
+
+<div>
+  <input type="checkbox" id="question2" name="q" className="questions" />
+  <div className="plus">+</div>
+  <label for="question2" className="question">
+    Do I have to be home?
+  </label>
+  <div className="answers">
+  No, you don’t need to be home. As long as we have access to your yard, we can perform our services. We will notify you once the job is done.
+  </div>
+</div>
+
+
+
 <div>
   <input type="checkbox" id="question2" name="q" className="questions" />
   <div className="plus">+</div>
@@ -873,6 +887,12 @@ Yes, we usually tough it out and do our pick ups in adverse weather.</div>
   Our team loves dogs and would be happy to clean your property with them outside as long as they are friendly and allow us to do our job unimpeded. If they aren’t as friendly or simply make our job more difficult, we would prefer if you kept them inside until our services are complete.
   </div>
 </div>
+
+
+
+
+
+
 </div>
 </section>
 
