@@ -665,21 +665,24 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
           )} */}
 
 
-<ul className="tags">
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', padding: '0 2%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
+<ul className="tags" style={{maxWidth:'500px', padding: '2%'}}>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.5vw, 2.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
     <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
   </div>
-<li className="tag">Pass Christian</li>
+  
+  <li className="tag">Gulfport</li>
+
   <li className="tag">Biloxi</li>
   <li className="tag">Long Beach</li>
-  <li className="tag">Gulfport</li>
+  <li className="tag">Orange Grove</li>
   <li className="tag">Ocean Springs</li>
   <li className="tag">Bay St. Louis</li>
   <li className="tag">D'Iberville</li>
-  <li className="tag">Orange Grove</li>
+  
   <li className="tag">Saucier</li>
+  <li className="tag">Pass Christian</li>
   <li className="tag">Gautier</li>
-  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5vw', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
+  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5%', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)',}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
 </ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
