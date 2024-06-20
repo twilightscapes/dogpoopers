@@ -916,7 +916,7 @@ ref={scrollRef}
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - Poopless in Biloxi</blockquote>
+  <blockquote style={{width:'30vw', position:'relative'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - <div style={{position:'absolute', bottom:'0', right:'2rem'}}>Poopless in Biloxi</div></blockquote>
 
 
 </div>
