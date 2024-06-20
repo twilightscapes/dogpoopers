@@ -84,5 +84,5 @@ comments: false
 shareable: false
 externalLink: https://dogpoopers.com
 ---
-<p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p><p>Start enjoying your yard again - your dog will thank you for it</p>
+p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p><p>Our professional dog waste removal service is designed to make your life easier and your yard cleaner. </p>
 
