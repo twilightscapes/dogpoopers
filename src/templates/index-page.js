@@ -848,7 +848,7 @@ You control your timeline (and everything else), not some billionaire appeasing 
     Do you still pick up with heavy rains or storms?
   </label>
   <div className="answers">
-Yes, we usually tough it out and do our pick ups in adverse weather.</div>
+Yes, we usually tough it out and do our pick ups in adverse weather. If for some reason we are unable to pick up on the scheduled day, we will try again at the next possible time.</div>
 </div>
 
 
@@ -859,7 +859,7 @@ Yes, we usually tough it out and do our pick ups in adverse weather.</div>
     Do I have to be home?
   </label>
   <div className="answers">
-  No, you don’t need to be home. As long as we have access to your yard, we can perform our services. We will notify you once the job is done.
+  No, you don’t need to be home. As long as we have access to your yard, we can perform our services.
   </div>
 </div>
 
@@ -916,7 +916,7 @@ ref={scrollRef}
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happyDog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - Poopless in Biloxi</blockquote>
+  <blockquote style={{width:'30vw'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - Poopless in Biloxi</blockquote>
 
 
 </div>
