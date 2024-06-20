@@ -795,7 +795,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as you wish.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as long as you wish.</p>
 
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers can deodorize and sanitize to get rid of foul odors and helps with fly control.</p>
 
@@ -896,7 +896,7 @@ ref={scrollRef}
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my back yard, back! I do my happy dance now!</blockquote>
+  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my back yard, back! I do my happy dance now!<br /> - Poopless in Biloxi</blockquote>
 
 
 </div>
@@ -921,7 +921,7 @@ ref={scrollRef}
   Buddy
 </div>
 
-<blockquote style={{width:'25vw'}}>The grossest part of having a dog is now gone. Thanks Dog Poopers!</blockquote>
+<blockquote style={{width:'25vw'}}>The grossest part of having a dog is now gone. Thanks Dog Poopers!<br /> - Poopless in Long Beach</blockquote>
 </div>
 
 <div className="quotecard" style={{width:''}}>
@@ -931,7 +931,7 @@ ref={scrollRef}
   Rex
 </div>
 
-<blockquote style={{width:'25vw'}}>I like to bark a lot about Dog Poopers. Their service makes me happy and allows me to use my yard again!</blockquote>
+<blockquote style={{width:'25vw'}}>I like to bark a lot about Dog Poopers. Their service makes me happy and allows me to use my yard again!<br /> - Poopless in Woolmarket</blockquote>
 </div>
 
 </div>

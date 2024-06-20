@@ -205,9 +205,9 @@ export default function Footer() {
 
 <>
 
-{isRunningStandalone() ? (
+{/* {isRunningStandalone() ? (
   ""
-) : (
+) : ( */}
 
   <>
 
@@ -359,7 +359,7 @@ export default function Footer() {
 
 
 </>
-)}
+{/* )} */}
 
     </>
 
