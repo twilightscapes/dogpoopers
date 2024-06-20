@@ -853,9 +853,9 @@ Yes, we usually tough it out and do our pick ups in adverse weather.</div>
 
 
 <div>
-  <input type="checkbox" id="question2" name="q" className="questions" />
+  <input type="checkbox" id="question4" name="q" className="questions" />
   <div className="plus">+</div>
-  <label for="question2" className="question">
+  <label for="question4" className="question">
     Do I have to be home?
   </label>
   <div className="answers">
@@ -916,7 +916,7 @@ ref={scrollRef}
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw'}}>Dog Poopers has gotten my back yard, back! I do my happy dance now!<br /> - Poopless in Biloxi</blockquote>
+  <blockquote style={{width:'30vw'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happyDog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<br /> - Poopless in Biloxi</blockquote>
 
 
 </div>
@@ -941,7 +941,7 @@ ref={scrollRef}
   Buddy
 </div>
 
-<blockquote style={{width:'25vw'}}>The grossest part of having a dog is now gone. Thanks Dog Poopers!<br /> - Poopless in Long Beach</blockquote>
+<blockquote style={{width:'25vw'}}>Dog Poopers has transformed our yard. The service is consistent, thorough, and a great value. I recommend them to every dog owner I know<br /> - Poopless in Long Beach</blockquote>
 </div>
 
 <div className="quotecard" style={{width:''}}>
@@ -951,7 +951,7 @@ ref={scrollRef}
   Rex
 </div>
 
-<blockquote style={{width:'25vw'}}>I like to bark a lot about Dog Poopers. Their service makes me happy and allows me to use my yard again!<br /> - Poopless in Woolmarket</blockquote>
+<blockquote style={{width:'25vw'}}>With three dogs, keeping the yard clean was a constant challenge. Dog Poopers made it easy and stress-free. Their team is friendly, and the results speak for themselves<br /> - Poopless in Woolmarket</blockquote>
 </div>
 
 </div>
