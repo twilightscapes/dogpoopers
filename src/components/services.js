@@ -55,34 +55,14 @@ const NFTDetails = () => (
 
     <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
 
-{/* <p style={{fontSize:'150%', textAlign:'center'}}>
+    <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
   <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
-</p>  */}
-<div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'90vw', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
-
-{/* <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">one single cleaning</strong>. 
-  <br />
-
- <br />
- <div style={{textDecoration:'underline', textAlign:'center'}}>
-  <a className="button" style={{color:'#fff', fontWeight:'700'}} href="https://www.paypal.com/ncp/payment/3WQU5K29X664L" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'#fff', fontWeight:'700'}}> Order Now</strong></a>
-  
-  <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
-  <br />
-  </div>
+</p>
+<div className="flexbutt1 hover" style={{display:'flex', flexDirection:'column', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
 
 
   
-
- </div>
-<p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
-</div> */}
-
-{/* <div className="flexcheek" style={{width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}> */}
-  
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center', margin:'0', padding:'0'}}>1-2 Dogs, Up to 1/4 Acre Yard </h3>
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Service Interval:</h3>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PTxp2KHJvXfkmw3QsnrVzWY"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
@@ -106,7 +86,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 </div>
     </TabPanel>
 
-        <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
+<TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
 
 <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
 <strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
@@ -115,7 +95,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-<div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'90vw', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
+<div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
 
 {/* <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
@@ -139,7 +119,11 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 {/* <div className="flexcheek" style={{width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}> */}
   
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center', margin:'0', padding:'0'}}>1-2 Dogs, Up to 1/4 Acre Yard </h3>
+{/* <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center', margin:'0', padding:'0'}}>1-2 Dogs, Up to 1/4 Acre Yard </h3> */}
+
+
+
+<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Service Interval:</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PU1NdKHJvXfkmw3VFNqumwb"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
