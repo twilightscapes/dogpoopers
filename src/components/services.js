@@ -58,9 +58,9 @@ const NFTDetails = () => (
 <p style={{fontSize:'150%', textAlign:'center'}}>
   <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
 </p> 
-<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'4vw', color:'#fff', width:'100%'}}>
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'1vw', color:'#fff', width:'100%'}}>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
 <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">one single cleaning</strong>. 
   <br />
@@ -72,14 +72,24 @@ const NFTDetails = () => (
   <br /> <strong style={{color:'yellow'}}>(Deluxe Included)</strong>
   <br />
   </div>
+
+
+  
+
  </div>
 <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> One Time</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColorText)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Weekly</h3>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+  
+<h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center', margin:'0', padding:'0'}}>Weekly</h3>
 
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
+<stripe-pricing-table pricing-table-id="prctbl_1PTxp2KHJvXfkmw3QsnrVzWY"
+publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
+</stripe-pricing-table>
+
+
+{/* <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">once per week</strong>. 
   <br />
 <br />
 
@@ -89,15 +99,20 @@ const NFTDetails = () => (
   <a className="" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-8BS82929AS9038505MZRGKKQ" target="_blank" rel="noreferrer" > <strong className="highlight" style={{color:'yellow'}}> Get Deluxe (only $4.99 more)</strong></a>
   </div>
 
+
+
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$29.99</strong> per week</p>
   
- </div>
+ </div> */}
 
 </div>
 
-<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double var(--theme-ui-colors-siteColor)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Twice Weekly</h3>
-<div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
+<stripe-pricing-table pricing-table-id="prctbl_1PTybqKHJvXfkmw3Lf0HU1jA"
+publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
+</stripe-pricing-table>
+{/* <div style={{}}>A Dog Pooper technician walks and cleans your yard <strong className="highlight">twice per week</strong>. 
   <br />
 <br />
 
@@ -109,7 +124,7 @@ const NFTDetails = () => (
 
   <p style={{textDecoration:'', textAlign:'center', margin:'1rem 0'}}><strong className="highlight" >$49.99</strong> per week</p>
 
- </div>
+ </div> */}
 </div>
 
 

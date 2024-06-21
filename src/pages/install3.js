@@ -55,26 +55,29 @@ function Install2() {
   textShadow:'0 2px 7px #000',
   textAlign:'center'
 }}>
-
+<br /><br />
 <h3>STEP TWO (3 of 3)</h3>
 
 
 
-<ul className="bulletlist">
+{/* <ul className="bulletlist">
   <li><strong>CHECK YOUR EMAIL</strong> and respond to create your GitHub</li>
   <li>Everything is completely FREE and only take 3-4 minutes</li>
 </ul>
+<br /> */}
+
+
+
+Manage your account and billing details.
 <br />
-
-
-
-In a few minutes your web app will be ready to login.
-<br />
-Simply follow the prompts and ignore the scary jargon
+Easily start or stop your Dog Pooper service
 <br /><br />
-<strong>Don't worry - we handle all the hard stuff for you!</strong>
+{/* <strong>Don't worry - we handle all the hard stuff for you!</strong> */}
 
 <br />
+<a className="button" href="https://billing.stripe.com/p/login/8wMeYg9DRgMH97W144" rel="noreferrer">
+Login Customer Portal
+</a>
 
 {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
@@ -122,9 +125,9 @@ Setup Account
 
 {/* <ContactForm /> */}
 
-<a className="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/piratesocial/pirate&amp;stack=cms&amp;SITE_LOGO=https://https://piratesocial.org/assets/logo.svg" target="_blank" rel="noreferrer">
+{/* <a className="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/piratesocial/pirate&amp;stack=cms&amp;SITE_LOGO=https://https://piratesocial.org/assets/logo.svg" target="_blank" rel="noreferrer">
 Setup GitHub &amp; Build Your Web App
-</a>
+</a> */}
 
 {/* <Link style={{display:'grid', placeContent:'center', margin:'0 auto 0 auto'}} state={{modal: true}} className="button" to="/contact">Tell us about yourself</Link> */}
 </section>
@@ -140,9 +143,13 @@ Setup GitHub &amp; Build Your Web App
 
 </div>
 
-{/* <div className="scroll-container1" style={{display:'flex', justifyContent:'start', maxWidth:'', height:'calc(100vh - 70px)', margin:'0 auto 0 auto', position:'relative', left:'0', right:'0', top:'0'}}>
-<iframe title="Pirate Frame" id="youtube2" className="blog-video1" width="100%" height="400" src="https://app.netlify.com/start/deploy?repository=https://github.com/completeweb-site/base&amp;stack=cms&amp;SITE_LOGO=https://completeweb.site/assets/logo.svg" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'calc(100vh - 70px)', minHeight:'', border:'0px solid yellow', borderRadius:'0', padding:'0 0 0 0' }} />
+
+
+
+{/* <div className="scroll-container1" style={{display:'flex', justifyContent:'start', maxWidth:'', height:'calc(100vh - 70px)', margin:'0 auto 0 auto', position:'relative', left:'0', right:'0', top:'0', border:'10px solid green'}}>
+<iframe title="Pirate Frame" id="youtube2" className="blog-video1" width="100%" height="400" src="https://billing.stripe.com/p/login/8wMeYg9DRgMH97W144" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'calc(100vh - 70px)', minHeight:'', border:'0px solid yellow', borderRadius:'0', padding:'0 0 0 0' }} />
 </div> */}
+
 
 
 

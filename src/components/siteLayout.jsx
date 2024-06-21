@@ -101,6 +101,8 @@ const Layout = ({ children }) => {
         `}</style>
 
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
       </Helmet>
 
       <Seo />

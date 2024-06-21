@@ -909,6 +909,13 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
 
 
 
+
+
+
+
+
+
+
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>Some of our happy customers</h2>
   </div>
