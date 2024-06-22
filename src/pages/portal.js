@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 import React from "react";
 import useSiteMetadata from "../hooks/SiteMetadata"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // import {Link} from "gatsby"
 // import styled from "styled-components"
 import Layout from "../components/siteLayout"
@@ -46,7 +46,7 @@ function Portal() {
 <Intro2 style={{height:'100vh', width:'100vw', position:'relative', zIndex:'1', top:'', objectFit:'cover',}} />
   </section> */}
   {/* </div> */}
-
+  <StaticImage src="../../static/assets/pooperportal.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', margin:'0 auto'}} />
 
 <section style={{ height:'', maxHeight:'', margin:'0 auto', padding:'0 0 0 0', position:'relative',
  alignContent:'center', display:'grid', placeContent:'center', verticalAlign:'center',
@@ -55,8 +55,16 @@ function Portal() {
   textShadow:'0 2px 7px #000',
   textAlign:'center'
 }}>
-<br /><br />
-<h3>STEP TWO (3 of 3)</h3>
+<br />
+<h3>Welcome to the Pooper Portal</h3>
+<li>Easily manage your Pooper services</li>
+<div style={{display:'flex', flexDirection:'column', listStyleType:'', textAlign:'left'}}>
+
+<li>Pause or change your service plans</li>
+<li>Communicate with your technician</li>
+<li>Update your billing information</li>
+<li>View/download service invoices</li>
+</div>
 
 
 
@@ -68,15 +76,13 @@ function Portal() {
 
 
 
-Manage your account and billing details.
-<br />
-Easily start or stop your Dog Pooper service
-<br /><br />
+
+
 {/* <strong>Don't worry - we handle all the hard stuff for you!</strong> */}
 
-<br />
+
 <a className="button" href="https://billing.stripe.com/p/login/8wMeYg9DRgMH97W144" rel="noreferrer">
-Login Customer Portal
+Login To Customer Portal
 </a>
 
 {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

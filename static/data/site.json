@@ -39,12 +39,12 @@
       "ShowDisclaimer": false,
       "showLegal": true,
       "showConsent": false,
-      "startUrl": "/",
+      "startUrl": "/portal",
       "showFeature": true,
       "showResume": false,
       "showLocation": false,
       "showPopup": false,
-      "showPWA": false
+      "showPWA": true
     },
     "magicOptions": {
       "showMagic": false,
