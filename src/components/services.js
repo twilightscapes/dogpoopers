@@ -49,20 +49,20 @@ const NFTDetails = () => (
     
     </TabList>
 
-     <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0 2rem', borderRadius:'12px'}}>
+     <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
       <div style={{display:'block', width:'100%', padding:'0'}}></div>
     </TabPanel>
 
-    <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
+    <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
 
     <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
   <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
 </p>
-<div className="flexbutt1 hover" style={{display:'flex', flexDirection:'column', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
+<div className="flexbutt1 hover" style={{display:'flex', flexDirection:'column', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
 
 
   
-<h3 className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Service Interval:</h3>
+<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PTxp2KHJvXfkmw3QsnrVzWY"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
@@ -86,7 +86,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 </div>
     </TabPanel>
 
-<TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'2rem', borderRadius:'12px'}}>
+<TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
 
 <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
 <strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
@@ -95,7 +95,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-<div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
+<div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'0', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
 
 {/* <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
@@ -123,7 +123,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Service Interval:</span>
+<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PU1NdKHJvXfkmw3VFNqumwb"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">

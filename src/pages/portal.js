@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
 
 
-function Install2() {
+function Portal() {
   const { showNav } = useSiteMetadata()
 
   
@@ -163,4 +163,4 @@ Setup GitHub &amp; Build Your Web App
   );
 }
 
-export default Install2;
+export default Portal;

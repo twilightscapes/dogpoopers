@@ -306,7 +306,10 @@ export default function Footer() {
       
         <div style={{width:'100vw', textAlign: 'center', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', display:'grid', margin:'1rem auto'}}>
 { showLegal ? (
-<div style={{display:'flex', justifyContent:'center', gap:'4%', width:'100%', minWidth:'380px' }}><Link state={{modal: false}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: false}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: false}} to="/terms/">{dicTerms}</Link></div>
+  <>
+<div style={{display:'flex', justifyContent:'center', gap:'1rem', width:'100%', minWidth:'380px' }}><Link state={{modal: false}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: false}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: false}} to="/terms/">{dicTerms}</Link></div>
+<br /><Link state={{modal: true}} to="/portal">Customer Portal</Link>
+ </>
 ) : (
 ""
   )}
