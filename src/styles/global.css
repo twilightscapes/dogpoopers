@@ -18,7 +18,7 @@ body.scroll footer{position:sticky !important;} */
 /* body.homepage{min-height: 100vh;} */
 
 
-body.install #gobacker1, body.install footer  {display:none !important; color: hsl(96, 42%, 29%);}
+body.install #gobacker1, body.install footer, body.install #pwabanner  {display:none !important; color: hsl(96, 42%, 29%);}
 
 body.install .topmenu{visibility: hidden;}
 
@@ -1768,6 +1768,12 @@ min-width: 80vw;
 .magicshell .grid-container{
 padding-top: 12vh;
 }
+
+
+/* .color{
+  color:#1a6b3e;
+  color:#53c16a;
+} */
 
 
   .slider .post-card1 .inline{

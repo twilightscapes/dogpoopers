@@ -77,13 +77,13 @@ const PWAInstaller = () => {
 
       {/* <div style={{fontSize:'60px', display:'grid', placeContent:'center', height:'60px', margin:'0 2vw', lineHeight:'100%'}}>&#x2620;</div>  */}
 
-                <div className="font" style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'1vw', textAlign:'center', justifyContent:'center',padding:'4px 0 0 40px', margin:'0 auto 0 auto', border:'0px solid blue', width:'', maxWidth:'', fontSize: 'clamp(.8rem,1.2vw,1rem)', position:'relative'}}>
+                <div className="font" style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'8px', textAlign:'center', justifyContent:'center', padding:'4px 0 0 40px', margin:'8px auto 0 auto', border:'0px solid blue', width:'', maxWidth:'', fontSize: 'clamp(.8rem,1.5vw,1.5rem)', fontWeight:'bold', position:'relative'}}>
 
-                <span style={{position:'absolute', display:'block', left:'1%',}}><MdOutlineIosShare style={{fontSize:'30px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span>
+                <span style={{position:'absolute', display:'block', top:'4px', left:'-10px',}}><MdOutlineIosShare style={{fontSize:'40px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span>
 
-                  <span style={{display:'block', textShadow:'0 1px 1px #000' }}>To access Customer Billing Portal</span>
+                  <div style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(1.2rem,2.5vw,1.5rem)', }}>Customer Billing Portal</div>
 
-                  <span style={{display:'block', textShadow:'0 1px 1px #000'}}>Click share / "Add To Home Screen"</span>
+                  <div style={{display:'block', textShadow:'0 1px 1px #000'}}>Click share &amp; "Add To Home Screen"</div>
 
                 
 
