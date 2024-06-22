@@ -42,7 +42,7 @@ const PWAInstaller = () => {
           fontSize: "clamp(3rem, 3vw, 3rem)",
           position: "absolute",
           top: "24px",
-          right: "10px",
+          right: "0",
           width: "",
           height: isInstalled ? "60px" : "60px",
           zIndex: "4",
@@ -77,13 +77,13 @@ const PWAInstaller = () => {
 
       {/* <div style={{fontSize:'60px', display:'grid', placeContent:'center', height:'60px', margin:'0 2vw', lineHeight:'100%'}}>&#x2620;</div>  */}
 
-                <div className="font" style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'8px', textAlign:'center', justifyContent:'center', padding:'4px 0 0 40px', margin:'8px auto 0 auto', border:'0px solid blue', width:'', maxWidth:'', fontSize: 'clamp(.8rem,1.5vw,1.5rem)', fontWeight:'bold', position:'relative'}}>
+                <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'0px', textAlign:'center', justifyContent:'center', padding:'4px 0 0 40px', margin:'8px auto 0 auto', border:'0px solid blue', width:'', maxWidth:'', fontSize: 'clamp(.8rem,1.5vw,1.5rem)', fontWeight:'bold', position:'relative'}}>
 
-                <span style={{position:'absolute', display:'block', top:'4px', left:'-10px',}}><MdOutlineIosShare style={{fontSize:'40px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span>
+                <span style={{position:'absolute', display:'block', top:'4px', left:'-5px',}}><MdOutlineIosShare style={{fontSize:'40px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span>
 
-                  <div style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(1rem,2.5vw,1.5rem)', }}>Customer Billing Portal</div>
+                  <div className="font" style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(1rem,2.5vw,1.5rem)', }}>Access Customer Billing Portal</div>
 
-                  <div style={{display:'block', textShadow:'0 1px 1px #000'}}>Click share &amp; "Add To Home Screen"</div>
+                  <div style={{display:'block', textShadow:'0 1px 1px #000', fontSize: 'clamp(.8rem,2vw,1rem)'}}>Click share &amp; "Add To Home Screen"</div>
 
                 
 

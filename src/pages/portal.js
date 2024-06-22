@@ -14,7 +14,8 @@ import { Helmet } from "react-helmet"
 
 
 function Portal() {
-  const { showNav } = useSiteMetadata()
+  const { language, showNav } = useSiteMetadata();
+  const { dicName, dicEmail, dicMessage, dicSubmit, dicPhone } = language;
 
   
 
@@ -35,7 +36,7 @@ function Portal() {
         ""
       )}
 
-<div className="scroll-container">
+
 
 
 {/* <div style={{display:'grid', justifyContent:'start', alignItems:'start', position:'relative', left:'', top:'', cursor:''}}> */}
@@ -45,26 +46,29 @@ function Portal() {
 {/* <section style={{height:''}}>
 <Intro2 style={{height:'100vh', width:'100vw', position:'relative', zIndex:'1', top:'', objectFit:'cover',}} />
   </section> */}
-  {/* </div> */}
-  <StaticImage src="../../static/assets/pooperportal.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', margin:'0 auto'}} />
 
-<section style={{ height:'', maxHeight:'', margin:'0 auto', padding:'0 0 0 0', position:'relative',
+  {/* </div> */}
+
+  <StaticImage src="../../static/assets/pooperportal.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'cover', margin:'0 auto'}} />
+
+
+{/* style={{ height:'', maxHeight:'', margin:'0 auto', padding:'0 0 0 0', position:'relative',
  alignContent:'center', display:'grid', placeContent:'center', verticalAlign:'center',
   color:'#fff',
   fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
   textShadow:'0 2px 7px #000',
-  textAlign:'center'
-}}>
-<br />
-<h3>Welcome to the Pooper Portal</h3>
-<li>Easily manage your Pooper services</li>
-<div style={{display:'flex', flexDirection:'column', listStyleType:'', textAlign:'left'}}>
+  textAlign:'center'}} */}
 
-<li>Pause or change your service plans</li>
-<li>Communicate with your technician</li>
-<li>Update your billing information</li>
-<li>View/download service invoices</li>
-</div>
+
+<section className="wrapper flexbutt" style={{ padding: "0 5% 0 5%", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "flex", flexDirection: "", justifyContent: "center", alignItems:'start', gap:'5vw', }}>
+
+
+          
+
+
+
+
+
 
 
 
@@ -80,10 +84,86 @@ function Portal() {
 
 {/* <strong>Don't worry - we handle all the hard stuff for you!</strong> */}
 
+<div className="panel2" style={{paddingTop:'6vh', width:'100%',textAlign:'',}}>
+<h3 style={{ fontSize:'clamp(1rem, 1.8vw, 3.2rem)', color:''}}>Welcome to the Pooper Portal</h3>
+<ul className="bullet panel" >
+<li>💩 Easily manage your Pooper services</li>
+<li>💩 Pause or change your service plans</li>
+<li>💩 Communicate with your technician</li>
+<li>💩 Update your billing information</li>
+<li>💩 View/download service invoices</li>
+</ul>
 
+<div style={{textAlign:'center'}}>
 <a className="button" href="https://billing.stripe.com/p/login/8wMeYg9DRgMH97W144" rel="noreferrer">
 Login To Customer Portal
 </a>
+</div>
+
+</div>
+
+<div className="" style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                 background: 'rgba(0,0,0,0.60)',
+                 padding:'1rem',
+                 width:'100%',
+                 maxWidth:'400px',
+                 textAlign:'center'
+              }}>
+<form
+              className={`contact-form flexcheek1 panel`}
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/thanks"
+              encType="multipart/form-data"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'#ddd'}}>Contact Your Pooper Tech:</p>
+
+                <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
+                  <label htmlFor="name" aria-label="Your Name">
+                    <input type="text" id="name" name="name" placeholder={dicName} required />
+                  </label>
+                </p>
+
+
+              <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
+                <label htmlFor="email" aria-label="Your Email">
+                  <input id="email" type="email" name="email" placeholder={dicEmail} required />
+                </label>
+              </p>
+
+
+                <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
+                  <label htmlFor="phone" aria-label="Your Phone">
+                    <input type="tel" id="phone" name="phone" placeholder={dicPhone} />
+                  </label>
+                </p>
+
+
+              <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
+                <label htmlFor="message" aria-label="Your Message">
+                  <textarea id="message" name="message" placeholder={dicMessage} required style={{height:'100px', padding:''}}></textarea>
+                </label>
+              </p>
+
+
+            
+              <p className="text-align-right1" style={{ margin: "0 auto", color: "#fff" }}>
+                <button
+                  className="button specialfont1"
+                  type="submit"
+                  style={{ width: '90%' }}
+                >
+                  {dicSubmit}
+                </button>
+              </p>
+</form>
+</div>
 
 {/* <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
@@ -147,7 +227,7 @@ Setup GitHub &amp; Build Your Web App
 
 
 
-</div>
+
 
 
 

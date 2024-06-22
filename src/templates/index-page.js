@@ -796,7 +796,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="flexbutt" style={{gap:'10vw'}}>
 <div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.<br /><br /><Link style={{display:'block', bottom:'0', right:'0', padding:'1rem 0', textAlign:'center'}}>Interested in longer 💩 plans?</Link></p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.<br /><br />
+{/* <Link style={{display:'block', bottom:'0', right:'0', padding:'1rem 0', textAlign:'center'}}>Interested in longer 💩 plans?</Link> */}
+</p>
 
 <h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as long as you wish. <br /></p>
 

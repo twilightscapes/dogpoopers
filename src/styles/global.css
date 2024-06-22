@@ -888,6 +888,15 @@ ul.bulletlist li{list-style-type:disc;text-shadow:0px 1px 1px var(--theme-ui-col
   border-radius:var(--theme-ui-colors-borderRadius);
   color:#fff;}
 
+ul.bullet{list-style-type:disc;margin:0;padding:0; justify-content:space-between;display:flex; flex-direction: column; text-align: left; width:100%;}
+
+ul.bullet li{list-style-type:disc; text-shadow:0px 1px 1px var(--theme-ui-colors-textShadow);  display: block;
+  padding:6px 1rem;
+  /* background: rgba(0,0,0,0.70); */
+  margin:6px 0;
+
+  /* border-radius:var(--theme-ui-colors-borderRadius); */
+}
 
 
  .post-content{display: relative ;}
