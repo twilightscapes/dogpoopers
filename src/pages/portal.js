@@ -106,8 +106,8 @@ Login To Customer Portal
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                 background: 'rgba(0,0,0,0.60)',
-                 padding:'1rem',
+                 background: 'rgba(0,0,0,0.20)',
+                 padding:'0 1rem',
                  width:'100%',
                  maxWidth:'400px',
                  textAlign:'center'
@@ -122,7 +122,7 @@ Login To Customer Portal
               encType="multipart/form-data"
             >
               <input type="hidden" name="form-name" value="contact" />
-<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'#ddd'}}>Contact Your Pooper Tech:</p>
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Contact Your Pooper Tech:</p>
 
                 <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
                   <label htmlFor="name" aria-label="Your Name">
