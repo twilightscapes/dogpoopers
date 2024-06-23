@@ -28,9 +28,9 @@ youtube:
 showPageNav: false
 showZoom: false
 showPostContact: false
-profText: <p>Dog Poopers are skilled at removing unsightly and unhealthy dog waste on a weekly basis all year round.</p><p>Our professional dog waste removal service is designed to make your life easier and your yard cleaner. </p>
+profText: <p> </p>
 profTitle: We come and pick up the poop!
-tagline: Pet Waste Removal Service Gulf Coast Mississippi
+tagline: Pet Waste Removal Service Mississippi Gulf Coast
 featuredImage: /assets/dogpoopers-nosey-header.webp
 secondaryImage: /assets/thankyou.webp
 scrollable: false

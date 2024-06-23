@@ -635,13 +635,13 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'center' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', textWrap:'balance', lineHeight:'1' }}>{frontmatter.tagline}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 2.8vw, 3rem)', textWrap:'balance', lineHeight:'1' }}>{frontmatter.tagline}</h1>
 
-      <h2 className="tagline1" style={{ fontSize: 'clamp(1.6rem, 1.5vw, 1.8rem)', textWrap:'balance' }}>
+      <h2 className="tagline1" style={{ fontSize: 'clamp(1.6rem, 1.5vw, 1.8rem)', textWrap:'balance', lineHeight:'1' }}>
         {frontmatter.profTitle}
       </h2>
       
-      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
+      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left',textWrap:'balance' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
     </div>
 
 
