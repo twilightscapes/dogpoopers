@@ -613,8 +613,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 {/* <p style={{fontSize:'100%', textAlign:'center'}}>
   <u>NO</u> contracts required - Cancel any time
 </p>  */}
-    <Faqs />
+    {/* <Faqs /> */}
+
+    
   </section>
+
 
 
 
@@ -771,7 +774,53 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:'2vh 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+
+<div className="" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 0 1rem 0', margin:'0', maxHeight: '', textAlign:'center', textShadow: '0 2px 3px #000', background:'#1a6b3e', backdropFilter:'blur(12px)', color:'#fff' }}>
+
+
+    <h2 style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 2vh', margin:'0', maxHeight: '', fontSize: 'clamp(1.8rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background: 'rgba(0,0,0,0.60)', backdropFilter:'blur(12px)', color:'#fff' }}>Get Started Today</h2>
+
+
+
+<h2 style={{fontSize:'', textAlign:'center', margin:'0', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#ddd'}}>Choose Your Service:</h2>
+
+<stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
+publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
+</stripe-pricing-table>
+
+<br />
+More Options:
+<div className="flexbutt hover" style={{margin:'2vh auto'}} >
+<Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Long-term plans save even more!</Link>
+<Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Just need a single cleaning?</Link>
+<Link to='/contact' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Gift certificates are available</Link>
+</div>
+
+
+<div className="flexbutt1 hover" style={{display:'grid', placeContent:'center', gap:'', color:'#ccc', maxWidth:'80%', padding:'3px 10px', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)'}}>
+
+{/* <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span> */}
+
+
+*Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment<br />
+**Your service plan may be upgraded depending on actual service conditions
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>How It Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
@@ -795,8 +844,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <div className="flexbutt" style={{gap:'10vw'}}>
-<div className="flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. Weekly plans are paid a month in advance.<br /><br />
+<div className="flexcheek mobileporkfat" style={{order:'', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. All plans are paid in advance.<br /><br />
 {/* <Link style={{display:'block', bottom:'0', right:'0', padding:'1rem 0', textAlign:'center'}}>Interested in longer 💩 plans?</Link> */}
 </p>
 
@@ -812,7 +861,7 @@ With the poop gone, you can enjoy a clean, fresh yard without the hassle.
 <br /><br />Our trained technicians thoroughly search your yard and remove all dog waste. We don’t miss a single pile!</p>
 </div>
 
-<div className="flexcheek" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
+<div className="flexcheek mobilepork" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
 
 <StaticImage src="../../static/assets/plans.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 You're in control - start and stop your service as needed with easy transactions using your safe and secure PayPal.

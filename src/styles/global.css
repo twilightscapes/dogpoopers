@@ -899,6 +899,8 @@ ul.bullet li{list-style-type:disc; text-shadow:0px 1px 1px var(--theme-ui-colors
 }
 
 
+
+
  .post-content{display: relative ;}
 
 
@@ -964,6 +966,9 @@ button:disabled{
 @media(max-width:48rem) {
   .mobilehide{display:none}
 
+  .mobilepork{order:1 !important;}
+.mobileporkfat{order:2 !important;}
+
   .mobile{border:0 solid red; height:69px; display:block;}
 
   #profiletop .nameblock {order:2 !important;}
@@ -987,7 +992,7 @@ button:disabled{
   body.blogpost {padding-top:8vh !important;}
   /* .grid-container .post-card1 iframe{margin-left:-5%;} */
 
-  .ReactModal__Content {width:100vw !important; }
+  /* .ReactModal__Content {width:100vw !important; } */
   
   .ReactModal__Content{margin-top:8vh !important;}
 
@@ -1439,7 +1444,17 @@ body:has(.ReactModal__Content) {overflow-x:hidden !important; overflow-y:hidden 
   
   .ReactModal__Content{padding:0 !important; background:var(--theme-ui-colors-siteBackground) !important; margin:0 auto ; overflow: auto !important; box-shadow: none !important; border:0px solid !important; inset:0 !important; width:100vw !important; padding-top:0 !important;}
   
-  
+  .ReactModal__Content {
+    padding: 0 !important;
+    background: var(--theme-ui-colors-siteBackground) !important;
+    margin: 10vh auto 0 auto;
+    overflow: auto !important;
+    box-shadow: none !important;
+    border: 0px solid !important;
+    inset: 0 !important;
+    width: 90vw !important;
+    padding-top: 0 !important;
+    }
 
   /* body.install .ReactModalPortal {border:20px blue !important;} */
 

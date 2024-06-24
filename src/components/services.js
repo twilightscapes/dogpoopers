@@ -34,40 +34,39 @@ const NFTDetails = () => (
 }}>
 
 <span className="font" style={{margin:'2vh auto 2vh auto', fontSize:'clamp(2rem, 3vw, 2.8rem)'}}>Get Started Today</span>
-<h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>How Many Dogs Do You Have?</h2>
+<h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>Weekly/Monthly Billing:</h2>
 
 
 
     
  <TabList style={{width:'100%', minWidth:'400px', background: 'var(--theme-ui-colors-cardBg)', margin:'0', padding:'0 0', border:'0', borderRadius:'8px', display:'flex', justifyContent:'center', alignItems:'center'}}>
 
-    <Tab></Tab>
+    {/* <Tab></Tab> */}
 
-    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>1 or 2 Dogs</span><span>Up to 1/4 Acre Yard</span></div></Tab>
+    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>Weekly</span></div></Tab>
     <div style={{width:'50px'}}>-OR-</div>
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>3 + Dogs</span><span>Up to 1/2 Acre Yard</span></div></Tab>
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>Monthly</span></div></Tab>
     
     </TabList>
 
-     <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
+     {/* <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
       <div style={{display:'block', width:'100%', padding:'0'}}></div>
-    </TabPanel>
+    </TabPanel> */}
 
-    <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
+    <TabPanel style={{width:'100vw', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
 
-    <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
+    {/* <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
   <strong>Pooper Packages</strong><br /> 1-2 Dogs, Up to 1/4 Acre Yard 
-</p>
+</p> */}
 <div className="flexbutt1 hover" style={{display:'flex', flexDirection:'column', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
 
 
   
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
 
-<stripe-pricing-table pricing-table-id="prctbl_1PTxp2KHJvXfkmw3QsnrVzWY"
+<stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
 </stripe-pricing-table>
-
 
 
 
@@ -86,16 +85,18 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 </div>
     </TabPanel>
 
-<TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
+<TabPanel style={{width:'100vw', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
 
-<p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
+{/* <p style={{fontSize:'clamp(1.4rem, 2vw, 3.2rem)', textAlign:'center'}}>
 <strong>Big Dawg Packages</strong><br /> 3 or More Dogs, Up to 1/2 Acre Yard 
-</p> 
+</p>  */}
 
 
 
 
 <div className="flexbutt1 hover" style={{display:'block', gap:'', color:'#fff', width:'', background: 'rgba(0,0,0,0.60)', padding:'0', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'0 auto'}}>
+
+  
 
 {/* <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Single Clean</h3>
@@ -125,7 +126,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
 
-<stripe-pricing-table pricing-table-id="prctbl_1PU1NdKHJvXfkmw3VFNqumwb"
+<stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
 </stripe-pricing-table>
 
