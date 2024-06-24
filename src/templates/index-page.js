@@ -837,30 +837,13 @@ More Options:
 
 
 
-<section id="" order="" className="nameblock2" style={{margin:'0 auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',
-  //  color:'var(--theme-ui-colors-text)',
-  // border:'0px solid red', 
-  // fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
-  // background:'#222',
-  // backdropFilter:'blur(8px)',
-  // border:'1px solid #333',
-  // borderRadius:'10px',
-  // textShadow:'0 2px 7px #000',
-  maxWidth:'100vw' }}>
-          {/* <h2 id="costs" className="letter" style={{fontSize:'140%', textAlign:'center'}}>Get Started</h2> */}
-
-          
-{/* <p style={{fontSize:'100%', textAlign:'center'}}>
-  <u>NO</u> contracts required - Cancel any time
-</p>  */}
+{/* <section id="" order="" className="nameblock2" style={{margin:'0 auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',maxWidth:'100vw' }}>
     <Faqs />
-
-    
-  </section>
+  </section> */}
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '10vh', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>How It Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
