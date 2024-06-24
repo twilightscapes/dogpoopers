@@ -1102,7 +1102,7 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
   width:100%!important;
   height: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
   position: relative;
   opacity: 0;
   -webkit-transition: .3s ease;
@@ -1454,6 +1454,7 @@ body:has(.ReactModal__Content) {overflow-x:hidden !important; overflow-y:hidden 
     inset: 0 !important;
     width: 90vw !important;
     padding-top: 0 !important;
+    color:rgba(11, 109, 36, 0.8)
     }
 
   /* body.install .ReactModalPortal {border:20px blue !important;} */

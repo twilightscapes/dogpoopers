@@ -21,10 +21,10 @@ const NFTDetails = () => (
 
 
 <Tabs className="infomenu" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
-  color:'#fff',
+  // color:'#fff',
   paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  background:'rgba(0,0,0,0.50)',
+  // background:'rgba(0,0,0,0.50)',
   backdropFilter:'blur(8px)',
   border:'0px double var(--theme-ui-colors-buttonHoverBg)',
   // borderRadius:'var(--theme-ui-colors-borderRadius)',
@@ -33,7 +33,7 @@ const NFTDetails = () => (
   width:'100vw'
 }}>
 
-<span className="font" style={{margin:'2vh auto 2vh auto', fontSize:'clamp(2rem, 3vw, 2.8rem)'}}>Which plan is right for you?</span>
+<span className="font" style={{margin:'10vh auto 2vh auto', fontSize:'clamp(1.6rem, 1.8vw, 2.8rem)'}}>Which plan is right for you?</span>
 {/* <h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>Weekly/Monthly Billing:</h2> */}
 
 

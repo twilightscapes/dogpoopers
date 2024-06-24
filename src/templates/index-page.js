@@ -624,7 +624,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 {/* show profile */}
   <>
 {showProfile ? (
-  <section className="scroll-area panel" id="profile" name="profile" style={{ display:'', height:'', minHeight:'', position:'relative', overflow:'hidden', margin:'0 auto 0 auto', padding:'3vh 0 60px 0', background:'var(--theme-ui-colors-background)', color:'var(--theme-ui-colors-text)', width:'100vw', borderRadius:'var(--theme-ui-colors-borderRadius)', }}>
+  <section className="scroll-area panel" id="profile" name="profile" style={{ display:'', height:'', minHeight:'', position:'relative', overflow:'hidden', margin:'0 auto 0 auto', padding:'3vh 0 20px 0', background:'var(--theme-ui-colors-background)', color:'var(--theme-ui-colors-text)', width:'100vw', borderRadius:'var(--theme-ui-colors-borderRadius)', }}>
   <article style={{ margin:'0 0 0 0'}}>
 
 
@@ -637,10 +637,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <div className="nameblock flexcheek" style={{position:'', top:'0', marginTop: '', padding: '1rem 2rem 0 2rem', maxHeight: '', fontSize: 'clamp(1rem, 1.4vw, 3.2rem)',  borderRadius: 'var(--theme-ui-colors-borderRadius)' }}>
 
 
-  <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'center' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 2.8vw, 3rem)', textWrap:'balance', lineHeight:'1' }}>{frontmatter.tagline}</h1>
+  <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'' }}>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2' }}>{frontmatter.tagline}</h1>
 
-      <h2 className="tagline1" style={{ fontSize: 'clamp(1.6rem, 1.5vw, 1.8rem)', textWrap:'balance', lineHeight:'1' }}>
+      <h2 className="tagline1" style={{ fontSize: 'clamp(1.2rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1' }}>
         {frontmatter.profTitle}
       </h2>
       
@@ -775,10 +775,27 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<div className="" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 0 1rem 0', margin:'0', maxHeight: '', textAlign:'center', textShadow: '0 2px 3px #000', background:'#1a6b3e', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="faqblock" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 0 0 0', margin:'0 0 0 0', maxHeight: '', textAlign:'center', textShadow: '0 2px 3px #000', background:'#1a6b3e', backdropFilter:'blur(12px)', color:'#fff' }}>
 
 
-    <h2 style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 2vh', margin:'0', maxHeight: '', fontSize: 'clamp(1.8rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background: 'rgba(0,0,0,0.60)', backdropFilter:'blur(12px)', color:'#fff' }}>Get Started Today</h2>
+    
+
+
+
+
+  
+<div>
+  <input type="checkbox" id="getStarted" name="q"  className="questions" />
+
+  <div className="plus" style={{fontSize:'50px', color:'#fff', top:'1vh'}}>+</div>
+
+  <label for="getStarted" className="question" style={{ background: 'inherit', backdropFilter:'blur(12px)', color:'#fff', border:'none', padding:'0'}}>
+
+  <h2 className="button" style={{fontSize: 'clamp(1.8rem, 2vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', padding:'1vh 1vw', margin:'5px 0 0 0' }}>Get Started Now!</h2>
+
+  </label>
+  <div className="answers">
+
 
 
 
@@ -814,15 +831,16 @@ More Options:
 
 </div>
 
+</div>
+</div>
 
 
 
 
-
-<section id="" order="" className="nameblock2" style={{margin:'0vh auto 0 auto', padding:'0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',
-   color:'var(--theme-ui-colors-text)',
+<section id="" order="" className="nameblock2" style={{margin:'0 auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+  //  color:'var(--theme-ui-colors-text)',
   // border:'0px solid red', 
-  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
+  // fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
   // background:'#222',
   // backdropFilter:'blur(8px)',
   // border:'1px solid #333',
@@ -839,7 +857,7 @@ More Options:
 
     
   </section>
-<br /><br /><br /><br />
+
 
 
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
