@@ -782,7 +782,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<h2 style={{fontSize:'', textAlign:'center', margin:'0', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#ddd'}}>Choose Your Service:</h2>
+<div style={{margin:'1vh 0'}}>
+  <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#ddd'}}>Choose Your Service:</h2>
+<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
+</div>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
@@ -802,8 +805,8 @@ More Options:
 {/* <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span> */}
 
 
-*Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment<br />
-**Your service plan may be upgraded depending on actual service conditions
+<br />
+**Your chosen service plan may be altered depending on actual service conditions.
 </div>
 
 
@@ -816,8 +819,27 @@ More Options:
 
 
 
+<section id="" order="" className="nameblock2" style={{margin:'0vh auto 0 auto', padding:'0 ',alignContent:'center', display:'flex', textAlign:'left', justifyContent:'center', verticalAlign:'center',
+   color:'var(--theme-ui-colors-text)',
+  // border:'0px solid red', 
+  fontSize:'clamp(1rem, 1.8vw, 3.2rem)',
+  // background:'#222',
+  // backdropFilter:'blur(8px)',
+  // border:'1px solid #333',
+  // borderRadius:'10px',
+  // textShadow:'0 2px 7px #000',
+  maxWidth:'100vw' }}>
+          {/* <h2 id="costs" className="letter" style={{fontSize:'140%', textAlign:'center'}}>Get Started</h2> */}
 
+          
+{/* <p style={{fontSize:'100%', textAlign:'center'}}>
+  <u>NO</u> contracts required - Cancel any time
+</p>  */}
+    <Faqs />
 
+    
+  </section>
+<br /><br /><br /><br />
 
 
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>

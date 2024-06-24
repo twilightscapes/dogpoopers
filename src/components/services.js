@@ -33,25 +33,29 @@ const NFTDetails = () => (
   width:'100vw'
 }}>
 
-<span className="font" style={{margin:'2vh auto 2vh auto', fontSize:'clamp(2rem, 3vw, 2.8rem)'}}>Get Started Today</span>
-<h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>Weekly/Monthly Billing:</h2>
+<span className="font" style={{margin:'2vh auto 2vh auto', fontSize:'clamp(2rem, 3vw, 2.8rem)'}}>Which plan is right for you?</span>
+{/* <h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>Weekly/Monthly Billing:</h2> */}
 
 
 
     
- <TabList style={{width:'100%', minWidth:'400px', background: 'var(--theme-ui-colors-cardBg)', margin:'0', padding:'0 0', border:'0', borderRadius:'8px', display:'flex', justifyContent:'center', alignItems:'center'}}>
+ <TabList style={{width:'100vw', minWidth:'400px', background: 'var(--theme-ui-colors-cardBg)', margin:'0', padding:'0 2vw', border:'0', borderRadius:'8px', display:'flex', justifyContent:'space-around', gap:'0', alignItems:'center'}}>
 
     {/* <Tab></Tab> */}
 
-    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>Weekly</span></div></Tab>
-    <div style={{width:'50px'}}>-OR-</div>
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'1.8vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)' }}><span>Monthly</span></div></Tab>
+    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Petite ?</span></div></Tab>
+    {/* <div style={{width:'50px'}}>-OR-</div> */}
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Mid Dawg ?</span></div></Tab>
+
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Big Dawg ?</span></div></Tab>
+
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Super ?</span></div></Tab>
     
     </TabList>
 
-     {/* <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
-      <div style={{display:'block', width:'100%', padding:'0'}}></div>
-    </TabPanel> */}
+     <TabPanel style={{width:'100%', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
+      <div style={{display:'block', width:'100%', padding:'0'}}>Petite is for customers with a smaller tract home yards and one or two dogs.</div>
+    </TabPanel>
 
     <TabPanel style={{width:'100vw', background: 'var(--theme-ui-colors-panelBG)', padding:'0', borderRadius:'12px'}}>
 
@@ -62,23 +66,15 @@ const NFTDetails = () => (
 
 
   
-<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
-
-<stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
-publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
-</stripe-pricing-table>
+{/* <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span> */}
 
 
 
-{/* </div> */}
-
-{/* <div className="flexcheek" style={{width:'50%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'100%', background: 'rgba(0,0,0,0.60)', padding:'1rem', backdropFilter: 'blur(4px)', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700', fontSize:'clamp(1.4rem, 3vw, 3.2rem)', textAlign:'center'}}>Twice Weekly</h3>
-<stripe-pricing-table pricing-table-id="prctbl_1PTybqKHJvXfkmw3Lf0HU1jA"
-publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
-</stripe-pricing-table>
 
-</div> */}
+
+</div>
 
 
 
@@ -126,9 +122,9 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span>
 
-<stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
+{/* <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
-</stripe-pricing-table>
+</stripe-pricing-table> */}
 
 
 
@@ -285,8 +281,10 @@ Custom Domain names available
 
 
 
-<Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'0 auto', borderBottom:'1px solid #fff' }}>Got Questions? Contact Us</Link>
-<br />
+{/* <Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'0 auto', borderBottom:'1px solid #fff' }}>Got Questions? Contact Us</Link>
+<br /> */}
+
+<br /><br />
   </Tabs>
 
 
