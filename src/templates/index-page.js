@@ -791,7 +791,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
   <label for="getStarted" className="question" style={{ background: 'inherit', backdropFilter:'blur(12px)', color:'#fff', border:'none', padding:'0'}}>
 
-  <h2 className="button" style={{fontSize: 'clamp(1.8rem, 2vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', padding:'1vh 1vw', margin:'5px 0 0 0' }}>Get Started Now!</h2>
+  <h2 className="button" style={{fontSize: 'clamp(1.8rem, 2vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', padding:'1vh 4vw', margin:'5px 0 0 0' }}>Get Started Now!</h2>
 
   </label>
   <div className="answers">
@@ -801,7 +801,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div style={{margin:'1vh 0'}}>
   <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#ddd'}}>Choose Your Service:</h2>
-<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
+<span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.2rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 </div>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
