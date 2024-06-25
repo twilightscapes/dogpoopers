@@ -788,7 +788,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
-  First, let's figure out the size of your yard using our innovative, YardStick™ technology</div>
+  First, let's figure out the size of your yard using our YardStick™ technology</div>
 
 
   <div className="flexbutt" style={{ padding: "2vh 2% 0 2%", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
@@ -798,7 +798,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     
     <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
 
-    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px' }}>Ruff!<br />|</div><TbRulerMeasure style={{marginRight:'.5rem', fontSize:'50px'}} /> Dog Poopers Yard Stick™ Technology</div>
+    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
+    
+    <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} />
+    <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>Dog Poopers YardStick™ Technology</span>
+    </div>
 </div>
 
     <div className="flexcheek" style={{width:'400px'}}>
@@ -806,7 +810,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'10px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers Yard Stick™</div>
+    <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers YardStick™</div>
 
 
 
@@ -823,14 +827,34 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
+  <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Great! How many dogs?</h2>
+
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
+  How many furry friends will be picking up after?</div>
 
 
+<div style={{display:'grid', placeContent:'center', width:'99%', height:'20vh', border:'1px solid', margin:'0 auto'}}>
+Coming Soon
+</div>
+
+  <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Awesome!</h2>
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
+Now, let's pick your plan!</div>
 
 
-<div style={{margin:'6vh 0'}}>
+<div className="faqblock" style={{width:'80%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto' }}>
+<div>
+  <input type="checkbox" id="question1" name="q"  className="questions" />
 
-  <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#fff'}}>Choose Your Service:</h2>
+  <label for="question1" className=" button" style={{cursor:'pointer'}}>
+  <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', color:'#fff', cursor:'pointer'}}>Choose Your Plan:</h2>
+  </label>
 
+
+  <div className="answers" style={{width:'100%'}}>
+{/* HiddenContent */}
+<div style={{margin:' 0', width:'100vw'}}>
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.2rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 </div>
 
@@ -855,6 +879,13 @@ More Options:
 <br />
 **Your chosen service plan may be altered depending on actual service conditions.
 </div>
+{/* HiddenContent */}
+</div>
+</div>
+
+</div>
+
+
 
 
 
