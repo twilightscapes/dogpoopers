@@ -54,8 +54,6 @@
     "gatsby-source-rss-feed": "^1.2.2",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "google-react-maps": "^1.5.0",
-    "measuretool-googlemaps-v3": "^1.0.2",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-cookie-consent": "^9.0.0",

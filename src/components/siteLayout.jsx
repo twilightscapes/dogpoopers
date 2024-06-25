@@ -106,12 +106,12 @@ const Layout = ({ children }) => {
 
 
 
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdH3AFSWLD3SrgbNqTGoRsg3U6W0qAAg&amp;libraries=geometry&amp;callback=initMap"
+{/* <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-iKnH_TwzkJytZvQiFNxdp_WQMlsJ4VQ&amp;libraries=geometry&amp;callback=initMap"
     async=""
     defer=""
   ></script>
-  <script src="https://cdn.jsdelivr.net/npm/measuretool-googlemaps-v3/lib/MeasureTool.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/measuretool-googlemaps-v3/lib/MeasureTool.min.js"></script> */}
 
 
 
