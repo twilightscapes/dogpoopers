@@ -11,26 +11,16 @@ import { Helmet } from "react-helmet"
 // import Intro3 from "../../static/assets/intro-github.svg"
 // import ContactForm from "../components/newssign"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
-import {MapControl} from 'google-react-maps'
+
 // import MeasureTool from 'measuretool-googlemaps-v3/lib/MeasureTool'
 
-import MeasureTool from 'measuretool-googlemaps-v3'
+
 
 function Portal() {
   const { language, showNav } = useSiteMetadata();
   const { dicName, dicEmail, dicMessage, dicSubmit, dicPhone } = language;
 
-  function createMeasureTool() {
 
-    this.measureTool = new MeasureTool(this.props.map, {
-      showSegmentLength: false,
-      tooltip: false,
-      contextMenu: false
-    })
-    this.measureTool._helper.formatLength = function(value) {
-      return this._formatLengthMetric(value) + " / " + this._formatLengthImperial(value * 3.28084)
-    }
-  }
 
   return (
 
