@@ -18,10 +18,11 @@
     }
     #controls {
       position: absolute;
-      top: 60px;
+      top: 80px;
       left: 10px;
       display: flex;
       flex-direction: column;
+      overflow: visible;
     }
     .button{align-items:center;align-self:center;
   /* background:var(--theme-ui-colors-siteColor);  */
@@ -36,20 +37,24 @@ font-size:clamp(1rem, 1.5vw, 2rem);
  }
  .actionJackson{background:rgb(69, 255, 69);}
 
-
+.logo {position: absolute; top:0;  z-index: 9999; display: flex; width:100%; height:100vh; place-content: center; border:0px solid red; margin:0 auto;}
+.logo img{max-width:200px; position:absolute; bottom:10vh; }
   </style>
 </head>
 <body>
+  <div class="logo"><img src="dogpooper-logo-text.svg" /></div>
+  
 <div id="map"></div>
 <div id="controls">
   <button id="start-with-points" style="display: none;">Start With Initial Points</button>
-  <img src="dogpooper-logo-text.svg" />
-<br />
+  
+
   <button id="start" class="button actionJackson">Start Sizing Yard</button>
   <button id="invert" class="button">Invert Colors</button>
   <button id="end" class="button">Clear All Points</button>
   
 </div>
+
 <script src="../dist/gmaps-measuretool.umd.js"></script>
 <script>
   const center = {lat: 30.38, lng: -89.03};
