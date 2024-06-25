@@ -83,7 +83,7 @@ const PWAInstaller = () => {
 
                   <div className="font" style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(1rem,2.5vw,1.5rem)', }}>Access Customer Billing Portal</div>
 
-                  <div style={{display:'block', textShadow:'0 1px 1px #000', fontSize: 'clamp(.8rem,2vw,1rem)'}}>Click share &amp; "Add To Home Screen"</div>
+                  <div style={{display:'block', textShadow:'0 1px 1px #000', fontSize: 'clamp(.6rem,2vw,1rem)'}}>Click share &amp; "Add To Home Screen"</div>
 
                 
 

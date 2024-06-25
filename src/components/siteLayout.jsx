@@ -103,6 +103,20 @@ const Layout = ({ children }) => {
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+
+
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdH3AFSWLD3SrgbNqTGoRsg3U6W0qAAg&amp;libraries=geometry&amp;callback=initMap"
+    async=""
+    defer=""
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/measuretool-googlemaps-v3/lib/MeasureTool.min.js"></script>
+
+
+
+
+
       </Helmet>
 
       <Seo />

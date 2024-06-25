@@ -638,13 +638,13 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.8rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2' }}>{frontmatter.tagline}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2' }}>{frontmatter.tagline}</h1>
 
-      <h2 className="tagline1" style={{ fontSize: 'clamp(1.2rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1' }}>
+      <h2 className="tagline1" style={{ fontSize: 'clamp(1rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1' }}>
         {frontmatter.profTitle}
       </h2>
       
-      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left',textWrap:'balance' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
+      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left',textWrap:'' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
     </div>
 
 
@@ -787,7 +787,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div>
   <input type="checkbox" id="getStarted" name="q"  className="questions" />
 
-  <div className="plus" style={{fontSize:'50px', color:'#fff', top:'1vh'}}>+</div>
+  {/* <div className="plus" style={{fontSize:'50px', color:'#fff', top:'1vh'}}>+</div> */}
 
   <label for="getStarted" className="question" style={{ background: 'inherit', backdropFilter:'blur(12px)', color:'#fff', border:'none', padding:'0'}}>
 
@@ -796,7 +796,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </label>
   <div className="answers">
 
-
+  <section id="" order="" className="nameblock2" style={{margin:'10vh auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'center', justifyContent:'center', verticalAlign:'center',maxWidth:'100vw',fontSize: 'clamp(1.3rem, 3vw, 3rem)' }}>
+    <h2>How big is your yard?</h2>
+    <Link to='/location' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>Open the Yard Measurement Tool</Link>
+  </section>
 
 
 <div style={{margin:'1vh 0'}}>
@@ -817,7 +820,7 @@ More Options:
 </div>
 
 
-<div className="flexbutt1 hover" style={{display:'grid', placeContent:'center', gap:'', color:'#ccc', maxWidth:'80%', padding:'3px 10px', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)'}}>
+<div className="flexbutt1 hover" style={{display:'grid', placeContent:'center', gap:'', color:'#ccc', maxWidth:'80%', padding:'3px 10px', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', textShadow:'none'}}>
 
 {/* <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.4rem, 1.8vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Choose Your Service:</span> */}
 
@@ -829,10 +832,12 @@ More Options:
 
 
 
+
 </div>
 
 </div>
 </div>
+
 
 
 
@@ -843,7 +848,7 @@ More Options:
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '10vh', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '15vh', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>How It Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
@@ -884,7 +889,7 @@ With the poop gone, you can enjoy a clean, fresh yard without the hassle.
 <br /><br />Our trained technicians thoroughly search your yard and remove all dog waste. We don’t miss a single pile!</p>
 </div>
 
-<div className="flexcheek mobilepork" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'center', padding:'1rem 0'}}> 
+<div className="flexcheek mobilepork" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'left', padding:'1rem 0'}}> 
 
 <StaticImage src="../../static/assets/plans.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 You're in control - start and stop your service as needed with easy transactions using your safe and secure PayPal.

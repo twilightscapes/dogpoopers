@@ -33,23 +33,26 @@ const NFTDetails = () => (
   width:'100vw'
 }}>
 
-<span className="font" style={{margin:'10vh auto 2vh auto', fontSize:'clamp(1.6rem, 1.8vw, 2.8rem)'}}>Which plan is right for you?</span>
+<span className="font" style={{margin:'10vh auto 2vh auto', fontSize:'clamp(1.6rem, 1.8vw, 2.8rem)', textShadow:'none'}}>Which plan is right for you?</span>
 {/* <h2 style={{fontSize:'', textAlign:'center', margin:'0',  background: 'var(--theme-ui-colors-panelBG)', padding:'', borderRadius:'12px 12px 0 0',fontSize:'clamp(1.2rem, 2vw, 2.8rem)'}}>Weekly/Monthly Billing:</h2> */}
 
 
 
     
- <TabList style={{width:'100vw', minWidth:'400px', background: 'var(--theme-ui-colors-cardBg)', margin:'0', padding:'0 2vw', border:'0', borderRadius:'8px', display:'flex', justifyContent:'space-around', gap:'0', alignItems:'center'}}>
+ <TabList style={{width:'99vw', minWidth:'', background: 'var(--theme-ui-colors-cardBg)', margin:'0', padding:'0 ', border:'0', borderRadius:'8px', display:'flex', justifyContent:'space-around', gap:'0', alignItems:'center'}}>
 
     {/* <Tab></Tab> */}
 
-    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Petite ?</span></div></Tab>
+
+
+
+    <Tab><div className="iconmenu11 button" style={{ display: 'flex', flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Petite Pooper</span></div></Tab>
     {/* <div style={{width:'50px'}}>-OR-</div> */}
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Mid Dawg ?</span></div></Tab>
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Mid Dawg</span></div></Tab>
 
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Big Dawg ?</span></div></Tab>
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Big Dawg</span></div></Tab>
 
-    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Super ?</span></div></Tab>
+    <Tab><div className="iconmenu1 button" style={{ display: 'flex',flexDirection:'column', textAlign:'center', textDecoration:'none', justifyContent: 'center', alignItems:'center', padding:'.5vh 1.2vw', maxWidth:'', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', textTransform:'none', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.10)', backdropFilter:'blur(12px)', }}><span>Super Pooper</span></div></Tab>
     
     </TabList>
 
