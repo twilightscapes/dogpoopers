@@ -8,7 +8,7 @@ import Seo from "../components/seo";
 // import { getSrc } from "gatsby-plugin-image";
 import useSiteMetadata from "../hooks/SiteMetadata";
 import { GatsbyImage, getSrc } from "gatsby-plugin-image"
-
+import { TbRulerMeasure } from "react-icons/tb";
 import Social from "../components/social"
 // import PropTypes from "prop-types";
 
@@ -22,7 +22,9 @@ import { ImPlay } from "react-icons/im"
 // import { ImCross } from "react-icons/im"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
-import { AiOutlineAudioMuted } from 'react-icons/ai';
+import { MdOutlineCleaningServices } from "react-icons/md";
+import { PiCalendarDuotone } from "react-icons/pi";
+import { AiOutlineAudioMuted, AiOutlineGift } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
 import Faqs from "../components/services"
 
@@ -796,14 +798,14 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </label>
   <div className="answers">
 
-  <section id="" order="" className="nameblock2" style={{margin:'10vh auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'center', justifyContent:'center', verticalAlign:'center',maxWidth:'100vw',fontSize: 'clamp(1.3rem, 3vw, 3rem)' }}>
+  <section id="" order="" className="nameblock2" style={{margin:'10vh auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'center', justifyContent:'center', verticalAlign:'center',maxWidth:'100vw',fontSize: 'clamp(1.3rem, 2vw, 2.5rem)' }}>
     <h2>How big is your yard?</h2>
-    <Link to='/location' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>Open the Yard Measurement Tool</Link>
+    <Link to='/location' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}><TbRulerMeasure style={{marginRight:'1rem'}} /> Open the Yard Measurement Tool </Link>
   </section>
 
 
 <div style={{margin:'1vh 0'}}>
-  <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#ddd'}}>Choose Your Service:</h2>
+  <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#fff'}}>Choose Your Service:</h2>
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.2rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 </div>
 
@@ -814,9 +816,9 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 <br />
 More Options:
 <div className="flexbutt hover" style={{margin:'2vh auto'}} >
-<Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Long-term plans save even more!</Link>
-<Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Just need a single cleaning?</Link>
-<Link to='/contact' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}>Gift certificates are available</Link>
+<Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
+<Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
+<Link to='/contact' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><AiOutlineGift style={{fontSize:'30px', marginRight:'1rem'}} />Gift certificates are available</Link>
 </div>
 
 
@@ -848,7 +850,7 @@ More Options:
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '15vh', width:'100vw', padding: '1vh 2vh', margin:' 0', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'15vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>How It Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
