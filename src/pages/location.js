@@ -86,22 +86,24 @@ Fax: (714) 903-4381</p>
 
 <iframe title="location map" className="virtualtour" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', margin:'0 auto', border:'10px solid #333', borderRadius:'12px'}}></iframe>
 
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Dog Poopers Yard Sizer</p>
 
-
-<div className="flexbutt" style={{width:'100%', maxWidth:'', display:'', placeContent:'center', margin:'0 auto', gap:'1vw', position:'', zIndex:'' }}>
+<div className="flexbutt" style={{width:'100%', maxWidth:'', display:'flex', placeContent:'center', margin:'0 auto', gap:'1vw', position:'', zIndex:'' }}>
   
   <div className="flexcheek" style={{width:''}}>
-    <div className="plus">1</div>
+    {/* <div className="plus">1</div> */}
     <label for="question1" className="question">
       Locate your property on the map above
     <br /><br />
-    Click the button in left corner to "view larger map".
+    Click the button to "Start Sizing Yard".
     <br /><br />
-     This will open Google Maps in a new window.</label>
+     Click on the boundaries of your yard dropping points at each boundary.
+     <br /><br />Once you've connected the dots, it will show you the total footage of your yard.
+     </label>
   </div>
 
 
-  <div className="flexcheek" style={{width:''}}>
+  {/* <div className="flexcheek" style={{width:''}}>
     <div className="plus">2</div>
     <label for="question1" className="question">
       Click the map square in the lower left and select "Layers" 
@@ -113,7 +115,7 @@ Fax: (714) 903-4381</p>
       <br /><br />
     
     </label>
-  </div>
+  </div> */}
   
   </div>
 </div>
