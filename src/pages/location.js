@@ -170,7 +170,7 @@ Login To Customer Portal
               encType="multipart/form-data"
             >
               <input type="hidden" name="form-name" value="contact" />
-<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Need help or want a quote?</p>
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.5vw, 2rem)'}}>Gpt questions or want a quote?</p>
 
                 <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
                   <label htmlFor="name" aria-label="Your Name">
