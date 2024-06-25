@@ -28,9 +28,9 @@
 <body>
 <div id="map"></div>
 <div id="controls">
-  <button id="start-with-points">Start With Initial Points</button>
+  <button id="start-with-points" style="display: none;">Start With Initial Points</button>
   <button id="start">Start</button>
-  <button id="end">End</button>
+  <button id="end">Clear</button><br />
   <button id="invert">Invert Color</button>
 </div>
 <script src="../dist/gmaps-measuretool.umd.js"></script>
@@ -101,7 +101,7 @@
     });
     measureTool = new MeasureTool(map, {
       contextMenu: false,
-      unit: MeasureTool.UnitTypeId.METRIC // metric, imperial, or nautical
+      unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
     });
 
     // var marker1 = new google.maps.Marker({
