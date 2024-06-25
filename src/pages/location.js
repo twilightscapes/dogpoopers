@@ -92,7 +92,7 @@ Fax: (714) 903-4381</p>
   
   <div className="flexcheek" style={{width:''}}>
     {/* <div className="plus">1</div> */}
-    <label for="question1" className="question">
+    <label for="question1" className="question" style={{width:'100%'}}>
       Locate your property on the map above
     <br /><br />
     Click the button to "Start Sizing Yard".
