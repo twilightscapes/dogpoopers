@@ -795,9 +795,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div style={{ padding: "2vh 0", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
     <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
-    <br />
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'10px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} />Dog Poopers Measure Tool</div>
+    
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
+    <TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} />Dog Poopers Yard Measurer</div>
 </div>
 
     <div className="flexcheek" style={{width:'400px'}}>
@@ -805,15 +805,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'10px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} />Using Dog Poopers Yard Measure Tool</div>
+    <TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} />Using Dog Poopers Yard Measurer</div>
 
 
 
      <ul className="bullet panel" >
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.5vw'}}>💩</span> Locate your property on the map</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.5vw'}}>💩</span> Click "Start Sizing Yard"</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.5vw'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.5vw'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Locate your property on the map</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click "Start Sizing Yard"</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
 </ul>
   
     </div>
