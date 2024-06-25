@@ -788,7 +788,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
-  First, let's figure out the size of your yard:</div>
+  First, let's figure out the size of your yard using our innovative, YardStick™ technology</div>
 
 
   <div className="flexbutt" style={{ padding: "2vh 2% 0 2%", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
@@ -798,7 +798,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     
     <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
 
-    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px' }}>Ruff!<br />|</div><TbRulerMeasure style={{marginRight:'.5rem', fontSize:'50px'}} /> Dog Poopers Yard Stick™</div>
+    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px' }}>Ruff!<br />|</div><TbRulerMeasure style={{marginRight:'.5rem', fontSize:'50px'}} /> Dog Poopers Yard Stick™ Technology</div>
 </div>
 
     <div className="flexcheek" style={{width:'400px'}}>
@@ -876,7 +876,7 @@ More Options:
 
 
 <div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'15vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2>How It Works</h2>
+    <h2>How It All Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
   color:'var(--theme-ui-colors-text)',
