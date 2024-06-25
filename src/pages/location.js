@@ -86,7 +86,7 @@ Fax: (714) 903-4381</p>
 
 <iframe title="location map" className="virtualtour" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', margin:'0 auto', border:'10px solid #333', borderRadius:'12px'}}></iframe>
 
-<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Dog Poopers Yard Sizer</p>
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'#fff', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Dog Poopers Yard Sizer</p>
 
 <div className="flexbutt" style={{width:'100%', maxWidth:'', display:'flex', placeContent:'center', margin:'0 auto', gap:'1vw', position:'', zIndex:'' }}>
   
@@ -170,7 +170,7 @@ Login To Customer Portal
               encType="multipart/form-data"
             >
               <input type="hidden" name="form-name" value="contact" />
-<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'', fontSize:'clamp(1rem, 1.5vw, 2rem)'}}>Gpt questions or want a quote?</p>
+<p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1', color:'#fff', fontSize:'clamp(1rem, 1.5vw, 2rem)'}}>Gpt questions or want a quote?</p>
 
                 <p style={{textAlign:'center', fontWeight:'bold', padding:'0', margin:'0', lineHeight:'1'}}>
                   <label htmlFor="name" aria-label="Your Name">
