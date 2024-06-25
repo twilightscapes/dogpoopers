@@ -82,7 +82,10 @@ Fax: (714) 903-4381</p>
 
 <div id="tour" className="virtualtour" style={{display:'flex', flexDirection:'column', gap:'1vw'}}>
 
-<iframe title="location map" className="virtualtour" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d218709.02813130492!2d-89.066156!3d30.443965!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1719269906271!5m2!1sen!2sus" allowFullScreen="" loading="lazy" origin="https://testing.hytronmanufacturing.com" style={{maxWidth:'100%', margin:'0 auto', border:'10px solid #333', borderRadius:'12px'}}></iframe>
+{/* <iframe title="location map" className="virtualtour" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d218709.02813130492!2d-89.066156!3d30.443965!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1719269906271!5m2!1sen!2sus" allowFullScreen="" loading="lazy" origin="https://testing.hytronmanufacturing.com" style={{maxWidth:'100%', margin:'0 auto', border:'10px solid #333', borderRadius:'12px'}}></iframe> */}
+
+<iframe title="location map" className="virtualtour" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://testing.hytronmanufacturing.com" style={{maxWidth:'100%', margin:'0 auto', border:'10px solid #333', borderRadius:'12px'}}></iframe>
+
 
 
 <div className="flexbutt" style={{width:'100%', maxWidth:'', display:'', placeContent:'center', margin:'0 auto', gap:'1vw', position:'', zIndex:'' }}>
