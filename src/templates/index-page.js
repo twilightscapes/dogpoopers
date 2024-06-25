@@ -800,7 +800,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
   <section id="" order="" className="nameblock2" style={{margin:'10vh auto 10vh auto', padding:'0 0 0 0 ',alignContent:'center', display:'flex', textAlign:'center', justifyContent:'center', verticalAlign:'center',maxWidth:'100vw',fontSize: 'clamp(1.3rem, 2vw, 2.5rem)' }}>
     <h2>How big is your yard?</h2>
-    <Link to='/location' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}><TbRulerMeasure style={{marginRight:'1rem'}} /> Open Yard Measurement Tool </Link>
+    <Link to='/map' state={{modal: true}} className="print hover" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}><TbRulerMeasure style={{marginRight:'1rem'}} /> Open Yard Measurement Tool </Link>
   </section>
 
 
