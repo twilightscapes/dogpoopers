@@ -797,7 +797,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
     
     <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px' }}>Ruff!<br />|</div><TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} /> Dog Poopers Yard Stick™</div>
+
+    <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px' }}>Ruff!<br />|</div><TbRulerMeasure style={{marginRight:'.5rem', fontSize:'50px'}} /> Dog Poopers Yard Stick™</div>
 </div>
 
     <div className="flexcheek" style={{width:'400px'}}>
@@ -805,7 +806,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'10px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.30)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <TbRulerMeasure style={{marginRight:'.5rem', fontSize:'4vw'}} />Using Dog Poopers Yard Stick™</div>
+    <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers Yard Stick™</div>
 
 
 
@@ -827,7 +828,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <div style={{margin:'6vh 0'}}>
-  
+
   <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', background:'#1a6b3e', color:'#fff'}}>Choose Your Service:</h2>
 
 <span className="vartext letter" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.2rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
