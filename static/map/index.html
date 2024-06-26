@@ -24,160 +24,135 @@
       flex-direction: column;
       overflow: visible;
     }
-    .button{align-items:center;align-self:center;
-  /* background:var(--theme-ui-colors-siteColor);  */
-  border:1px solid;
-  border-color:#999;
-  border-radius:3px;
-  color:#333 !important;
-  display:inline-flex;height:auto;justify-content:center;margin:1vh 0;
-  
-  padding:5px clamp(.5rem, 1vw, 1rem);
-/* text-shadow: 1px 1px 2px #666; */
-min-width:120px;
-font-size:clamp(.7rem, 1.5vw, 2rem);
- }
- .actionJackson{background:rgb(69, 255, 69);}
-
-.logo {position: absolute; top:0; display: flex; width:100%; height:100vh; place-content: center; border:0px solid red; margin:0 auto;}
-.logo img{max-width:200px;opacity: .4; position:absolute; bottom:5vh; z-index: 9999;}
+    .button {
+      align-items: center;
+      align-self: center;
+      border: 1px solid;
+      border-color: #999;
+      border-radius: 3px;
+      color: #333 !important;
+      display: inline-flex;
+      height: auto;
+      justify-content: center;
+      margin: 1vh 0;
+      padding: 5px clamp(.5rem, 1vw, 1rem);
+      min-width: 120px;
+      font-size: clamp(.7rem, 1.5vw, 2rem);
+    }
+    .actionJackson {
+      background: rgb(69, 255, 69);
+    }
+    .logo {
+      position: absolute;
+      top: 0;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      place-content: center;
+      border: 0px solid red;
+      margin: 0 auto;
+    }
+    .logo img {
+      max-width: 200px;
+      opacity: .4;
+      position: absolute;
+      bottom: 5vh;
+      z-index: 9999;
+    }
   </style>
 </head>
 <body>
   <div class="logo"><img src="dogpooper-logo-text.svg" /></div>
   
-<div id="map"></div>
-<div id="controls">
-  <button id="start-with-points" style="display: none;">Start With Initial Points</button>
-  
+  <div id="map"></div>
+  <div id="controls">
+    <button id="start-with-points" style="display: none;">Start With Initial Points</button>
+    <button id="start" class="button actionJackson">Start Sizing Yard</button>
+    <button id="invert" class="button">Invert Colors</button>
+    <button id="end" class="button">Clear All Points</button>
+  </div>
 
-  <button id="start" class="button actionJackson">Start Sizing Yard</button>
-  <button id="invert" class="button">Invert Colors</button>
-  <button id="end" class="button">Clear All Points</button>
-  
-</div>
+  <script src="../dist/gmaps-measuretool.umd.js"></script>
+  <script>
+    const center = {lat: 30.38, lng: -89.03};
+    const segments = [
+      {"lat": 41.69547509615208, "lng": -71.36993408203125},
+      {"lat": 41.434490308949215, "lng": -71.3671875},
+      {"lat": 41.50857729743936, "lng": -71.20513916015625},
+      {"lat": 41.66923209813446, "lng": -71.18435546874998},
+      {"lat": 41.80245339578072, "lng": -71.34365722656248},
+      {"lat": 41.910875425626266, "lng": -71.39034912109373},
+      {"lat": 42.01299182987659, "lng": -71.38760253906248},
+      {"lat": 42.01299182987659, "lng": -71.80508300781248},
+      {"lat": 41.69957665997156, "lng": -71.795654296875},
+      {"lat": 41.3566211272796, "lng": -71.82156249999998},
+      {"lat": 41.37723402378496, "lng": -71.49471923828123},
+      {"lat": 41.6154423246811, "lng": -71.48529052734375},
+      {"lat": 41.69547509615208, "lng": -71.36993408203125}
+    ];
 
-<script src="../dist/gmaps-measuretool.umd.js"></script>
-<script>
-  const center = {lat: 30.38, lng: -89.03};
-  const segments = [
-    {
-      "lat": 41.69547509615208,
-      "lng": -71.36993408203125
-    },
-    {
-      "lat": 41.434490308949215,
-      "lng": -71.3671875
-    },
-    {
-      "lat": 41.50857729743936,
-      "lng": -71.20513916015625
-    },
-    {
-      "lat": 41.66923209813446,
-      "lng": -71.18435546874998
-    },
-    {
-      "lat": 41.80245339578072,
-      "lng": -71.34365722656248
-    },
-    {
-      "lat": 41.910875425626266,
-      "lng": -71.39034912109373
-    },
-    {
-      "lat": 42.01299182987659,
-      "lng": -71.38760253906248
-    },
-    {
-      "lat": 42.01299182987659,
-      "lng": -71.80508300781248
-    },
-    {
-      "lat": 41.69957665997156,
-      "lng": -71.795654296875
-    },
-    {
-      "lat": 41.3566211272796,
-      "lng": -71.82156249999998
-    },
-    {
-      "lat": 41.37723402378496,
-      "lng": -71.49471923828123
-    },
-    {
-      "lat": 41.6154423246811,
-      "lng": -71.48529052734375
-    },
-    {
+    var map, measureTool;
 
-      "lat": 41.69547509615208,
-      "lng": -71.36993408203125
-    }
-  ];
+    // Define a style to hide points of interest and other features.
+    const mapStyle = [
+      {
+        "featureType": "poi",
+        "stylers": [{ "visibility": "off" }]
+      },
+      {
+        "featureType": "transit",
+        "stylers": [{ "visibility": "off" }]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "labels",
+        "stylers": [{ "visibility": "off" }]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [{ "visibility": "on" }]
+      }
+    ];
 
-  var map, measureTool;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center,
-      zoom: 10,
-      scaleControl: true
-    });
-    measureTool = new MeasureTool(map, {
-      contextMenu: false,
-      unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
-    });
-
-    // var marker1 = new google.maps.Marker({
-    //   position: {lat: 47.94796, lng: -116.70797},
-    //   map: map,
-    //   label: "1"
-    // });
-    // marker1.addListener('click', function() {
-    //   alert("Marker 1 has been clicked");
-    // });
-    //
-    // var marker2 = new google.maps.Marker({
-    //   position: {lat: 47.95028, lng: -116.69907},
-    //   map: map,
-    //   label: "2"
-    // });
-    // marker2.addListener('click', function() {
-    //   alert("Marker 2 has been clicked");
-    // });
-
-    // test for setting units
-//    measureTool.setOption('unit', MeasureTool.UnitTypeId.METRIC);
-
-    measureTool.addListener('measure_start', () => {
-      console.log('started');
-//      measureTool.removeListener('measure_start')
-    });
-    measureTool.addListener('measure_end', (e) => {
-      console.log('ended', e.result);
-//      measureTool.removeListener('measure_end');
-    });
-    measureTool.addListener('measure_change', (e) => {
-      console.log('changed', e.result);
-//      measureTool.removeListener('measure_change');
-    });
-  }
-
-  let inverted = false;
-  document.querySelector('#start-with-points')
-      .addEventListener('click', () => measureTool.start(segments));
-  document.querySelector('#start')
-      .addEventListener('click', () => measureTool.start());
-  document.querySelector('#end')
-      .addEventListener('click', () => measureTool.end());
-  document.querySelector('#invert')
-      .addEventListener('click', () => {
-        inverted = !inverted
-        measureTool.setOption('invertColor', inverted);
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: center,
+        zoom: 10,
+        scaleControl: true,
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+        styles: mapStyle
       });
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-iKnH_TwzkJytZvQiFNxdp_WQMlsJ4VQ&libraries=geometry&callback=initMap&loading=async"
-        async defer></script>
+      measureTool = new MeasureTool(map, {
+        contextMenu: false,
+        unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
+      });
 
+      measureTool.addListener('measure_start', () => {
+        console.log('started');
+      });
+      measureTool.addListener('measure_end', (e) => {
+        console.log('ended', e.result);
+      });
+      measureTool.addListener('measure_change', (e) => {
+        console.log('changed', e.result);
+      });
+    }
+
+    let inverted = false;
+    document.querySelector('#start-with-points')
+        .addEventListener('click', () => measureTool.start(segments));
+    document.querySelector('#start')
+        .addEventListener('click', () => measureTool.start());
+    document.querySelector('#end')
+        .addEventListener('click', () => measureTool.end());
+    document.querySelector('#invert')
+        .addEventListener('click', () => {
+          inverted = !inverted
+          measureTool.setOption('invertColor', inverted);
+        });
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-iKnH_TwzkJytZvQiFNxdp_WQMlsJ4VQ&libraries=geometry&callback=initMap&loading=async"
+          async defer></script>
 </body>
 </html>
