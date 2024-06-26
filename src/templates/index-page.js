@@ -27,7 +27,7 @@ import { PiCalendarDuotone } from "react-icons/pi";
 import { AiOutlineAudioMuted, AiOutlineGift } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
 import Faqs from "../components/services"
-
+import NoDogs from "../components/panels"
 
 
 
@@ -505,7 +505,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   return (
     <Layout>
       <Helmet>
-        <body id="body" className="homepage" />
+        <body id="body" className="homepage intro" />
       </Helmet>
 
       {/* <Seo
@@ -827,15 +827,19 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-  <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Great! How many dogs?</h2>
+  {/* <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Great! How many dogs?</h2>
 
   <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
   How many furry friends will be picking up after?</div>
 
 
+
 <div style={{display:'grid', placeContent:'center', width:'99%', height:'20vh', border:'1px solid', margin:'0 auto'}}>
-Coming Soon
-</div>
+
+
+</div> */}
+
+
 
   <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Awesome!</h2>
 
