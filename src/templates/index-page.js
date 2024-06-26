@@ -669,7 +669,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
             ""
           )} */}
 
-<h3 style={{textAlign:'center'}}>Call (601) 385-1781</h3>
+<h3 style={{textAlign:'center'}}><a href="tel:6013851781">Call (601) 385-1781</a></h3>
 
 
 <ul className="tags" style={{maxWidth:'clamp(380px, 90%, 600px)', padding: '2%'}}>
