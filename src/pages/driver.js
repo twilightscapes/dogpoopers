@@ -16,7 +16,7 @@ const Driver = () => {
 <body id="body" className="install homepage " />
 </Helmet>
 
- <Seo title={`Thanks for being a Pirate!`} />
+ <Seo title={`Thanks for being a Pooper!`} />
 
 
 <section className="outer section section--gradient" >

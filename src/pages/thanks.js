@@ -9,7 +9,7 @@ const Thanks = () => {
       return (
 
  <Layout className="thanks-page">
- <Seo title={`Thanks for being a Pirate!`} />
+ <Seo title={`Thanks!`} />
 
 <section className="outer section section--gradient" >
       <div className="container" style={{padding: '30px 0', minHeight:'100dvh'}}>

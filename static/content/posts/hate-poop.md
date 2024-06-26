@@ -3,7 +3,7 @@ template: blog-post
 title: I HATE picking up my dog's poop!
 slug: /hate-poop
 date: 2023-10-01 09:00
-description: Experience the thrill of PIRATE
+description: I HATE picking up my dog's poop!
 featuredImage: /assets/hate-poop-header.webp
 showPageNav: true
 tags:

@@ -3,7 +3,7 @@ template: blog-post
 title: How we doo what we doo
 slug: /first-post
 date: 2023-10-01 09:00
-description: Experience the thrill of PIRATE
+description: How we doo what we doo
 featuredImage: /assets/grid-tech-header.webp
 showPageNav: true
 tags:
