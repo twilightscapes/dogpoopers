@@ -851,9 +851,9 @@ Now, let's pick your plan!</div>
 
 <div className="faqblock" style={{width:'80%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto' }}>
 <div>
-  <input type="checkbox" id="question1" name="q"  className="questions" />
+  <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
-  <label for="question1" className=" button" style={{cursor:'pointer'}}>
+  <label for="getstarted" className=" button" style={{cursor:'pointer'}}>
   <h2 style={{fontSize:'', textAlign:'center', margin:'', padding:'', borderRadius:'12px 12px 0 0', fontSize:'clamp(1.2rem, 2vw, 2.8rem)', color:'#fff', cursor:'pointer'}}>Choose Your Plan:</h2>
   </label>
 
@@ -994,15 +994,7 @@ You control your timeline (and everything else), not some billionaire appeasing 
           
 
 <div className="faqblock" style={{width:'80%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto' }}>
-<div>
-  <input type="checkbox" id="question1" name="q"  className="questions" />
-  <div className="plus">+</div>
-  <label for="question1" className="question">
-    Do you still pick up with heavy rains or storms?
-  </label>
-  <div className="answers">
-Yes, we usually tough it out and do our pick ups in adverse weather. If for some reason we are unable to pick up on the scheduled day, we will try again at the next possible time.</div>
-</div>
+
 
 
 <div>
@@ -1028,6 +1020,18 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
     No problem! You can either provide a key, tell us where the key is, or provide the gate code. 
   </div>
 </div>
+
+
+<div>
+  <input type="checkbox" id="question1" name="q"  className="questions" />
+  <div className="plus">+</div>
+  <label for="question1" className="question">
+    Do you still pick up with heavy rains or storms?
+  </label>
+  <div className="answers">
+Yes, we usually tough it out and do our pick ups in adverse weather. If for some reason we are unable to pick up on the scheduled day, we will try again at the next possible time.</div>
+</div>
+
   
 <div>
   <input type="checkbox" id="question3" name="q" className="questions" />
@@ -1039,8 +1043,24 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
   
   Our team loves dogs and would be happy to clean your property with them outside as long as they are friendly and allow us to do our job unimpeded. If they aren’t as friendly or simply make our job more difficult, we would prefer if you kept them inside until our services are complete.
   </div>
+
+  
 </div>
 
+
+
+<div>
+  <input type="checkbox" id="question5" name="q" className="questions" />
+  <div className="plus">+</div>
+  <label for="question5" className="question">
+  Can I pause or stop my service if I am out of town?
+  </label>
+  <div className="answers">
+  You bet! Just log into the Dog Poopers Customer Portal and you can manage any of your account details and services.
+  </div>
+
+  
+</div>
 
 
 
