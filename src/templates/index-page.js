@@ -817,8 +817,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
      <ul className="bullet panel" >
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Locate your property on the map</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Zoom the map into 100% and  click 'Start Sizing Yard'</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click 'Start Sizing Yard' button</li>
 <li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
 <li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
 </ul>

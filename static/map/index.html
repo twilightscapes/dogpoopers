@@ -66,6 +66,8 @@
   
   <div id="map"></div>
   <div id="controls">
+    <input type="text" id="address" placeholder="Enter address" style="padding:2px" />
+    <button id="load-address" class="button">Load Address</button>
     <button id="start-with-points" style="display: none;">Start With Initial Points</button>
     <button id="start" class="button actionJackson">Start Sizing Yard</button>
     <button id="invert" class="button">Invert Colors</button>
@@ -91,7 +93,7 @@
       {"lat": 41.69547509615208, "lng": -71.36993408203125}
     ];
 
-    var map, measureTool;
+    var map, measureTool, geocoder;
 
     // Define a style to hide points of interest and other features.
     const mapStyle = [
@@ -128,6 +130,8 @@
         unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
       });
 
+      geocoder = new google.maps.Geocoder();
+
       measureTool.addListener('measure_start', () => {
         console.log('started');
       });
@@ -136,6 +140,26 @@
       });
       measureTool.addListener('measure_change', (e) => {
         console.log('changed', e.result);
+      });
+    }
+
+    document.querySelector('#load-address').addEventListener('click', () => {
+      const address = document.getElementById('address').value;
+      geocodeAddress(address);
+    });
+
+    function geocodeAddress(address) {
+      geocoder.geocode({'address': address}, (results, status) => {
+        if (status === 'OK') {
+          if (results[0].geometry.viewport) {
+            map.fitBounds(results[0].geometry.viewport);
+          } else {
+            map.setCenter(results[0].geometry.location);
+            map.setZoom(14);  // Adjust the zoom level as needed
+          }
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
       });
     }
 
