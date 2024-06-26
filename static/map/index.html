@@ -18,7 +18,7 @@
     }
     #controls {
       position: absolute;
-      top: 55px;
+      top:60px;
       right: 5px;
       display: flex;
       flex-direction: column;
@@ -36,11 +36,12 @@
       justify-content: center;
       margin: 1vh 0;
       padding: 5px clamp(.5rem, 1vw, 1rem);
-      min-width: 120px;
+      min-width: 140px;
       font-size: clamp(.7rem, 1.5vw, 2rem);
     }
     .actionJackson {
-      background: rgb(69, 255, 69);
+      background: #000;
+      color:#fff !important;
     }
     .logo {
       position: absolute;
@@ -59,6 +60,7 @@
       bottom: 5vh;
       z-index: 9999;
     }
+    /* #controls button{width:150px;} */
   </style>
 </head>
 <body>
@@ -66,12 +68,12 @@
   
   <div id="map"></div>
   <div id="controls">
-    <input type="text" id="address" placeholder="Enter address" style="padding:2px" />
+    <input type="text" id="address" placeholder="Street and City" style="padding:4px;margin:3px 0;" />
     <button id="load-address" class="button">Load Address</button>
     <button id="start-with-points" style="display: none;">Start With Initial Points</button>
-    <button id="start" class="button actionJackson">Start Sizing Yard</button>
+    <button id="start" class="button actionJackson">Size My Yard !</button>
     <button id="invert" class="button">Invert Colors</button>
-    <button id="end" class="button">Clear All Points</button>
+    <button id="end" class="button">Clear Points</button>
   </div>
 
   <script src="../dist/gmaps-measuretool.umd.js"></script>
