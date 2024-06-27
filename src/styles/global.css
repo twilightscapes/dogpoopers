@@ -1436,7 +1436,9 @@ body.blogpost .featured-image1{border:0 solid red;max-height:70vh !important;max
   body:has(.ReactModal__Content){position: fixed !important; overflow-y: hidden !important;}
 
 
-
+.ReactModalPortal .back, .ReactModalPortal .backimage, .ReactModalPortal .upbar, .ReactModalPortal footer{
+  display: none !important;
+  }
 
   /* body:has(.ReactModal__Content) .magicisland{display: none !important;} */
 
@@ -1456,7 +1458,7 @@ body:has(.ReactModal__Content) {overflow-x:hidden !important; overflow-y:hidden 
     box-shadow: none !important;
     border: 0px solid !important;
     inset: 0 !important;
-    width: 90vw !important;
+    width: 95vw !important;
     padding-top: 0 !important;
     color:rgba(11, 109, 36, 0.8)
     }
