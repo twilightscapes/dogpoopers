@@ -874,7 +874,7 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
 
 
 
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',textShadow:'none' }}>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
   Now, let's pick your plan!</div>
 
   <div style={{borderRadius:'12px', padding:'5px 0', background:'#1a6b3e', width:'99vw', margin:'0 auto'}}>
@@ -897,6 +897,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 <div className="flexbutt1 hover" style={{display:'grid', placeContent:'center', gap:'', color:'', maxWidth:'80%', padding:'3px 10px', backdropFilter: 'blur(4px)', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', textShadow:'none'}}>
 <br />
 **Your chosen service plan may be adjusted depending on actual service conditions.
+
 </div>
 
 
@@ -906,8 +907,8 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-
-
+<br />
+<br />
 
 
 
@@ -926,7 +927,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'5vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>How It All Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
