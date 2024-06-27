@@ -636,19 +636,19 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-  <div className="nameblock flexcheek" style={{position:'', top:'0', marginTop: '', padding: '1rem 2rem 0 2rem', maxHeight: '', fontSize: 'clamp(1rem, 1.4vw, 3.2rem)',  borderRadius: 'var(--theme-ui-colors-borderRadius)' }}>
+  <div className="nameblock flexcheek" style={{position:'', top:'0', marginTop: '', padding: '1rem 0 0 0', maxHeight: '', fontSize: 'clamp(1rem, 1.4vw, 3.2rem)',  borderRadius: 'var(--theme-ui-colors-borderRadius)' }}>
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2', textShadow:'rgb(0, 0, 0) 0px 2px 3px', color:'#fff' }}>{frontmatter.tagline}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2', textShadow:'rgb(0, 0, 0) 0px 2px 3px', color:'#fff' }}>{frontmatter.tagline}</h1>
 
 
 
-      <h2 className="tagline1" style={{ fontSize: 'clamp(1rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1', textShadow:'none' }}>
+      <h2 className="tagline1" style={{ fontSize: 'clamp(1.3rem, 1.3vw, 1.8rem)', textWrap:'', textAlign:'center', lineHeight:'1', textShadow:'none' }}>
         {frontmatter.profTitle}
       </h2>
       
-      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left',textWrap:'' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
+      <div style={{ fontSize: 'clamp(1.2rem, 2vw, 2.8rem)', textAlign:'left',textWrap:'',padding: '0 1rem 0 1rem' }} className="description" dangerouslySetInnerHTML={{ __html: html }} />
     </div>
 
 
@@ -818,6 +818,7 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
 
 
   <div className="faqblock" style={{width:'', maxWidth:'', display:'grid', placeContent:'center', margin:'0 auto' }}>
+
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
@@ -828,11 +829,11 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
     <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>YardStick™ - Yard Sizing Tool</span>
   </label>
 
-<div className="answers" style={{width:'100%', padding:'0'}}>
+<div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
 
-<div className="flexbutt" style={{ padding: "2vh 2% 0 2%", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
+<div className="flexbutt" style={{ padding: " 0", width:'100%', maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
-<div style={{ padding: "2vh 0", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
+<div style={{ padding: "0 10px 0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
     <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
     
     <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
@@ -883,7 +884,7 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
 
 
 
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.5rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
   Now, let's pick your plan!</div>
 
   <div style={{borderRadius:'12px', padding:'5px 0', background:'#1a6b3e', width:'99vw', margin:'0 auto'}}>
