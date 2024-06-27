@@ -849,7 +849,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 Now, let's pick your plan!</div>
 
 
-<div className="faqblock" style={{width:'80%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto' }}>
+<div className="faqblock" style={{width:'', maxWidth:'', display:'grid', placeContent:'center', margin:'0 auto' }}>
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
@@ -858,20 +858,20 @@ Now, let's pick your plan!</div>
   </label>
 
 
-  <div className="answers" style={{width:'100%'}}>
+  <div className="answers" style={{width:'100%', padding:'0'}}>
 {/* HiddenContent */}
 
 
-<div style={{borderRadius:'12px', padding:'5px 0', background:'#1a6b3e', width:'95vw', textShadow:'0 1px 0 #444'}}>
+<div style={{borderRadius:'12px', padding:'5px 0', background:'#1a6b3e', width:'92vw', margin:'0 auto'}}>
 
-<span className="vartext" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1.2rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0', fontFamily:'inherit', textShadow:'0 1px 0 #444'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
+<span className="vartext" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0 4vw', fontFamily:'inherit', textShadow:'0 1px 0 #444'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
 </stripe-pricing-table>
 </div>
 <br />
-More Options:
+<span style={{textShadow:'none', fontWeight:'bold',fontSize:'clamp(1rem, 1.2vw, 2rem)'}}>More Options:</span>
 <div className="flexbutt hover" style={{margin:'2vh auto'}} >
 <Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex',  color: '#fff', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
 <Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center',  color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
