@@ -57,7 +57,7 @@
       max-width: 200px;
       opacity: .4;
       position: absolute;
-      bottom: 5vh;
+      bottom: 80px;
       z-index: 9999;
     }
     #controls input::placeholder{color:#000}
@@ -157,7 +157,7 @@
             map.fitBounds(results[0].geometry.viewport);
           } else {
             map.setCenter(results[0].geometry.location);
-            map.setZoom(14);  // Adjust the zoom level as needed
+            map.setZoom(20);  // Adjust the zoom level as needed
           }
         } else {
           alert('Geocode was not successful for the following reason: ' + status);

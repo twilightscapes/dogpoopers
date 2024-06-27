@@ -1230,8 +1230,8 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
 
 
 iframe.virtualtour{
-	filter: invert(40%) grayscale(1);
-  -webkit-filter: sepia(90%) hue-rotate(90deg);
+	filter: invert(70%) grayscale(1);
+  -webkit-filter: sepia(100%) hue-rotate(80deg);
 
 }
 
