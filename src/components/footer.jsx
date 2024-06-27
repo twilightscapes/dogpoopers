@@ -308,7 +308,7 @@ export default function Footer() {
 { showLegal ? (
   <>
 <div style={{display:'flex', justifyContent:'center', gap:'1rem', width:'100%', minWidth:'380px' }}><Link state={{modal: false}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: false}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: false}} to="/terms/">{dicTerms}</Link></div>
-<br /><Link state={{modal: true}} to="/portal">Customer Portal</Link>
+<br /><Link state={{modal: false}} to="/portal">Customer Portal</Link>
  </>
 ) : (
 ""

@@ -84,9 +84,9 @@ function Portal() {
 
 {/* <strong>Don't worry - we handle all the hard stuff for you!</strong> */}
 
-<div className="panel2" style={{paddingTop:'6vh', width:'100%',textAlign:'',}}>
+<div className="panel2" style={{paddingTop:'6vh', width:'100%',textAlign:'center',}}>
 <h3 style={{ fontSize:'clamp(1rem, 1.8vw, 3.2rem)', color:''}}>Welcome to the Pooper Portal</h3>
-<ul className="bullet panel" >
+<ul className="bullet panel" style={{ fontSize:'clamp(1rem, 1.8vw, 3.2rem)', display:'grid', justifyContent:'center', flexDirection:'column', gap:'1vh',}} >
 <li>💩 Easily manage your Pooper services</li>
 <li>💩 Pause or change your service plans</li>
 <li>💩 Communicate with your technician</li>
