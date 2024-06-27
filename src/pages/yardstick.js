@@ -41,7 +41,7 @@ function YardStick() {
 
 <div className="flexbutt" style={{ padding: "2vh 2% 0 2%", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
-<div style={{ padding: "2vh 0", width:'100%',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
+<div style={{ padding: "2vh 0", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
     <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
     
     <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'0 0 12px 12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
@@ -49,7 +49,7 @@ function YardStick() {
     <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
     
     <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} />
-    <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>Dog Poopers YardStick™ Technology</span>
+    <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>YardStick™ - Yard Sizing Tool</span>
     </div>
 </div>
 
@@ -57,8 +57,8 @@ function YardStick() {
     
     {/* <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
 
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'125px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
-    <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers YardStick™</div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
+    <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers YardStick tool</div>
 
 
 
@@ -72,6 +72,11 @@ function YardStick() {
     </div>
 
   </div>
+
+
+
+
+
 
 
 
