@@ -640,9 +640,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className=" mob print" style={{ position:'sticky', top:'0', fontSize: 'clamp(1rem, 1.5vw, 3.2rem)', textAlign:'' }}>
-      <h1 className="title1" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2' }}>{frontmatter.tagline}</h1>
+      <h1 className="title1" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 3rem)', textWrap:'balance', textAlign:'center', lineHeight:'1.2', textShadow:'rgb(0, 0, 0) 0px 2px 3px', color:'#fff' }}>{frontmatter.tagline}</h1>
 
-      <h2 className="tagline1" style={{ fontSize: 'clamp(1rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1' }}>
+
+
+      <h2 className="tagline1" style={{ fontSize: 'clamp(1rem, 1.3vw, 1.8rem)', textWrap:'balance', textAlign:'center', lineHeight:'1', textShadow:'none' }}>
         {frontmatter.profTitle}
       </h2>
       
@@ -669,12 +671,12 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
             ""
           )} */}
 
-<h3 style={{textAlign:'center'}}><a href="tel:6013851781">Call (601) 385-1781</a></h3>
+<h3 style={{textAlign:'center', fontSize: 'clamp(1.3rem, 2.4vw, 3rem)'}}><a href="tel:6013851781">Call (601) 385-1781</a></h3>
 
 
 <ul className="tags" style={{maxWidth:'clamp(380px, 90%, 600px)', padding: '2%'}}>
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.4vw, 2rem)', textAlign:'center', textShadow: '0 2px 3px #000', color:'#fff' }}>
-    <h4 style={{textAlign:'center'}}>Serving All Of South Mississippi:</h4>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.4vw, 2rem)', textAlign:'center',  color:'' }}>
+    <h4 style={{textAlign:'center', fontFamily:'inherit'}}>Serving All Of South Mississippi</h4>
   </div>
   
   <li className="tag">Gulfport</li>
