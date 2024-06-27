@@ -843,7 +843,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-  <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Awesome!</h2>
+  <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Great!</h2>
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',color:'#fff' }}>
 Now, let's pick your plan!</div>
@@ -1053,7 +1053,7 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
   <input type="checkbox" id="question5" name="q" className="questions" />
   <div className="plus">+</div>
   <label for="question5" className="question">
-  Can I pause or stop my service if I am out of town?
+  Can I pause my service if I am out of town?
   </label>
   <div className="answers">
   You bet! Just log into the Dog Poopers Customer Portal and you can manage any of your account details and services.

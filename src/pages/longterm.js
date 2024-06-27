@@ -20,7 +20,7 @@ const Driver = () => {
 
 
  <section className="outer section section--gradient" >
- <div className="container" style={{padding: '0 0', minHeight:'100dvh'}}>
+ <div className="container" style={{padding: '0 0', minHeight:''}}>
         
       {/* <div className="mobile"><GoBack /></div> */}
 

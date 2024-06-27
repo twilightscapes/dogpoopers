@@ -11,7 +11,7 @@ const Thanks = () => {
  <Layout className="thanks-page">
  <Seo title={`Thanks!`} />
 
-<section className="outer section section--gradient" >
+<section className="outer section " >
       <div className="container" style={{padding: '30px 0', minHeight:'100dvh'}}>
         
       {/* <div className="mobile"><GoBack /></div> */}

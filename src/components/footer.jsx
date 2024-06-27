@@ -212,7 +212,7 @@ export default function Footer() {
   <>
 
     {showfooter ? (
-      <footer className="panel" style={{display:'flex', flexDirection:'column', zIndex:'', justifyContent:'end', padding:'0 0 60px 0', marginTop:'0', width:'100vw',textAlign:'center', color:'#fff', background:'rgba(0,0,0,0.80)',
+      <footer className="panel" style={{display:'flex', flexDirection:'column', zIndex:'', justifyContent:'end', padding:'0 0 60px 0', marginTop:'0', width:'100%',textAlign:'center', color:'#fff', background:'rgba(0,0,0,0.80)',
         backdropFilter:'blur(8px)', paddingTop: showFooterMenu ? '100px' : '0'}}>
 
 {showConsent ? (
@@ -304,7 +304,7 @@ export default function Footer() {
 
 
       
-        <div style={{width:'100vw', textAlign: 'center', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', display:'grid', margin:'1rem auto'}}>
+        <div style={{width:'100%', textAlign: 'center', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', display:'grid', margin:'1rem auto'}}>
 { showLegal ? (
   <>
 <div style={{display:'flex', justifyContent:'center', gap:'1rem', width:'100%', minWidth:'380px' }}><Link state={{modal: false}} to="/disclaimer/">{dicDisclaimer}</Link> | <Link state={{modal: false}} to="/privacy/">{dicPrivacy}</Link> | <Link state={{modal: false}} to="/terms/">{dicTerms}</Link></div>
