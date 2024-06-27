@@ -806,18 +806,18 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
     
 
 
-    <Link to="/yardstick" state={{modal: true}} className=" button" style={{cursor:'pointer'}}>
+    {/* <Link to="/yardstick" state={{modal: true}} className=" button" style={{cursor:'pointer'}}>
   <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
     
     <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} />
     <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>YardStick™ - Yard Sizing Tool</span>
-  </Link>
+  </Link> */}
 
 
 
 
 
-  {/* <div className="faqblock" style={{width:'', maxWidth:'', display:'grid', placeContent:'center', margin:'0 auto' }}>
+  <div className="faqblock" style={{width:'', maxWidth:'', display:'grid', placeContent:'center', margin:'0 auto' }}>
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
@@ -846,7 +846,7 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
 
     <div className="flexcheek" style={{width:'400px'}}>
     
-    <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
+    {/* <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
     <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers YardStick tool</div>
@@ -868,7 +868,7 @@ First, let's figure out the size of your yard.<br />Open the Dog Pooper's yard s
 </div>
 
 </div>
-</div> */}
+</div>
 
 
 
