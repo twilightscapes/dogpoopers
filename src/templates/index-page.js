@@ -896,7 +896,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 </stripe-pricing-table>
 </div>
 <br />
-<span style={{textShadow:'none', fontWeight:'bold',fontSize:'clamp(1rem, 1.2vw, 2rem)'}}>More Options:</span>
+<span style={{textShadow:'none', fontWeight:'bold',fontSize:'clamp(1rem, 1.6vw, 2rem)'}}>More Options:</span>
 <div className="flexbutt hover" style={{margin:'2vh auto'}} >
 <Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex',  color: '#fff', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
 <Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center',  color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
@@ -1104,24 +1104,24 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto 5vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2>Some of our happy customers</h2>
   </div>
 
 <div className="slider"
-style={{height:'', border:'0px solid', }}
+style={{maxHeight:'500px', border:'0px solid', }}
 onWheel={handleScroll}
 ref={scrollRef}
 >
 
-<div className="quotecard" style={{marginLeft:'-25vw'}}>
+<div className="quotecard" style={{marginLeft:'15vw'}}>
 
 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
-    <StaticImage src="../../static/assets/twitch.jpg" alt="Default Image" style={{height:'150px', width:'150px', maxHeight:'', position:'relative', zIndex:'', top:'0', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
+    <StaticImage src="../../static/assets/twitch.jpg" alt="Default Image" style={{height:'150px', width:'150px', maxHeight:'', position:'relative', zIndex:'', top:'0', left:'', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />
   Twitch
 </div>
 
-  <blockquote style={{width:'30vw', position:'relative'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<span>- Poopless in Biloxi</span></blockquote>
+  <blockquote style={{width:'85%', minWidth:'300px', position:'relative', fontsize:'clamp(.8rem, 1vw, 1.5rem)'}}>Dog Poopers has been a game-changer for us. No more arguing about whose turn it is to pick up the poop. The yard is always clean, and our dogs are happy<span>- Poopless in Biloxi</span></blockquote>
 
 
 </div>
@@ -1134,7 +1134,7 @@ ref={scrollRef}
   Lexy
 </div>
 
-  <blockquote style={{width:'25vw'}}>My hooman loves me and always make sure my yard is clean every week. <span>- Turd free in Gulfport</span></blockquote>
+<blockquote style={{width:'85%', minWidth:'300px', position:'relative', fontsize:'clamp(.8rem, 1vw, 1.5rem)'}}>My hooman loves me and always make sure my yard is clean every week. <span>- Turd free in Gulfport</span></blockquote>
 
 
 </div>
@@ -1146,7 +1146,7 @@ ref={scrollRef}
   Buddy
 </div>
 
-<blockquote style={{width:'25vw'}}>Dog Poopers has transformed our yard. The service is consistent, thorough, and a great value. I recommend them to every dog owner I know <span>- Clean and fresh in Long Beach</span></blockquote>
+<blockquote style={{width:'85%', minWidth:'300px', position:'relative', fontsize:'clamp(.8rem, 1vw, 1.5rem)'}}>Dog Poopers has transformed our yard. The service is consistent, thorough, and a great value. I recommend them to every dog owner I know <span>- Clean and fresh in Long Beach</span></blockquote>
 </div>
 
 <div className="quotecard" style={{width:''}}>
@@ -1156,7 +1156,7 @@ ref={scrollRef}
   Rex
 </div>
 
-<blockquote style={{width:'25vw'}}>With three dogs, keeping the yard clean was a constant challenge. Dog Poopers made it easy and stress-free. Their team is friendly, and the results speak for themselves<span>- Happy dogs in Woolmarket</span></blockquote>
+<blockquote style={{width:'85%', minWidth:'300px', position:'relative', fontsize:'clamp(.8rem, 1vw, 1.5rem)'}}>With three dogs, keeping the yard clean was a constant challenge. Dog Poopers made it easy and stress-free. Their team is friendly, and the results speak for themselves<span>- Happy dogs in Woolmarket</span></blockquote>
 </div>
 
 </div>
