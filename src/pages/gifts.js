@@ -29,7 +29,7 @@ const Gifts = () => {
 
 <div style={{width:'100%', height:'', margin:'0 auto', textAlign:'center',}}>
 
-<StaticImage src="../../static/assets/dogpoopers-header-longterm.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'cover', margin:'0 auto'}} />
+<StaticImage src="../../static/assets/dogpoopers-header-gift.webp" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'cover', margin:'0 auto'}} />
 
 {/* <p>
 <strong>Hytron Manufacturing, Inc.</strong><br />
