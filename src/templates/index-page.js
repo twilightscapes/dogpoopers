@@ -900,7 +900,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 <div className="flexbutt hover" style={{margin:'2vh auto'}} >
 <Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex',  color: '#fff', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
 <Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center',  color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
-<Link to='/contact' state={{modal: true}} className="print hover" style={{ display: 'flex', color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><AiOutlineGift style={{fontSize:'30px', marginRight:'1rem'}} />Gift certificates are available</Link>
+<Link to='/gifts' state={{modal: true}} className="print hover" style={{ display: 'flex', color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><AiOutlineGift style={{fontSize:'30px', marginRight:'1rem'}} />Gift certificates are available</Link>
 </div>
 
 
@@ -920,7 +920,8 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 <br />
 <br />
 
-
+<br />
+<br />
 
 
 

@@ -76,12 +76,23 @@ const Contact = ({ data }) => {
 
 <StaticImage src="../../static/assets/dogpoopers-contact-header.webp" alt="Default Image" style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', zIndex:'1', top:'0', left:'0', right:'0', border:'0px solid #888 !important', objectFit:'contain', margin:'0'}} />
 
-      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "0", background: 'rgba(0,0,0,0.30)' }}>
+      <div className="container panel" style={{ maxWidth: "1024px", margin: "0 auto", paddingTop: "0", background: '' }}>
 
-        {/* <div style={{ padding: "3vh 6% 0 6%", textAlign:'center' }} dangerouslySetInnerHTML={{ __html: html }} /> */}
+        
 
         {showContact ? (
-          <div className="wrapper flexbutt" style={{ padding: "0 10% 10vh 10%", maxWidth: "", margin: "0 auto", display: "flex", flexDirection: "", justifyContent: "center" }}>
+          <div className="wrapper flexbutt" style={{ padding: "4vh 2% 10vh 2%", maxWidth: "", margin: "0 auto", display: "flex", flexDirection: "", justifyContent: "center" }}>
+
+<div className="flexcheek" style={{padding:'5vh 0', width:'100%', order:'2'}}>
+<div style={{ padding: "3vh 0 0 0", textAlign:'center', color:'' }} dangerouslySetInnerHTML={{ __html: html }} />
+<br />
+<br />
+<div style={{textAlign:'center',}}>Please feel free to contact us<br /><br /><br />Customer Service #</div>
+<h3 style={{textAlign:'center', fontSize: 'clamp(1.3rem, 2vw, 3rem)'}}><a href="tel:6013851781">(601) 385-1781</a></h3>
+</div>
+
+
+<div className="flexcheek" style={{width:'100%', order:'1'}}>
             <form
               className={`contact-form flexcheek1`}
               name="contact"
@@ -94,6 +105,8 @@ const Contact = ({ data }) => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
+                 background: 'rgba(0,0,0,0.30)',
+                 padding:'0 3%', borderRadius:'10px'
               }}
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -149,6 +162,7 @@ const Contact = ({ data }) => {
                 </button>
               </p>
             </form>
+</div>
           </div>
         ) : (
           "Please Upgrade to Plus"

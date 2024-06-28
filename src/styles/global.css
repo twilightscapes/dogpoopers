@@ -1436,7 +1436,7 @@ body.blogpost .featured-image1{border:0 solid red;max-height:70vh !important;max
   body:has(.ReactModal__Content){position: fixed !important; overflow-y: hidden !important;}
 
 
- .ReactModalPortal .backimage, .ReactModalPortal .upbar, .ReactModalPortal footer{
+ .ReactModalPortal .backimage, .ReactModalPortal #pwabanner, .ReactModalPortal .upbar, .ReactModalPortal footer{
   display: none !important;
   }
 

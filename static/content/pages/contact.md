@@ -11,4 +11,5 @@ scrollable: false
 uploadtext: ""
 excludeFromRSS: true
 ---
-Contact Us!
+
+<h2>Thank you for your interest in Dog Poopers</h2>
