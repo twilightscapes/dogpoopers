@@ -1114,7 +1114,7 @@ onWheel={handleScroll}
 ref={scrollRef}
 >
 
-<div className="quotecard" style={{marginLeft:'15vw'}}>
+<div className="quotecard" style={{marginLeft:'25vw'}}>
 
 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
     <StaticImage src="../../static/assets/twitch.jpg" alt="Default Image" style={{height:'150px', width:'150px', maxHeight:'', position:'relative', zIndex:'', top:'0', left:'', border:'1px solid !important', objectFit:'contain', margin:'0 auto'}} /><br />

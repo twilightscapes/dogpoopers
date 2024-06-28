@@ -81,7 +81,7 @@ const PWAInstaller = () => {
 
                 
 
-                  <div className="font" style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(.9rem, 1.7vw, 1.2rem)', }}>Install Customer Billing Portal</div>
+                  <div className="font" style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(.7rem, 1.7vw, 1.2rem)', textWrap:'balance' }}>Install Customer Billing Portal</div>
 
                   <div style={{display:'flex', alignItems:'center', textShadow:'0 1px 1px #000', fontSize: 'clamp(.8rem,2vw,1rem)'}}>Click <span style={{position:'', display:'block', top:'', left:'',}}><MdOutlineIosShare style={{fontSize:'30px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span> then "Add To Home Screen"</div>
 
