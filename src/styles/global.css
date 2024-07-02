@@ -1827,7 +1827,7 @@ padding-top: 12vh;
 
 .slider:after{border-radius:var(--theme-ui-colors-borderRadius);display:flex;flex-direction:column;justify-content:center;margin:auto;padding:10px;text-shadow:0 1px 1px var(--theme-ui-colors-textShadow); z-index:3}
 
-.slider:before{animation:fadeout 4s forwards;animation-delay:4s;background:rgba(0,0,0,.7);border-radius:var(--theme-ui-colors-borderRadius);bottom:50px;color:#fff;content:" 〈 swipe ";display:flex;flex-direction:column;font-size:clamp(1.3rem,2.5vw,2.8rem);justify-content:center;margin:auto;opacity:.7;padding:10px;position:absolute;right:10vw;text-shadow:0 1px 1px var(--theme-ui-colors-textShadow);z-index:2}
+.slider:before{animation:fadeout11 4s forwards;animation-delay:4s;background:rgba(0,0,0,.7);border-radius:var(--theme-ui-colors-borderRadius);color:#fff;content:" 〈 swipe ";display:flex;flex-direction:column;font-size:clamp(1.3rem,2.5vw,2.8rem);justify-content:center;margin:auto;opacity:.7;padding:10px;position:absolute;right:10vw;bottom:10px;text-shadow:0 1px 1px var(--theme-ui-colors-textShadow);z-index:2}
 
 /* body:has(.ReactModal__Content) .pagemenu:first-of-type{ display:none !important;} */
 /* body.homepage .ReactModalPortal .pagemenu:first-of-type{ display:none !important;} */
