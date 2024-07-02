@@ -45,6 +45,7 @@ $alpha-black: rgba(0, 0, 0, 1);
 .segment-measure-text {
   pointer-events: none;
   stroke: black;
+  font-size: 16px;
   text-shadow: -2.4px -2.4px $alpha-white, -2.4px 2.4px $alpha-white,
     2.4px 2.4px $alpha-white, 2.4px -2.4px $alpha-white, -2.4px 0 $alpha-white,
     0 2.4px $alpha-white, 2.4px 0 $alpha-white, 0 -2.4px $alpha-white;
@@ -59,6 +60,7 @@ $alpha-black: rgba(0, 0, 0, 1);
 
 .node-measure-text {
   stroke: black;
+  font-size: 20px;
   text-shadow: -2.4px -2.4px $alpha-white, -2.4px 2.4px $alpha-white,
     2.4px 2.4px $alpha-white, 2.4px -2.4px $alpha-white, -2.4px 0 $alpha-white,
     0 2.4px $alpha-white, 2.4px 0 $alpha-white, 0 -2.4px $alpha-white;
