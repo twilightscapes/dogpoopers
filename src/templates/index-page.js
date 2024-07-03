@@ -675,8 +675,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <ul className="tags" style={{maxWidth:'clamp(380px, 90%, 600px)', padding: '2%'}}>
-<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.1/3rem, 1.4vw, 2rem)', textAlign:'center',  color:'' }}>
-    <h4 style={{textAlign:'center', fontFamily:'inherit'}}>Serving All Of South Mississippi</h4>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100%', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1/2.7rem, 1.3vw, 2rem)', textAlign:'center',  color:'' }}>
+    <h4 style={{textAlign:'center', fontFamily:'inherit'}}>Serving all of South Mississippi</h4>
   </div>
   
   <li className="tag">Gulfport</li>
@@ -691,7 +691,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   <li className="tag">Saucier</li>
   <li className="tag">Pass Christian</li>
   <li className="tag">Gautier</li>
-  <div style={{background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5%', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
+  <div style={{background:'rgba(8, 44, 20, 0.4)', backdropFilter:'blur(12px)', marginTop:'2vh', padding:'1vh 5%', color:'#fff', borderRadius:'var(--theme-ui-colors-borderRadius)', fontSize:'clamp(1rem, 1.8vw, 3.2rem)'}}>Interested in the Dog Poopers business?<br /><Link to='/contact' state={{modal: false}} className=" print" style={{ display: 'flex', justifyContent: 'center', padding:'', maxWidth:'', margin:'1vh auto', }}>Contact Us Today 💩</Link></div>
 </ul>
 {/* <div className="nameblock font" style={{margin:'0 auto 0 auto', padding:'0 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
@@ -781,7 +781,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 
-<div className="" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0 0 0 0', margin:'0 0 0 0', maxHeight: '', textAlign:'center', textShadow: '0 2px 3px #000', background:'', backdropFilter:'blur(12px)', color:'' }}>
+<div className="" style={{position:'', top:'', marginTop: '', width:'100vw', padding: '0', margin:'0 0 0 0', maxHeight: '', textAlign:'center', textShadow: '0 2px 3px #000', background:'', backdropFilter:'blur(12px)', color:'' }}>
 
 
   <div className="">
@@ -790,7 +790,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   {/* <h2 style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', margin:'2px auto', textDecoration:'none', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1.4rem, 3vw, 2.8rem)', color:'#fff' }}>Get Started Today!</h2> */}
 
 
-  <div className="" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+  <div className="" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(8, 44, 20, 0.9)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2 className="glow">Get Started Today!</h2>
   </div>
 
@@ -825,7 +825,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div style={{ padding: "0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
   
-<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'4px 1rem 0 1rem', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' , gap:''}}>
+<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'4px 1rem 0 1rem', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background:'rgba(8, 44, 20, 0.9)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' , gap:''}}>
 
 <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
 
@@ -845,11 +845,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
     
 </div>
 
-    <div className="flexcheek" style={{width:'400px'}}>
+    <div className="flexcheek" style={{width:'400px', marginRight:'2%'}}>
     
     {/* <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
 
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(8, 44, 20, 0.9)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
     <TbRulerMeasure style={{marginRight:'8px', fontSize:'50px'}} />Using Dog Poopers YardStick tool</div>
 
 
@@ -884,9 +884,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
 
 
-<div style={{borderRadius:'12px', padding:'5px 0', background:'#1a6b3e', width:'99vw', margin:'0 auto'}}>
+<div style={{borderRadius:'12px', padding:'5px', background:'rgba(8, 44, 20, 0.9)', width:'99vw', margin:'0 auto'}}>
 
-<span className="vartext" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'0 4vw', fontFamily:'inherit', textShadow:'0 1px 0 #444'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
+<span className="vartext" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'.4vh 4vw', fontFamily:'inherit', textShadow:'0 1px 0 #444'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"
 publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCWdsAdiLDaLZ3Kfal2jTTitRIDC2azwyuwgl00T2NoCR5m">
@@ -895,9 +895,9 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 <br />
 <span style={{textShadow:'none', fontWeight:'bold',fontSize:'clamp(1rem, 1.6vw, 2rem)'}}>More Options:</span>
 <div className="flexbutt hover" style={{margin:'2vh auto'}} >
-<Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex',  color: '#fff', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
-<Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center',  color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
-<Link to='/gifts' state={{modal: true}} className="print hover" style={{ display: 'flex', color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.80)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><AiOutlineGift style={{fontSize:'30px', marginRight:'1rem'}} />Gift certificates are available</Link>
+<Link to='/longterm' state={{modal: true}} className="print hover" style={{ display: 'flex',  color: '#fff', alignItems:'center', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.90)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><PiCalendarDuotone style={{fontSize:'30px', marginRight:'1rem'}} /> Long-term plans save even more!</Link>
+<Link to='/single' state={{modal: true}} className="print hover" style={{ display: 'flex', alignItems:'center',  color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.90)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><MdOutlineCleaningServices style={{fontSize:'30px', marginRight:'1rem'}} /> Just need a single cleaning?</Link>
+<Link to='/gifts' state={{modal: true}} className="print hover" style={{ display: 'flex', color: '#fff', padding:'1vh 3vw', maxWidth:'80%', minWidth:'350px', margin:'2px auto', textDecoration:'underline', borderRadius:'12px', margin:'5px auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1.2vw, 2rem)', background: 'rgba(0,0,0,0.90)',  backdropFilter: 'blur(4px)', border:'1px solid #333' }}><AiOutlineGift style={{fontSize:'30px', marginRight:'1rem'}} />Gift certificates are available</Link>
 </div>
 
 
@@ -957,7 +957,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(8, 44, 20, 0.9)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2 className="glow">How It Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
@@ -1124,7 +1124,7 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
 
 
 
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto 5vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto 5vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(8, 44, 20, 0.9)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2 className="glow">Our Happy Customers</h2>
   </div>
 
@@ -1189,7 +1189,7 @@ ref={scrollRef}
 
 
   
-<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '',fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
+<div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '',fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh', textShadow: '0 2px 3px #000', background:'rgba(8, 44, 20, 0.9)', backdropFilter:'blur(12px)', color:'#fff' }}>
     <h2 className="glow">Our Latest News</h2>
   </div>
 

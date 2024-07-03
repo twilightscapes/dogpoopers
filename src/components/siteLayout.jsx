@@ -304,7 +304,8 @@ const Layout = ({ children }) => {
 
 
 {iconimage ? (
-          <img className="cornerlogo1" style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" />
+  <Link state={showModals ? { modal: true } : {}} to="/" className="cornerlogo" name="homereturnbottom" aria-label="Link to Top" title="Back to Top">
+          <img className="cornerlogo1" style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" /></Link>
         ) : (
           <div style={{ fontWeight: '', display: 'grid', justifyContent: 'center', alignItems: 'center', height: '', fontSize: 'clamp(.9rem,2vw,1rem)', color: 'var(--theme-ui-colors-headerColorText)', maxWidth: '50vw' }}>
             {companyname}

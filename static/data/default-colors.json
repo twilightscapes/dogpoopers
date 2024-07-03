@@ -1,7 +1,7 @@
 {
   "siteColor": "hsl(133, 47%, 54%)",
   "siteColorText": "#fff",
-  "headerColor": "hsl(147, 61%, 26%)",
+  "headerColor": "hsl(0, 0, 0, .8)",
   "headerColorText": "#eee",
   "siteBackground": "hsl(146, 23%, 82%)",
   "text": "hsl(133, 39%, 34%)",
