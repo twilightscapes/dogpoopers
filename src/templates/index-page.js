@@ -795,7 +795,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'' }}>
+<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
 <span>Let's figure out your yard size</span>
 {/* <br />Open the Dog Pooper's yard sizing tool. */}
 </div>
@@ -866,7 +866,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-  <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'' }}>
+  <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
 
   <span>Now, let's pick your plan!</span>
   </div>
