@@ -791,7 +791,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className="" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2>Get Started Today!</h2>
+    <h2 className="glow">Get Started Today!</h2>
   </div>
 
 
@@ -823,18 +823,24 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
   <div className="flexbutt" style={{ padding: " 0", width:'100%', maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
-<div style={{ padding: "0 10px 0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
-<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' }}>
+<div style={{ padding: "0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
+  
+<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'4px 1rem 0 1rem', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' , gap:''}}>
 
 <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
 
-<TbRulerMeasure style={{marginRight:'5px', fontSize:'50px', marginRight:'1.4rem'}} />
-<div style={{display:'flex', flexDirection:'column'}}><span style={{fontSize:'clamp(1.6rem, 2.2vw, 2.8rem)'}}>YardStick™</span>
-<span style={{fontSize:'clamp(.8rem, 1vw, 1.2rem)'}}>Yard Sizing Tool</span>
-</div>
+<TbRulerMeasure style={{fontSize:'5rem', margin:'0 1.4rem 0 0', lineHeight:'1', padding:'0', margin:'0 20px 0 0'}} />
+
+<div className="" style={{display:'flex', flexDirection:'column', padding:'0', margin:'0', gap:'5px', alignItems:'center', position:'relative',fontSize:'clamp(1.3rem, 2.2vw, 2.8rem)', padding:'0', margin:'0', lineHeight:'1'}}>
+  
+  <span className="glow">Dog Poopers YardStick</span>
+  {/* <div style={{fontSize:'50%', posiition:'absolute', top:'-10px'}}>™</div> */}
+<div style={{fontSize:'clamp(1rem, 1.5vw, 2.2rem)', padding:'4px 0 0 0', margin:'0', lineHeight:'1'}}>Yard Sizing Tool</div>
 </div>
 
-    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'1vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
+</div>
+
+    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'.5vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
     
     
 </div>
@@ -868,11 +874,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
-  <label for="getstarted" className=" button" style={{cursor:'pointer'}}>
+  <label for="getstarted" className=" button glow" style={{cursor:'pointer'}}>
   {/* <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div> */}
     
     {/* <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} /> */}
-    <span style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
+    <span className="glow" style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
   </label>
 
 <div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
@@ -952,7 +958,7 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 
 <div className="nameblock flexcheek" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2>How It All Works</h2>
+    <h2 className="glow">How It All Works</h2>
   </div>
 <section id="SecondaryInfo4" order="" className="nameblock" style={{margin:'0 auto 0 auto', padding:'0 4% 10vh 0',alignContent:'center', display:'grid', textAlign:'left', justifyContent:'center', verticalAlign:'center',
   color:'var(--theme-ui-colors-text)',
@@ -1119,7 +1125,7 @@ Yes, we usually tough it out and do our pick ups in adverse weather. If for some
 
 
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto 5vh auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2>Some of our happy customers</h2>
+    <h2 className="glow">Some of our happy customers</h2>
   </div>
 
 <div className="slider"
@@ -1184,7 +1190,7 @@ ref={scrollRef}
 
   
 <div className="nameblock flexcheek" style={{position:'', top:'', marginTop: '', width:'100%', padding: '1vh 2vh', margin:'0 auto', maxHeight: '',fontSize:'clamp(1.4rem,3.9vw,4rem)', textAlign:'center', position:'relative', top:'10vh', textShadow: '0 2px 3px #000', background:'rgba(0,0,0,0.50)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2>Our Latest News</h2>
+    <h2 className="glow">Our Latest News</h2>
   </div>
 
     <HomePosts isSliderVisible={isSliderVisible} className="scroll-area" id="posttop" name="posttop" style={{minHeight:'', width:'100vw'}} />

@@ -2249,6 +2249,6 @@ body:has(.ReactModal__Content) .upbar{ transform:translateY(0);}
 
 
       
-      .numblist1 span { backdrop-filter: blur(12px); color: #fff; font-size:clamp(1.4rem, 3.4vw, 4rem); font-weight: 700; font-style: italic; border-radius:0.675em; text-align: center;  transition: all 0.2s ease-in-out; padding:.8rem 2rem; margin-right:1rem; text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(8, 202, 44),0px 12px 10px rgb(240, 240, 240),0 2px rgb(39, 227, 102),0 5px 2px rgb(39, 227, 99),0 0 2px rgb(39, 227, 80),0 0 2px rgb(39, 227, 86),0 0 1px rgb(39, 227, 77);
+      .glow { color: #fff; font-weight: 700; font-style: italic; border-radius:0.675em; text-align: center;  transition: all 0.2s ease-in-out; text-shadow: .3vw .2vh .2vw #444, 0 8px 20px rgb(8, 202, 44),0px 5px .3vw rgb(240, 240, 240),0 2px rgb(39, 227, 102),0 5px .6vw rgb(39, 227, 99),0 0 .6vw rgb(39, 227, 80),0 0 .6vw rgb(39, 227, 86),0 0 .6vw rgb(39, 227, 77);
       } 
       
