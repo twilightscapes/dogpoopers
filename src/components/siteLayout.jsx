@@ -23,12 +23,28 @@ import userStyles from "../../static/data/userStyles.json"
 import Switch from "../components/Switch"
 import BlueCheck from './bluecheck';
 import Footer from "../components/footer"
-import PwaInstaller from "../components/PwaInstaller"
 
+import { RiCloseCircleFill } from "react-icons/ri";
+import { MdOutlineIosShare } from "react-icons/md";
 
 const Layout = ({ children }) => {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
+  const [isInstalled, setisInstalled] = useState(true);
+  useEffect(() => {
+    const storedisInstalled = localStorage.getItem("isInstalled");
+    setisInstalled(storedisInstalled === "true");
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("isInstalled", isInstalled);
+  }, [isInstalled]);
+
+  // const MenuIcon = isInstalled ? RiCloseCircleFill : Flag;
+
+  const handleButtonClick = () => {
+    setisInstalled(!isInstalled);
+  };
 
   function isRunningStandalone() {
     if (typeof window !== 'undefined') {
@@ -166,13 +182,13 @@ const Layout = ({ children }) => {
 
 
 
-            {socialMenuPages.some(page => currentPage.startsWith(page)) ? <SocialMenu /> : <Menu />}
+            {socialMenuPages.some(page => currentPage.startsWith(page)) ? <SocialMenu /> : ""}
 
 
               {/* <li key="demo"><Link to="/pirate">View Demo</Link></li> */}
             </ul>
 
-            <div id="missioncontrol" className="missioncontrol sitecontrols" style={{ display: 'flex', justifyContent: 'space-around', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '3vw', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px' }}>
+            <div id="missioncontrol" className="missioncontrol sitecontrols" style={{ display: 'flex', justifyContent: 'space-around', fontSize: 'clamp(.8rem, 2.3vw, 2.5rem)', gap: '3vw', textAlign: 'center', maxHeight: '', alignItems: 'center', paddingTop: '5px', paddingRight:'5vw' }}>
 
               {showSearch ? (
                 <div className="searchIcon">
@@ -249,6 +265,78 @@ const Layout = ({ children }) => {
       
         {children}
 
+
+      {showPWA ? (
+<>
+{!isRunningStandalone() && (
+  <div id="pwabanner" className="upbar" style={{transform: showBackToTop ? 'translateY(0)' : 'translateY(300%)', position:'fixed', bottom:'0', display: isInstalled ? "none" : "flex",  alignItems:'center', fontSize: 'clamp(.9rem,2vw,1rem)', background:'rgba(0,0,0,0.80)', backdropFilter:'blur(12px)', color:'var(--theme-ui-colors-siteColorText)', marginBottom:'0px', padding:'0px 40px 15px 0', width:'100vw', zIndex:'10' }}>
+
+<button
+  className="flag1 bug1"
+  onClick={handleButtonClick}
+  aria-label={isInstalled ? "Collapse menu" : "Expand menu"}
+  style={{
+    cursor: "pointer",
+    padding: "0",
+    fontSize: "clamp(3rem, 3vw, 3rem)",
+    position: "absolute",
+    top: "25px",
+    right: "0",
+    width: "",
+    height: isInstalled ? "60px" : "60px",
+    zIndex: "4",
+    display: "flex",
+    flexDirection: "column",
+    justifySelf: "flex-start",
+    textAlign: "center",
+    overflow: "hidden", // Hides content when height is set to 0
+    transition: "height 0.3s ease", // Smooth transition for height change
+  }}
+>
+  {isInstalled ? (
+    <RiCloseCircleFill style={{ height: "100%", maxHeight: "20px", top: "0", zIndex: "4", color: "#fff" }} />
+  ) : (
+    <RiCloseCircleFill style={{ height: "100%", maxHeight: "20px", top: "0", zIndex: "4", color: "#fff" }} />
+  )}
+</button>
+
+
+
+
+{iconimage ? (
+          <img className="cornerlogo1" style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" />
+        ) : (
+          <div style={{ fontWeight: '', display: 'grid', justifyContent: 'center', alignItems: 'center', height: '', fontSize: 'clamp(.9rem,2vw,1rem)', color: 'var(--theme-ui-colors-headerColorText)', maxWidth: '50vw' }}>
+            {companyname}
+          </div>
+        )}
+
+
+
+
+
+          <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'0px', textAlign:'center', justifyContent:'center', padding:'0 0 0 0', margin:'8px auto 0 auto', border:'0px solid blue', width:'', maxWidth:'', fontSize: 'clamp(.8rem,1.5vw,1.5rem)', fontWeight:'bold', position:'relative'}}>
+
+          
+
+            <div className="font" style={{display:'block', textShadow:'0 1px 1px #000',fontSize: 'clamp(.7rem, 1.7vw, 1.2rem)', textWrap:'balance' }}>Install Customer Billing Portal</div>
+
+            <div style={{display:'flex', alignItems:'center', textShadow:'0 1px 1px #000', fontSize: 'clamp(.8rem,2vw,1rem)'}}>Click <span style={{position:'', display:'block', top:'', left:'',}}><MdOutlineIosShare style={{fontSize:'30px',filter:'drop-shadow(1px 0 4px var(--theme-ui-colors-siteColor))'}} /></span> then "Add To Home Screen"</div>
+
+          
+
+          </div>
+
+</div>
+)}
+</>
+  ) : (
+''
+)}
+
+
+
+
       <div className={`upbar button ${showBackToTop ? 'visible' : ''}`}
         style={{
           position: 'fixed',
@@ -288,15 +376,7 @@ const Layout = ({ children }) => {
         </AnchorLink>
       </div>
 
-      {showPWA ? (
-<>
-{!isRunningStandalone() && (
-<PwaInstaller />
-)}
-</>
-  ) : (
-''
-)}
+
       </main>
     
       
@@ -356,7 +436,7 @@ const Layout = ({ children }) => {
           <>{/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}</>
           <label htmlFor="openSidebarMenu" className="backdrop1"></label>
 
-          <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle  " style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '0px', textAlign: 'center', color:'#fff', height:'' }}>
+          <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle  " style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex:'10000', marginTop: '0px', textAlign: 'center', color:'#fff', height:'' }}>
           <BsLayoutSidebarInsetReverse style={{ height: '30px', width:'30px', color:'#fff', filter:'drop-shadow(0px 1px 0px var(--theme-ui-colors-textShadow))' }} />
           <span className="themetext">Menu</span>
 
