@@ -833,7 +833,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="" style={{display:'flex', flexDirection:'column', padding:'0', margin:'0', gap:'5px', alignItems:'center', position:'relative',fontSize:'clamp(1.3rem, 2.2vw, 2.8rem)', padding:'0', margin:'0', lineHeight:'1'}}>
   
-  <span className="glow">Dog Poopers YardStick</span>
+  <span className="glow font">Dog Poopers YardStick</span>
   {/* <div style={{fontSize:'50%', posiition:'absolute', top:'-10px'}}>™</div> */}
 <div style={{fontSize:'clamp(1rem, 1.5vw, 2.2rem)', padding:'4px 0 0 0', margin:'0', lineHeight:'1'}}>Yard Sizing Tool</div>
 </div>
