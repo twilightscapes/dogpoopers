@@ -828,8 +828,10 @@ First, let's figure out the size of your yard.
 
 <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
 
-<TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} />
-<span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>YardStick™ - Yard Sizing Tool</span>
+<TbRulerMeasure style={{marginRight:'5px', fontSize:'50px', marginRight:'1.4rem'}} />
+<div style={{display:'flex', flexDirection:'column'}}><span style={{fontSize:'clamp(1.6rem, 2.2vw, 2.8rem)'}}>YardStick™</span>
+<span style={{fontSize:'clamp(.8rem, 1vw, 1.2rem)'}}>Yard Sizing Tool</span>
+</div>
 </div>
 
     <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
@@ -868,7 +870,7 @@ First, let's figure out the size of your yard.
   {/* <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div> */}
     
     {/* <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} /> */}
-    <span style={{fontSize:'clamp(.8rem, 2vw, 1.8rem)'}}>Flexible Payment Plans - Choose Yours Now</span>
+    <span style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
   </label>
 
 <div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
