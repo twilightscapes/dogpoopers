@@ -795,8 +795,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-<div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 2vw, 1.8rem)',textShadow:'none' }}>
-First, let's figure out the size of your yard.
+<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'' }}>
+<span>Let's figure out your yard size</span>
 {/* <br />Open the Dog Pooper's yard sizing tool. */}
 </div>
 
@@ -824,7 +824,7 @@ First, let's figure out the size of your yard.
   <div className="flexbutt" style={{ padding: " 0", width:'100%', maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
 <div style={{ padding: "0 10px 0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
-<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
+<div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background: 'rgba(0,0,0,0.60)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' }}>
 
 <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
 
@@ -834,7 +834,7 @@ First, let's figure out the size of your yard.
 </div>
 </div>
 
-    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'0px solid #333', borderRadius:'12px'}}></iframe>
+    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'1vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
     
     
 </div>
@@ -860,8 +860,10 @@ First, let's figure out the size of your yard.
   </div>
 
 
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 3vw', textDecoration:'none', width:'80%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.5rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
-  Now, let's pick your plan!</div>
+  <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'' }}>
+
+  <span>Now, let's pick your plan!</span>
+  </div>
 
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
