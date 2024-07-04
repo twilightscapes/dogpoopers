@@ -11,6 +11,7 @@ import * as turf from "@turf/turf";
 
 function Cooter() {
   useEffect(() => {
+    // Ensure code runs only in the browser
     if (typeof window !== "undefined") {
       const map = L.map("map").setView([30.38, -89.03], 10);
 
