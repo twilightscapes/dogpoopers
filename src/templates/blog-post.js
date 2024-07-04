@@ -1247,7 +1247,7 @@ zindex:'1'
 
       
 
-<article className="blog-post" style={{marginTop:'0',}}>
+<article className="blog-post" style={{marginTop:'0', paddingBottom:'6vh'}}>
 
 {frontmatter.youtube.youtuber2 && <Iframer3 />}
 

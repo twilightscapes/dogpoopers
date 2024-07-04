@@ -269,7 +269,7 @@ const Layout = ({ children }) => {
       {showPWA ? (
 <>
 {!isRunningStandalone() && (
-  <div id="pwabanner" className="upbar" style={{transform: showBackToTop ? 'translateY(0)' : 'translateY(300%)', position:'fixed', bottom:'0', display: isInstalled ? "none" : "flex",  alignItems:'center', fontSize: 'clamp(.9rem,2vw,1rem)', background:'rgba(0,0,0,0.80)', backdropFilter:'blur(12px)', color:'var(--theme-ui-colors-siteColorText)', marginBottom:'0px', padding:'0px 40px 15px 0', width:'100vw', zIndex:'10' }}>
+  <div id="pwabanner" className="upbar" style={{transform: showBackToTop ? 'translateY(0)' : 'translateY(300%)', position:'fixed', bottom:'0', display: isInstalled ? "none" : "flex",  alignItems:'center', fontSize: 'clamp(.9rem,2vw,1rem)', background:'rgba(0,0,0,0.80)', backdropFilter:'blur(12px)', color:'var(--theme-ui-colors-siteColorText)', marginBottom:'0px', padding:'0px 40px 15px 0', width:'100vw', zIndex:'1' }}>
 
 <button
   className="flag1 bug1"
@@ -300,12 +300,18 @@ const Layout = ({ children }) => {
   )}
 </button>
 
-
+{/* <Link state={showModals ? { modal: true } : {}} to="/" className="cornerlogo" name="homereturnbottom" aria-label="Link to Top" title="Back to Top">
+          <img className="cornerlogo1" onClick={scrollToTop} style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" /></Link> */}
 
 
 {iconimage ? (
-  <Link state={showModals ? { modal: true } : {}} to="/" className="cornerlogo" name="homereturnbottom" aria-label="Link to Top" title="Back to Top">
-          <img className="cornerlogo1" style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" /></Link>
+  <AnchorLink
+  to="#top"
+  aria-label="Link to Top"
+  onClick={scrollToTop}
+  style={{ cursor: 'pointer', height: '', fontSize: '', border: 'none', outline: 'none' }}
+  state={showModals ? { modal: true } : {}}
+><img className="cornerlogo1" onClick={scrollToTop} style={{ position: 'relative', top: '4px', left: '', border: '0px solid white', padding: '0', maxHeight: '60px' }} src={iconimage} alt={companyname} width="111" height="60" /></AnchorLink>
         ) : (
           <div style={{ fontWeight: '', display: 'grid', justifyContent: 'center', alignItems: 'center', height: '', fontSize: 'clamp(.9rem,2vw,1rem)', color: 'var(--theme-ui-colors-headerColorText)', maxWidth: '50vw' }}>
             {companyname}

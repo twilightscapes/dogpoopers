@@ -3,7 +3,7 @@ template: blog-post
 title: Deluxe Service Includes Spraying
 slug: /first-post2
 date: 2023-10-01 09:00
-description: Deluxe Service Includes Spraying
+description: Montly Service Includes Spraying
 featuredImage: /assets/spray-tech-header.webp
 showPageNav: true
 tags:

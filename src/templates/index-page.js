@@ -833,7 +833,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="" style={{display:'flex', flexDirection:'column', padding:'0', margin:'0', gap:'5px', alignItems:'center', position:'relative',fontSize:'clamp(1.3rem, 2.2vw, 2.8rem)', padding:'0', margin:'0', lineHeight:'1'}}>
   
-  <span className="glow font">Dog Poopers YardStick</span>
+  <span className=" font">Dog Poopers YardStick</span>
   {/* <div style={{fontSize:'50%', posiition:'absolute', top:'-10px'}}>™</div> */}
 <div style={{fontSize:'clamp(1rem, 1.5vw, 2.2rem)', padding:'4px 0 0 0', margin:'0', lineHeight:'1'}}>Yard Sizing Tool</div>
 </div>
@@ -874,11 +874,11 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div>
   <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
-  <label for="getstarted" className=" button glow" style={{cursor:'pointer'}}>
+  <label for="getstarted" className=" button " style={{cursor:'pointer'}}>
   {/* <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div> */}
     
     {/* <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} /> */}
-    <span className="glow" style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
+    <span className="font" style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
   </label>
 
 <div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
@@ -982,20 +982,22 @@ publishable-key="pk_live_51O3tWYKHJvXfkmw3F98KZ7I7367B5T8zSl7qIWhmDzP5o4XR4hRlCW
 
 <div className="flexbutt" style={{gap:'10vw'}}>
 <div className="flexcheek mobileporkfat" style={{order:'', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. All plans are paid in advance.<br /><br />
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Place Your Order:</h2> <p>Using the Dog Poopers website, simply select the service plan you desire. All plans are paid in advance.<br /><br />Schedule a cleaning using our easy online account tools to choose the service that work best for you. We offer flexible billing options to fit your needs.
 {/* <Link style={{display:'block', bottom:'0', right:'0', padding:'1rem 0', textAlign:'center'}}>Interested in longer 💩 plans?</Link> */}
 </p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>We do pick ups on Mondays and Thursdays. Your service will begin on one of those days and will continue as long as you wish. <br /></p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Our Weekly Service:</h2> <p>Our friendly and professional team will arrive at your residence on Mondays and Thursdays. You don’t need to be home – just provide us access to your yard, and we’ll take care of the rest.<br /><br /> Your service will begin on one of those days and will continue as long as you wish. </p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our Deluxe packages, our Dog Poopers can deodorize and sanitize to get rid of foul odors and helps with fly control.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Deluxe Extras:</h2> <p>If you've chosen our monthly packages or added our Deluxe spraying option, Dog Poopers can deodorize and sanitize in order to get rid of foul odors which helps with fly control.</p>
 
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers provides a Poopers Report Card that will let you know when we did our business, as well as monitor your dog's business and let you know if there was blood or worms present when we picked up.</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>You Can Rest Assured:</h2> <p>Dog Poopers provides a Poopers Report Card that will let you know when we did our business, as well as monitor your dog's business too!
+  <br /><br />With our provided service cards we'll let you know if there was blood or worms present when we picked up.</p>
 
-<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard:</h2> <p>It's about time for you to start enjoying your back yard again!<br /><br />
-With the poop gone, you can enjoy a clean, fresh yard without the hassle.
-<br /><br />Our trained technicians thoroughly search your yard and remove all dog waste. We don’t miss a single pile!</p>
+<h2 style={{fontSize: 'clamp(1rem, 3vw, 2.2rem)'}}>Enjoy your yard:</h2> <p>It's about time for you to start enjoying your back yard again! With the poop gone, you can enjoy a clean, fresh yard without the hassle.
+<br /><br />
+Let us take care of the mess so you can enjoy a spotless yard and more quality time with your four-legged friends. Schedule your first service today and experience the delight of a poop-free yard!
+<br /><br />Our team is trained, insured, and dedicated to providing top-notch service with a smile.</p>
 </div>
 
 <div className="flexcheek mobilepork" style={{display:'flex', gap:'2vw', flexDirection:'column', justifyContent:'space-between', fontSize: 'clamp(1rem, 1vw, 2.2rem)', textAlign:'left', padding:'1rem 0'}}> 
