@@ -1229,13 +1229,13 @@ body.contactpage .ReactModal__Content{padding-top:10vh !important;}
 #gobacker{position:fixed; top:80px ; right:1vw; z-index:11;}
 
 
-iframe.virtualtour{
-	filter: invert(70%) grayscale(1);
-  -webkit-filter: sepia(100%) hue-rotate(80deg);
+.virtualtour{
+	filter: invert(80%) grayscale(.2);
+  -webkit-filter: sepia(30%) hue-rotate(80deg);
 
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
 	.virtualtour{
 		position:relative;
 		display:flex;
@@ -1255,7 +1255,7 @@ iframe.virtualtour{
 	.virtualtour:hover::before{
 		animation: move 2s forwards;
 	}
-}
+} */
 
 
 

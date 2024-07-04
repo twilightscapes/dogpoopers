@@ -855,10 +855,10 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
      <ul className="bullet panel" >
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click the 'Size My Yard' button</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
-<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}><StaticImage src="../../static/assets/zoom-icon.webp" alt="Default Image" style={{height:'30px', width:'30px',maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'3px', objectFit:'contain', margin:'0 auto'}} /></span> Locate your property and zoom in as needed</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}><StaticImage src="../../static/assets/boundary-icon.webp" alt="Default Image" style={{height:'30px', width:'30px',maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'3px', objectFit:'contain', margin:'0 auto'}} /></span> Click the 'Line' button and drop points on the boundaries of your yard</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'1.2rem'}}><StaticImage src="../../static/assets/edit-icon.webp" alt="Default Image" style={{height:'30px', width:'30px',maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'3px', objectFit:'contain', margin:'0 auto'}} /></span> You can edit or refine your points with the 'Edit' button. You just have to get close.</li>
+<li style={{fontSize:'clamp(1rem, 1vw, 1.8rem)', display:'flex', alignItems:'center', gap:'10px'}}> Once you've connected the points, click 'finish' to view the footage of your yard</li>
 </ul>
   
     </div>
