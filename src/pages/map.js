@@ -178,7 +178,7 @@ const Cooter = () => {
         <style>{`
           body{overflow:hidden !important;}
           #map {
-            height: calc(100vh - 80px); /* Ensuring the map takes full viewport height minus header/footer */
+            height: calc(100dvh - 80px);
             width: 100%;
             z-index: 0;
           }
@@ -227,7 +227,7 @@ const Cooter = () => {
         />
       </div>
 
-      <div id="map"></div>
+      <div id="map" style={{height:'100dvh'}}></div>
       <div id="area">Total Area: 0 sq ft</div>
       <div id="search">
         <input
