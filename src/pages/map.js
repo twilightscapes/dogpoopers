@@ -174,12 +174,12 @@ function Cooter() {
       <Helmet>
         <body id="body" className="homepage intro" />
         <style>{`
-        body{overflow:hidden !important;}
+          body { overflow: hidden !important; }
           #map {
             height: inherit;
-            z-index:0;
+            z-index: 0;
           }
-          header, footer{display:none !important;}
+          header, footer { display: none !important; }
           #area {
             position: absolute;
             top: 160px;
@@ -232,7 +232,7 @@ function Cooter() {
           id="addressInput"
           placeholder="Enter an address"
         />
-        <button onClick={() => window.geocodeAddress()}>Search</button>
+        <button onClick={() => typeof window !== "undefined" && window.geocodeAddress()}>Search</button>
       </div>
     </Layout>
   );
