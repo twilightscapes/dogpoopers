@@ -26,6 +26,7 @@
     "@stripe/stripe-js": "^4.0.0",
     "@theme-ui/color": "^0.16.2",
     "@theme-ui/mdx": "^0.16.2",
+    "@turf/turf": "^7.0.0",
     "decap-cms-app": "^3.1.4",
     "gatsby": "5.10.0",
     "gatsby-image": "^3.11.0",
@@ -53,6 +54,9 @@
     "gatsby-source-rss-feed": "^1.2.2",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "leaflet": "^1.9.4",
+    "leaflet-control-geocoder": "^2.4.0",
+    "leaflet-draw": "^1.0.4",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-cookie-consent": "^9.0.0",
@@ -65,7 +69,8 @@
     "react-timeago": "^7.2.0",
     "rss-parser": "^3.13.0",
     "simple-react-lightbox": "^3.6.9-0",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.16.2",
+    "turf": "^3.0.14"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
