@@ -1,200 +1,182 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import "leaflet-draw/dist/leaflet.draw.css";
+import "leaflet-control-geocoder/dist/Control.Geocoder.css";
+import "leaflet-draw";
+import "leaflet-control-geocoder";
 import * as turf from "@turf/turf";
 
-const Cooter = () => {
-  const [leafletReady, setLeafletReady] = useState(false);
-
+function Cooter() {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const L = require("leaflet");
-      require("leaflet/dist/leaflet.css");
-      require("leaflet-draw/dist/leaflet.draw.css");
-      require("leaflet-control-geocoder/dist/Control.Geocoder.css");
-      require("leaflet-draw");
-      require("leaflet-control-geocoder");
+      const map = L.map("map").setView([30.38, -89.03], 10);
 
-      setLeafletReady(true);
-
-      // Ensure the map container is available
-      setTimeout(() => {
-        const mapContainer = document.getElementById("map");
-        if (!mapContainer) {
-          console.error("Map container not found");
-          return;
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFzZXJsYXduIiwiYSI6ImNseTc2czRlbzAxaXMyanB4a3JqNGg0c2QifQ.XllLo86E6MxKyH8ycZJKHQ",
+        {
+          maxZoom: 22,
+          tileSize: 512,
+          zoomOffset: -1,
         }
+      ).addTo(map);
 
-        const map = L.map("map").setView([30.38, -89.03], 10);
+      const drawnItems = new L.FeatureGroup();
+      map.addLayer(drawnItems);
 
-        L.tileLayer(
-          "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFzZXJsYXduIiwiYSI6ImNseTc2czRlbzAxaXMyanB4a3JqNGg0c2QifQ.XllLo86E6MxKyH8ycZJKHQ",
-          {
-            maxZoom: 22,
-            tileSize: 512,
-            zoomOffset: -1,
+      const drawControl = new L.Control.Draw({
+        draw: {
+          polyline: true,
+          polygon: false,
+          rectangle: false,
+          circle: false,
+          marker: false,
+          circlemarker: false,
+        },
+        edit: {
+          featureGroup: drawnItems,
+        },
+      });
+      map.addControl(drawControl);
+
+      map.on(L.Draw.Event.CREATED, function (event) {
+        const layer = event.layer;
+        drawnItems.addLayer(layer);
+        updateQueryString();
+        calculateArea();
+      });
+
+      map.on(L.Draw.Event.EDITED, function () {
+        updateQueryString();
+        calculateArea();
+      });
+
+      map.on(L.Draw.Event.DELETED, function () {
+        updateQueryString();
+        calculateArea();
+      });
+
+      map.on("moveend", function () {
+        updateQueryString();
+      });
+
+      loadFromQueryString();
+
+      function updateQueryString() {
+        const bounds = drawnItems.toGeoJSON();
+        const encodedBounds = encodeURIComponent(JSON.stringify(bounds));
+        const center = map.getCenter();
+        const zoomLevel = map.getZoom();
+        const newUrl =
+          window.location.protocol +
+          "//" +
+          window.location.host +
+          window.location.pathname +
+          "?bounds=" +
+          encodedBounds +
+          "&zoom=" +
+          zoomLevel +
+          "&lat=" +
+          center.lat.toFixed(5) +
+          "&lng=" +
+          center.lng.toFixed(5) +
+          "&address=" +
+          encodeURIComponent(document.getElementById("addressInput").value);
+        window.history.replaceState({ path: newUrl }, "", newUrl);
+      }
+
+      function calculateArea() {
+        let totalArea = 0;
+        drawnItems.eachLayer(function (layer) {
+          const geojson = layer.toGeoJSON();
+          let area = 0;
+          if (geojson.geometry.type === "Polygon") {
+            area = turf.area(geojson);
+          } else if (geojson.geometry.type === "LineString") {
+            const polygon = turf.lineToPolygon(geojson);
+            area = turf.area(polygon);
           }
-        ).addTo(map);
-
-        const drawnItems = new L.FeatureGroup();
-        map.addLayer(drawnItems);
-
-        const drawControl = new L.Control.Draw({
-          draw: {
-            polyline: true,
-            polygon: false,
-            rectangle: false,
-            circle: false,
-            marker: false,
-            circlemarker: false,
-          },
-          edit: {
-            featureGroup: drawnItems,
-          },
+          totalArea += area;
         });
-        map.addControl(drawControl);
+        const totalAreaSqFt = totalArea * 10.7639;
+        document.getElementById("area").innerText =
+          "Total Area: " + totalAreaSqFt.toFixed(2) + " sq ft";
+      }
 
-        const updateQueryString = () => {
-          const bounds = drawnItems.toGeoJSON();
-          const encodedBounds = encodeURIComponent(JSON.stringify(bounds));
-          const center = map.getCenter();
-          const zoomLevel = map.getZoom();
-          const newUrl =
-            window.location.protocol +
-            "//" +
-            window.location.host +
-            window.location.pathname +
-            "?bounds=" +
-            encodedBounds +
-            "&zoom=" +
-            zoomLevel +
-            "&lat=" +
-            center.lat.toFixed(5) +
-            "&lng=" +
-            center.lng.toFixed(5) +
-            "&address=" +
-            encodeURIComponent(document.getElementById("addressInput").value);
-          window.history.replaceState({ path: newUrl }, "", newUrl);
-        };
+      function loadFromQueryString() {
+        const params = new URLSearchParams(window.location.search);
+        const boundsParam = params.get("bounds");
+        const zoomParam = params.get("zoom");
+        const latParam = params.get("lat");
+        const lngParam = params.get("lng");
+        const addressParam = params.get("address");
 
-        const calculateArea = () => {
-          let totalArea = 0;
-          drawnItems.eachLayer(function (layer) {
-            const geojson = layer.toGeoJSON();
-            let area = 0;
-            if (geojson.geometry.type === "Polygon") {
-              area = turf.area(geojson);
-            } else if (geojson.geometry.type === "LineString") {
-              const polygon = turf.lineToPolygon(geojson);
-              area = turf.area(polygon);
-            }
-            totalArea += area;
+        if (boundsParam) {
+          const bounds = JSON.parse(decodeURIComponent(boundsParam));
+          L.geoJSON(bounds).eachLayer(function (layer) {
+            drawnItems.addLayer(layer);
           });
-          const totalAreaSqFt = totalArea * 10.7639;
-          document.getElementById("area").innerText =
-            "Total Area: " + totalAreaSqFt.toFixed(2) + " sq ft";
-        };
-
-        const loadFromQueryString = () => {
-          const params = new URLSearchParams(window.location.search);
-          const boundsParam = params.get("bounds");
-          const zoomParam = params.get("zoom");
-          const latParam = params.get("lat");
-          const lngParam = params.get("lng");
-          const addressParam = params.get("address");
-
-          if (boundsParam) {
-            const bounds = JSON.parse(decodeURIComponent(boundsParam));
-            L.geoJSON(bounds).eachLayer(function (layer) {
-              drawnItems.addLayer(layer);
-            });
-            calculateArea();
-          }
-          if (zoomParam && latParam && lngParam) {
-            const latlng = L.latLng(parseFloat(latParam), parseFloat(lngParam));
-            map.setView(latlng, parseInt(zoomParam, 10));
-          }
-          if (addressParam) {
-            document.getElementById("addressInput").value = decodeURIComponent(
-              addressParam
-            );
-          }
-        };
-
-        map.on(L.Draw.Event.CREATED, function (event) {
-          const layer = event.layer;
-          drawnItems.addLayer(layer);
-          updateQueryString();
           calculateArea();
-        });
+        }
+        if (zoomParam && latParam && lngParam) {
+          const latlng = L.latLng(parseFloat(latParam), parseFloat(lngParam));
+          map.setView(latlng, parseInt(zoomParam, 10));
+        }
+        if (addressParam) {
+          document.getElementById("addressInput").value = decodeURIComponent(
+            addressParam
+          );
+        }
+      }
 
-        map.on(L.Draw.Event.EDITED, function () {
-          updateQueryString();
-          calculateArea();
-        });
+      function geocodeAddress() {
+        const address = document.getElementById("addressInput").value;
+        if (address.trim() !== "") {
+          const geocoder = L.Control.Geocoder.nominatim();
+          geocoder.geocode(address, function (results) {
+            if (results.length > 0) {
+              const latlng = results[0].center;
+              map.setView(latlng, 15); // Adjust zoom level if needed
+              updateQueryString();
+            } else {
+              alert("Address not found");
+            }
+          });
+        } else {
+          alert("Please enter an address");
+        }
+      }
 
-        map.on(L.Draw.Event.DELETED, function () {
-          updateQueryString();
-          calculateArea();
-        });
-
-        map.on("moveend", function () {
-          updateQueryString();
-        });
-
-        loadFromQueryString();
-
-        const geocodeAddress = () => {
-          const address = document.getElementById("addressInput").value;
-          if (address.trim() !== "") {
-            const geocoder = L.Control.Geocoder.nominatim();
-            geocoder.geocode(address, function (results) {
-              if (results.length > 0) {
-                const latlng = results[0].center;
-                map.setView(latlng, 15);
-                updateQueryString();
-              } else {
-                alert("Address not found");
-              }
-            });
-          } else {
-            alert("Please enter an address");
-          }
-        };
-
-        window.geocodeAddress = geocodeAddress;
-      }, 0); // You can increase this delay if needed
+      window.geocodeAddress = geocodeAddress;
     }
   }, []);
-
-  if (!leafletReady) {
-    return null;
-  }
 
   return (
     <Layout>
       <Helmet>
         <body id="body" className="homepage intro" />
         <style>{`
-          body{overflow:hidden !important;}
+          body { overflow: hidden !important; }
           #map {
-            height: calc(100dvh - 80px);
+            height: 100vh; 
             width: 100%;
             z-index: 0;
           }
-          header, footer{display:none !important;}
+          header, footer { display: none !important; }
           #area {
             position: absolute;
-            top: 160px;
-            right: 15px;
+            top: 160px; /* Adjust position as per your layout */
+            right: 15px; /* Adjust position as per your layout */
             background: white;
             padding: 5px;
             z-index: 10;
           }
           #search {
             position: absolute;
-            top: 120px;
-            right: 15px;
+            top: 120px; /* Adjust position as per your layout */
+            right: 15px; /* Adjust position as per your layout */
             background: white;
             padding: 5px;
             z-index: 10;
@@ -213,8 +195,8 @@ const Cooter = () => {
             max-width: 20vw;
             opacity: 0.4;
             position: absolute;
-            bottom: 20px;
-            right: 0;
+            bottom: 20px; /* Adjust position as per your layout */
+            right: 0; /* Adjust position as per your layout */
             z-index: 1;
           }
         `}</style>
@@ -227,7 +209,7 @@ const Cooter = () => {
         />
       </div>
 
-      <div id="map" style={{height:'100dvh'}}></div>
+      <div id="map" style={{height:'100vh'}}></div>
       <div id="area">Total Area: 0 sq ft</div>
       <div id="search">
         <input
@@ -235,10 +217,10 @@ const Cooter = () => {
           id="addressInput"
           placeholder="Enter an address"
         />
-        <button onClick={() => window.geocodeAddress()}>Search</button>
+        <button onClick={() => typeof window !== "undefined" && window.geocodeAddress()}>Search</button>
       </div>
     </Layout>
   );
-};
+}
 
 export default Cooter;
