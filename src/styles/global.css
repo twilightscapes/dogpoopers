@@ -18,7 +18,7 @@ body.scroll footer{position:sticky !important;} */
 /* body.homepage{min-height: 100vh;} */
 
 
-body.install #gobacker1, body.install header, body.install footer, body.install #pwabanner  {display:none !important; color: hsl(96, 42%, 29%);}
+body.install #gobacker1, body.install footer, body.install #pwabanner  {display:none !important; color: hsl(96, 42%, 29%);}
 
 body.install .topmenu{visibility: hidden;}
 

@@ -170,13 +170,14 @@ function Cooter() {
   return (
     <Layout>
       <Helmet>
-      <body id="body" className="homepage install" />
+      <body id="body" className="homepage intro" />
         <style>{`
         body{overflow:hidden !important;}
           #map {
             height: inherit;
             z-index:0;
           }
+          header, footer{display:none !important;}
           #area {
             position: absolute;
             top: 160px;
