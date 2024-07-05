@@ -18,7 +18,7 @@
     }
     #controls {
       position: absolute;
-      top:60px;
+      top: 60px;
       right: 5px;
       display: flex;
       flex-direction: column;
@@ -61,7 +61,18 @@
       right: 45px;
       z-index: 9999;
     }
-    #controls input::placeholder{color:#000}
+    #controls input::placeholder {
+      color: #000;
+    }
+    #search {
+      
+
+  
+
+            z-index:1 ;
+
+            max-width: 200px;
+        }
   </style>
 </head>
 <body>
@@ -69,8 +80,11 @@
   
   <div id="map"></div>
   <div id="controls">
-    <input type="text" id="address" placeholder="Street and City" style="padding:4px;margin:3px 0;" />
-    <button id="load-address" class="button">Load Address</button>
+    <div id="search" style="display:flex;">
+      <input type="text" id="address" placeholder="Street and City" style="padding:4px;margin:3px 0;" />
+    <button id="load-address" style="padding:4px;margin:3px 0;">Load Address</button>
+  </div>
+    
     <button id="start-with-points" style="display: none;">Start With Initial Points</button>
     <button id="start" class="button actionJackson">Size My Yard</button>
     <button id="invert" class="button">Invert Colors</button>
@@ -121,13 +135,39 @@
     ];
 
     function initMap() {
+      // Default values if query parameters are not provided
+      let defaultParams = {
+        lat: center.lat,
+        lng: center.lng,
+        zoom: 12,
+        address: ""
+      };
+
+      // Parse query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('lat') && urlParams.has('lng') && urlParams.has('zoom')) {
+        defaultParams.lat = parseFloat(urlParams.get('lat'));
+        defaultParams.lng = parseFloat(urlParams.get('lng'));
+        defaultParams.zoom = parseInt(urlParams.get('zoom'));
+      }
+      if (urlParams.has('address')) {
+        defaultParams.address = urlParams.get('address');
+      }
+
+      // Create map with default parameters
       map = new google.maps.Map(document.getElementById('map'), {
-        center: center,
-        zoom: 10,
-        scaleControl: true,
+        center: { lat: defaultParams.lat, lng: defaultParams.lng },
+        zoom: defaultParams.zoom,
         mapTypeId: google.maps.MapTypeId.HYBRID,
-        styles: mapStyle
+        styles: mapStyle,
+        fullscreenControl: false, // Disable full-screen control
+        mapTypeControl: false, // Disable map/satellite toggle button
+        streetViewControl: false, // Disable street view control
+        scaleControl: false, // Disable scale control
+        zoomControl: false, // Disable zoom control
+        tilt: 0
       });
+
       measureTool = new MeasureTool(map, {
         contextMenu: false,
         unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
@@ -135,12 +175,30 @@
 
       geocoder = new google.maps.Geocoder();
 
+      // Load address from query parameter
+      if (defaultParams.address) {
+        document.getElementById('address').value = defaultParams.address;
+        geocodeAddress(defaultParams.address);
+      }
+
+      // Update query string on map move
+      map.addListener('idle', () => {
+        updateQueryString();
+      });
+
+      // Update query string on zoom change
+      map.addListener('zoom_changed', () => {
+        updateQueryString();
+      });
+
       measureTool.addListener('measure_start', () => {
         console.log('started');
       });
+
       measureTool.addListener('measure_end', (e) => {
         console.log('ended', e.result);
       });
+
       measureTool.addListener('measure_change', (e) => {
         console.log('changed', e.result);
       });
@@ -160,22 +218,42 @@
             map.setCenter(results[0].geometry.location);
             map.setZoom(20);  // Adjust the zoom level as needed
           }
+          updateQueryString();
         } else {
           alert('Geocode was not successful for the following reason: ' + status);
         }
       });
     }
 
+    // Function to update query string with current map state
+    function updateQueryString() {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+      const address = document.getElementById('address').value;
+
+      const queryParams = new URLSearchParams();
+      queryParams.set('lat', center.lat());
+      queryParams.set('lng', center.lng());
+      queryParams.set('zoom', zoom);
+      queryParams.set('address', address);
+
+      // Replace current URL with updated query string
+      history.replaceState(null, null, '?' + queryParams.toString());
+    }
+
     let inverted = false;
     document.querySelector('#start-with-points')
         .addEventListener('click', () => measureTool.start(segments));
+
     document.querySelector('#start')
         .addEventListener('click', () => measureTool.start());
+
     document.querySelector('#end')
         .addEventListener('click', () => measureTool.end());
+
     document.querySelector('#invert')
         .addEventListener('click', () => {
-          inverted = !inverted
+          inverted = !inverted;
           measureTool.setOption('invertColor', inverted);
         });
   </script>
