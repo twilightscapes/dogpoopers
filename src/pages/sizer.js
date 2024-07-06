@@ -8,6 +8,7 @@ function MyMapPage() {
   const [geocoder, setGeocoder] = useState(null);
   const [inverted, setInverted] = useState(false);
   const [address, setAddress] = useState("");
+  const [totalSqFt, setTotalSqFt] = useState(0);
 
   useEffect(() => {
     // Dynamically load MeasureTool script
@@ -61,22 +62,36 @@ function MyMapPage() {
       });
 
       measureTool.addListener('measure_start', () => {
-        console.log('started');
+        console.log('Measurement started');
       });
 
       measureTool.addListener('measure_end', (e) => {
-        console.log('ended', e.result);
+        console.log('Measurement ended', e.result);
+        if (e.result && e.result.area) {
+          const sqFeet = e.result.area.sqft;
+          setTotalSqFt(sqFeet);
+          console.log(`Total Square Feet: ${sqFeet}`);
+        } else {
+          console.log('No area calculated');
+        }
       });
 
       measureTool.addListener('measure_change', (e) => {
-        console.log('changed', e.result);
+        console.log('Measurement changed', e.result);
+        if (e.result && e.result.area) {
+          const sqFeet = e.result.area.sqft;
+          setTotalSqFt(sqFeet);
+          console.log(`Total Square Feet: ${sqFeet}`);
+        } else {
+          console.log('No area calculated');
+        }
       });
     }
   }, [map, measureTool, geocoder, address]);
 
   function initMap() {
     const center = { lat: 30.38, lng: -89.03 };
-    
+
     // Define map style
     const mapStyle = [
       {
@@ -116,7 +131,7 @@ function MyMapPage() {
     if (window.MeasureTool && window.google.maps.geometry.spherical) {
       const googleMeasureTool = new window.MeasureTool(googleMap, {
         contextMenu: false,
-        unit: 'imperial' // Ensure 'unit' is set as a lowercase string
+        unit: 'imperial' 
       });
 
       const googleGeocoder = new window.google.maps.Geocoder();
@@ -125,13 +140,11 @@ function MyMapPage() {
       setMeasureTool(googleMeasureTool);
       setGeocoder(googleGeocoder);
 
-      // Your map initialization code here
-
       // Example of adding a marker
       new window.google.maps.Marker({
         position: center,
         map: googleMap,
-        title: 'Hello World!'
+        title: 'Dog Poopers'
       });
     } else {
       console.error('MeasureTool or Google Maps API not fully initialized');
@@ -205,26 +218,27 @@ function MyMapPage() {
   return (
     <Layout>
       <Helmet>
-        <body id="body" className="homepage install" />
+        <body id="body" className="homepage" />
       </Helmet>
 
       <style>{`
         body { overflow: hidden !important; }
         #map {
-          height: 100vh;
+          height: 100dvh;
           width: 100%;
           z-index: 0;
         }
-        header, footer { display: none !important; }
-        .logo {
+        // header, footer { display: none !important; }
+        .logo1 {
           position: absolute;
           top: 0;
+          right:0;
           display: flex;
           width: 100%;
           height: 100vh;
           place-content: center;
         }
-        .logo img {
+        .logo1 img {
           max-width: 20vw;
           opacity: 0.4;
           position: absolute;
@@ -234,21 +248,26 @@ function MyMapPage() {
         }
       `}</style>
 
-      <div className="logo">
+      <div className="logo1">
         <img src="https://dogpoopers.com/assets/dogpooper-logo-text.svg" alt="Logo" />
       </div>
 
-      <div id="map" style={{ height: "100vh" }}></div>
+      <div id="map" style={{ height: "100vh", zIndex:'0' }}></div>
 
-      <div id="controls" style={{ position: "absolute", top: "60px", right: "5px", display: "flex", flexDirection: "column", overflow: "visible" }}>
+      <div id="controls" style={{ position: "absolute", top: "80px", right: "5px", display: "flex", flexDirection: "column", overflow: "visible" }}>
         <div id="search" style={{ display: "flex", marginRight: "20px" }}>
           <input type="text" id="address" className="" placeholder="Street and City" style={{ padding: "4px", margin: "3px 0" }} />
           <button id="load-address" style={{ padding: "2px 4px", margin: "3px 5px", background:'#fff', color:'#000', maxWidth:'80px', }} onClick={handleLoadAddress}>Load Address</button>
         </div>
         <button id="start-with-points" style={{ display: "none" }}>Start With Initial Points</button>
         <button id="start" className="button actionJackson" onClick={handleMeasureStart}>Size My Yard</button>
-        <button id="invert" className="button" onClick={handleInvert}>Invert Colors</button>
-        <button id="end" className="button" onClick={handleMeasureEnd}>Clear Points</button>
+        <div style={{display:'flex',}}>
+          <button id="invert" className="button1" onClick={handleInvert} style={{display:'flex', flexDirection:'column', width:'70px', height:'60px', padding:'', border:'1px solid #333', borderRadius:'var(--theme-ui-colors-borderRadius)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff',filter:'drop-shadow(2px 2px 2px #000)', backgroundColor:'#222', justifyContent:'center', alignItems:'center'}}>Invert Colors</button>
+          <button id="end" className="button" onClick={handleMeasureEnd} style={{display:'flex', flexDirection:'column', width:'70px', height:'60px', padding:'', border:'1px solid #333', borderRadius:'var(--theme-ui-colors-borderRadius)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff',filter:'drop-shadow(2px 2px 2px #000)', backgroundColor:'#222', justifyContent:'center', alignItems:'center'}}>Clear Points</button>
+        </div>
+        <div style={{marginTop: "10px", padding: "5px", backgroundColor: "#fff", borderRadius: "4px", boxShadow: "0 0 10px rgba(0,0,0,0.5)"}}>
+          <strong>Total Sq Ft: </strong>{totalSqFt ? totalSqFt.toFixed(2) : 0} sq ft
+        </div>
       </div>
 
       <script src="/dist/gmaps-measuretool.umd.js"></script>

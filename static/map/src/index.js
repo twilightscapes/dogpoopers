@@ -1024,7 +1024,7 @@ export default class MeasureTool {
       this._nodeText
         .select(':last-child')
         .text(
-          `Total distance: ${this.lengthText}; YARD SQ FOOTAGE: ${this.areaText}.`
+          `YARD SQ FOOTAGE: ${this.areaText}.`
         );
     }
   }
