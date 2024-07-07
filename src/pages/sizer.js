@@ -216,9 +216,9 @@ function MyMapPage() {
   }
 
   return (
-    <Layout>
+    <>
       <Helmet>
-        <body id="body" className="homepage" />
+        <body id="body" className="homepage install" />
       </Helmet>
 
       <style>{`
@@ -254,7 +254,7 @@ function MyMapPage() {
 
       <div id="map" style={{ height: "100vh", zIndex:'0' }}></div>
 
-      <div id="controls" style={{ position: "absolute", top: "80px", right: "5px", display: "flex", flexDirection: "column", overflow: "visible" }}>
+      <div id="controls" style={{ position: "absolute", top: "10px", right: "5px", display: "flex", flexDirection: "column", overflow: "visible" }}>
         <div id="search" style={{ display: "flex", marginRight: "20px" }}>
           <input type="text" id="address" className="" placeholder="Street and City" style={{ padding: "4px", margin: "3px 0" }} />
           <button id="load-address" style={{ padding: "2px 4px", margin: "3px 5px", background:'#fff', color:'#000', maxWidth:'80px', }} onClick={handleLoadAddress}>Load Address</button>
@@ -265,13 +265,13 @@ function MyMapPage() {
           <button id="invert" className="button1" onClick={handleInvert} style={{display:'flex', flexDirection:'column', width:'70px', height:'60px', padding:'', border:'1px solid #333', borderRadius:'var(--theme-ui-colors-borderRadius)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff',filter:'drop-shadow(2px 2px 2px #000)', backgroundColor:'#222', justifyContent:'center', alignItems:'center'}}>Invert Colors</button>
           <button id="end" className="button" onClick={handleMeasureEnd} style={{display:'flex', flexDirection:'column', width:'70px', height:'60px', padding:'', border:'1px solid #333', borderRadius:'var(--theme-ui-colors-borderRadius)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff',filter:'drop-shadow(2px 2px 2px #000)', backgroundColor:'#222', justifyContent:'center', alignItems:'center'}}>Clear Points</button>
         </div>
-        <div style={{marginTop: "10px", padding: "5px", backgroundColor: "#fff", borderRadius: "4px", boxShadow: "0 0 10px rgba(0,0,0,0.5)"}}>
+        {/* <div style={{marginTop: "10px", padding: "5px", backgroundColor: "#fff", borderRadius: "4px", boxShadow: "0 0 10px rgba(0,0,0,0.5)"}}>
           <strong>Total Sq Ft: </strong>{totalSqFt ? totalSqFt.toFixed(2) : 0} sq ft
-        </div>
+        </div> */}
       </div>
 
       <script src="/dist/gmaps-measuretool.umd.js"></script>
-    </Layout>
+    </>
   );
 }
 

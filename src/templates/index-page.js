@@ -840,7 +840,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 </div>
 
-    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/map" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'.5vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
+    <iframe title="location map" className="virtualtour flexcheek" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://dogpoopers.com/sizer" allowFullScreen="true" loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', margin:'0 auto', border:'.5vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
     
     
 </div>
@@ -866,22 +866,27 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-  <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
+  {/* <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
 
   <span>Now, let's pick your plan!</span>
-  </div>
+  </div> */}
 
 <div>
-  <input type="checkbox" id="getstarted" name="q"  className="questions" />
 
-  <label for="getstarted" className=" button " style={{cursor:'pointer'}}>
+
+
+  <br />
+  <br />
+  {/* <input type="checkbox" id="getstarted" name="q"  className="questions" />
+
+  <label for="getstarted" className=" button " style={{cursor:'pointer'}}> */}
   {/* <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div> */}
     
     {/* <TbRulerMeasure style={{marginRight:'5px', fontSize:'50px'}} /> */}
-    <span className="font" style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)'}}>Choose Your Plan</span>
-  </label>
+    <div className="font" style={{fontSize:'clamp(1.8rem, 2.5vw, 2.8rem)', margin:'2vh'}}>Choose Your Plan</div>
+  {/* </label> */}
 
-<div className="answers" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
+<div className="answers1" style={{width:'100%', padding:'0 ', margin:'0 auto'}}>
 
 
 <div style={{borderRadius:'12px', padding:'5px', background:'rgba(8, 44, 20, 0.9)', width:'99vw', margin:'0 auto'}}>
