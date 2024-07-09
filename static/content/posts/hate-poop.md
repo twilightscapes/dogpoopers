@@ -4,7 +4,7 @@ title: I HATE picking up my dog's poop!
 slug: /hate-poop
 date: 2023-10-01 09:00
 description: I HATE picking up my dog's poop!
-featuredImage: /assets/hate-poop-header.webp
+featuredImage: /assets/default-og-image.webp
 showPageNav: true
 tags:
  - test

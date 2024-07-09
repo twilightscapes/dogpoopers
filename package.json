@@ -28,7 +28,6 @@
     "@theme-ui/mdx": "^0.16.2",
     "@turf/turf": "^7.0.0",
     "decap-cms-app": "^3.1.4",
-    "dotenv": "^16.4.5",
     "gatsby": "5.10.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
