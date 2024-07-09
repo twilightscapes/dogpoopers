@@ -52,11 +52,11 @@ const Map = ({ location }) => {
     const params = new URLSearchParams(location.search);
     const lat = parseFloat(params.get('lat'));
     const lng = parseFloat(params.get('lng'));
-    const initialZoom = parseInt(params.get('zoom'), 10);
+    const initialZoom = parseInt(params.get('zoom'), 11);
     const search = params.get('search');
 
     const initialCenter = { lat: lat || 30.38, lng: lng || -89.03 };
-    const initialZoomLevel = initialZoom || 12;
+    const initialZoomLevel = initialZoom || 11;
 
     const googleMap = new window.google.maps.Map(mapRef.current, {
       center: initialCenter,
