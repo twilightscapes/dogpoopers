@@ -1030,8 +1030,8 @@
     };
     var Dt = {
             en: {
-                tooltipText1: "Drag to change, click to remove",
-                tooltipText2: "Drag to change"
+                tooltipText1: "",
+                tooltipText2: ""
             },
             it: {
                 tooltipText1: "Trascina per modificare, fai clic per rimuovere",
@@ -1181,7 +1181,7 @@
                 }
             }])
         }(),
-        Xt = ".measure-tool-tooltip {\n  display: none;\n  font-family: Roboto, Arial, sans-serif;\n  margin: 6px 15px;\n  background-color: #fff;\n  border-radius: 2px;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n  padding: 10px;\n  overflow: hidden;\n  pointer-events: none;\n  font-size: 0.7rem;\n  z-index: 999; }\n";
+        Xt = ".measure-tool-tooltip {\n  display: none !important;\n  font-family: Roboto, Arial, sans-serif;\n  margin: 6px 15px;\n  background-color: transparent;\n  border-radius: 2px;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n  padding: 0;\n  overflow: hidden;\n  pointer-events: none;\n  font-size: 0.7rem;\n  z-index: 999; }\n";
     Ht(Xt, {});
     var Ft = function() {
             return i((function t(n) {
@@ -1991,14 +1991,31 @@
         }, {
             key: "_showTooltipOnEvent",
             value: function(t, e) {
-                e.sourceEvent.type.startsWith("touch") || this._options.tooltip && this._tooltip.show(this._projectionUtility.svgPointToContainerPoint([e.x, e.y]), t)
+                // Disable tooltips for all events
+                // Comment out the line that shows the tooltip
+                /*
+                if (e.sourceEvent.type.startsWith("touch")) {
+                    return;
+                }
+                
+                if (this._options.tooltip && this._tooltip) {
+                    this._tooltip.show(this._projectionUtility.svgPointToContainerPoint([e.x, e.y]), t);
+                }
+                */
             }
-        }, {
+        },
+        {
             key: "_hideTooltip",
             value: function() {
-                this._options.tooltip && this._tooltip.hide()
+                // Comment out the line that hides the tooltip
+                /*
+                if (this._options.tooltip && this._tooltip) {
+                    this._tooltip.hide();
+                }
+                */
             }
-        }, {
+        },
+         {
             key: "_dispatchMeasureEvent",
             value: function() {
                 if (this._started) {

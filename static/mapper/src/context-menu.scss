@@ -12,7 +12,7 @@ $font-family: Roboto, Arial, sans-serif;
   z-index: 1;
   outline-offset: -2px;
 
-  background: #fff;
+  // background: #fff;
   padding: 6px 0;
   white-space: nowrap;
   cursor: default;
@@ -20,7 +20,7 @@ $font-family: Roboto, Arial, sans-serif;
   ul {
     padding: 0px;
     margin: 0px;
-    background-color: white;
+    // background-color: white;
 
     li {
       cursor: pointer;
@@ -38,8 +38,8 @@ $font-family: Roboto, Arial, sans-serif;
       white-space: nowrap;
 
       &:hover {
-        background-color: #f1f1f1;
-        border-color: #f1f1f1;
+        // background-color: #f1f1f1;
+        // border-color: #f1f1f1;
         color: #222;
         transition: background 0s;
       }
