@@ -858,7 +858,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
      <ul className="bullet" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)'}} >
 <li style={{ display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
-<li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'YardStick' button</li>
+<li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'Yard Stick' button</li>
 <li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
 <li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
 </ul>
