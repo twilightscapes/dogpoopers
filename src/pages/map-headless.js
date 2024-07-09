@@ -23,7 +23,7 @@ const IndexPage = () => {
       </Helmet>
       <Seo title="DogPoopers YardStick" />
       <section className="outer section">
-        <div className="container" style={{ padding: '0', minHeight: '100dvh', position:'relative' }}>
+        <div className="container" style={{ padding: '0', height: 'calc(100vh - 60px)', position:'relative' }}>
           <Map location={location} onMapUpdate={handleMapUpdate} />
         </div>
       </section>

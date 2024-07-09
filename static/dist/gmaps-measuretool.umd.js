@@ -1984,7 +1984,7 @@
                     n > 2 && (o = 0 === t ? this._helper.computeLengthBetween(this._geometry.nodes[n - 1], e) > i ? 0 : this._helper.computeArea([e].concat(this._geometry.nodes.slice(1, n - 1))) : t === n - 1 ? this._helper.computeLengthBetween(e, this._geometry.nodes[0]) > i ? 0 : this._helper.computeArea(this._geometry.nodes.slice(0, n - 1)) : t > 0 && t < n - 1 ? this._helper.computeLengthBetween(this._geometry.nodes[0], this._geometry.nodes[n - 1]) > i ? 0 : this._helper.computeArea([].concat(this._geometry.nodes.slice(0, t), [e], this._geometry.nodes.slice(t + 1))) : this._helper.computeLengthBetween(this._geometry.nodes[0], this._geometry.nodes[n - 1]) > i ? 0 : this._helper.computeArea(this._geometry.nodes));
                     this._area = o;
                     if (o > 0) {
-                        this._nodeText.select(":last-child").attr("class", "sqfoot").text("YARD SQ FOOTAGE: " + this.areaText + ".");
+                        this._nodeText.select(":last-child").attr("class", "sqfoot").text("YARD Sq Ft: " + this.areaText + ".");
                     }
                 }
             }

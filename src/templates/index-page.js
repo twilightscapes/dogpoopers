@@ -795,8 +795,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 0', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
-<span>Determine the size of your yard</span>
+<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
+<span>Determine the size of your yard using our Yard Stick technology</span>
 {/* <br />Open the Dog Pooper's yard sizing tool. */}
 </div>
 
@@ -850,7 +850,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'95%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1.5rem, 2vw, 1.8rem)', background: 'rgba(8, 44, 20, 0.9)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
     <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
-    <TbRulerMeasure style={{marginRight:'8px', fontSize:'80px'}} />Using<br />YardStick™</div>
+    <TbRulerMeasure style={{marginRight:'8px', fontSize:'80px'}} />Using<br />Yard Stick™</div>
 
 
 
@@ -858,7 +858,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
      <ul className="bullet" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)'}} >
 <li style={{ display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
-<li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'Size Yard' button</li>
+<li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'YardStick' button</li>
 <li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
 <li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
 </ul>

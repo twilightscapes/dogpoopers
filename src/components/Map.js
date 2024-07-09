@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Map = ({ location }) => {
   const mapRef = useRef(null);
@@ -17,10 +17,10 @@ const Map = ({ location }) => {
 
   const googleMapsApiKey = process.env.GATSBY_GOOGLE_MAPS_API_KEY;
   const mapStyle = [
-    { "featureType": "poi", "stylers": [{ "visibility": "off" }] },
-    { "featureType": "transit", "stylers": [{ "visibility": "off" }] },
-    { "featureType": "administrative", "elementType": "labels", "stylers": [{ "visibility": "off" }] },
-    { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "on" }] }
+    { featureType: 'poi', stylers: [{ visibility: 'off' }] },
+    { featureType: 'transit', stylers: [{ visibility: 'off' }] },
+    { featureType: 'administrative', elementType: 'labels', stylers: [{ visibility: 'off' }] },
+    { featureType: 'road', elementType: 'labels', stylers: [{ visibility: 'on' }] },
   ];
 
   const updateQueryString = (lat, lng, zoom, search) => {
@@ -37,26 +37,22 @@ const Map = ({ location }) => {
   };
 
   const loadGoogleMapsScript = () => {
-    if (!window.google) {
-      const googleMapsScript = document.createElement('script');
-      googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=geometry,drawing,places`;
-      googleMapsScript.async = true;
-      googleMapsScript.onload = () => {
-        setIsGoogleLoaded(true);
-        setIsLoading(false);
-      };
-      document.body.appendChild(googleMapsScript);
-    } else {
+    const googleMapsScript = document.createElement('script');
+    googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=geometry,drawing,places`;
+    googleMapsScript.async = true; // Load asynchronously
+    googleMapsScript.defer = true; // Ensure it's deferred
+    googleMapsScript.onload = () => {
       setIsGoogleLoaded(true);
       setIsLoading(false);
-    }
+    };
+    document.body.appendChild(googleMapsScript);
   };
 
   const initMap = () => {
     const params = new URLSearchParams(location.search);
     const lat = parseFloat(params.get('lat'));
     const lng = parseFloat(params.get('lng'));
-    const initialZoom = parseInt(params.get('zoom'), 12);
+    const initialZoom = parseInt(params.get('zoom'), 10);
     const search = params.get('search');
 
     const initialCenter = { lat: lat || 30.38, lng: lng || -89.03 };
@@ -194,16 +190,15 @@ const Map = ({ location }) => {
 
   return (
     <>
-      <div className="virtualtour" ref={mapRef} style={{ width: '100%', height: '100vh', position: 'relative' }}></div>
+      <div className="virtualtour" ref={mapRef} style={{ width: '100%', height: '100dvh', position: 'relative' }}></div>
 
       <div style={{ position: 'absolute', top: '1vh', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-
-      <StaticImage
-        className="logo1"
-        src="../../static/assets/dogpooper-logo-text.svg"
-        alt="Default Image"
-        style={{ height: 'auto', maxWidth: '18vw', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0', opacity:'.8' }}
-      />
+        <StaticImage
+          className="logo1"
+          src="../../static/assets/dogpooper-logo-text.svg"
+          alt="Default Image"
+          style={{ height: 'auto', maxWidth: '18vw', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0', opacity:'.8' }}
+        />
         <input
           ref={searchRef}
           type="text"
@@ -212,15 +207,14 @@ const Map = ({ location }) => {
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        
-        <button className="button" style={{ padding: '5px 10px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)' }} onClick={handleMeasureStart}>Size Yard</button>
+        <button className="button" style={{ padding: '5px 10px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)' }} onClick={handleMeasureStart}>Yard Stick</button>
         <button className="button" style={{ padding: '5px 5px', fontSize: 'clamp(.5rem,1.4vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
       </div>
-
       
-      <div style={{ position: 'absolute', bottom: '1vh', left: '1vw', background: '#fff', padding: '1px', borderRadius: '5px', opacity: '0.7', fontSize: 'clamp(.7rem,2vw,3rem)' }}>
-        {/* <span>Total Area: {totalArea.toFixed(2)} sq ft</span> */}
-      </div>
+      {/* <div style={{ position: 'absolute', bottom: '1vh', left: '1vw', background: '#fff', padding: '4px 10px', borderRadius: '3px', opacity: '.7', zIndex: '10' }}>
+        <input type="checkbox" id="invertColor" checked={inverted} onChange={handleInvert} />
+        <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Colors</label>
+      </div> */}
     </>
   );
 };
