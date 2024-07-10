@@ -994,6 +994,8 @@ button:disabled{
 
   .mobile{border:0 solid red; height:69px; display:block;}
 
+  .help{top:50px !important;}
+
   #profiletop .nameblock {order:2 !important;}
   
   .horizontal-scroll .post-card1 .inline * {

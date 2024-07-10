@@ -228,7 +228,7 @@ const Map = ({ location }) => {
 
 <input type="checkbox" id="help" name="help" className="questions" />
 
-<label htmlFor="help" className="question1 font plus" style={{ width:'40px', fontSize:'34px', display:'grid', placeContent:'center', color:'#fff', border:'1px solid', borderRadius:'50%', padding:'2px 14px', position:'', left:'1%', top:'10vh',}}>?</label>
+<label htmlFor="help" className=" font plus help" style={{ width:'40px', fontSize:'34px', display:'grid', placeContent:'center', color:'#fff', border:'1px solid', borderRadius:'50%', padding:'2px 14px', position:'', left:'1%', top:'-20px',}}>?</label>
 
 
 <div className="answers" style={{marginTop:'50px', position:'absolute'}}>
