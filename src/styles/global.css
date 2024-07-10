@@ -27,8 +27,14 @@ body.install .topmenu{visibility: hidden;}
 /* body.homepage footer{display: none !important;} */
 
 
-#menu,.menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.slider:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special{font-family:var(--theme-ui-colors-siteFont);}
+#menu,.menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.slider:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special
 
+/* {font-family:var(--theme-ui-colors-siteFont);} */
+{
+  font-family: "Bowlby One SC", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* .effects{position: relative; z-index: 1;} */

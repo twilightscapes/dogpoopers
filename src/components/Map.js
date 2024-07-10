@@ -192,31 +192,44 @@ const Map = ({ location }) => {
     <>
       <div className="virtualtour" ref={mapRef} style={{ width: '100%', height: '100dvh', position: 'relative' }}></div>
 
-      <div style={{ position: 'absolute', top: '1vh', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-      <Link to="/" aria-label="Link to Top" title="Back to Top">
+      <div style={{ position: 'absolute', top: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', background:'rgba(0,0,0,0.50)', maxWidth:'', margin:'0 auto', padding:'0 0 4px 0' }}>
+
+      <Link to="/" aria-label="Link to Top" title="Back to Top" style={{textDecoration:'none', borderBottom:'0'}}>
         <StaticImage
           className="logo1"
           src="../../static/assets/dogpooper-logo-text.svg"
           alt="Default Image"
-          style={{ height: 'auto', maxWidth: '150px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0', opacity:'.8' }}
+          style={{ height: 'auto', maxWidth: '130px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0 2vw 0 1vw', opacity:'.8', }}
         />
         </Link>
+
         <input
           ref={searchRef}
           type="text"
           placeholder="Enter your address"
-          style={{ width: '80%', maxWidth: '300px', padding: '5px', borderRadius: '3px', border: '1px solid #ccc', color: '#222' }}
+          style={{ width: '80%', maxWidth: '300px', marginTop:'', padding: '5px', borderRadius: '3px', border: '1px solid #ccc', color: '#222', opacity:'.8' }}
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        <button className="button" style={{ padding: '5px 10px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)' }} onClick={handleMeasureStart}>Yard Stick</button>
-        <button className="button" style={{ padding: '5px 5px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
+
+        <button className="button font" style={{ padding: '1vh 2vw', fontSize: 'clamp(.7rem,1.8vw,2.2rem)' }} onClick={handleMeasureStart}>Yard Stick™</button>
+
+        <button className="button" style={{ padding: '.3vh 5px', fontSize: 'clamp(.7rem,1.2vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
+
+
       </div>
       
-      {/* <div style={{ position: 'absolute', bottom: '1vh', left: '1vw', background: '#fff', padding: '4px 10px', borderRadius: '3px', opacity: '.7', zIndex: '10' }}>
+      <div style={{ position: 'absolute', bottom: '6vh', left: '1vw', background: '#fff', padding: '4px 10px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '10', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
         <input type="checkbox" id="invertColor" checked={inverted} onChange={handleInvert} />
-        <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Colors</label>
-      </div> */}
+        <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Text</label>
+      </div>
+
+      <Link to='/contact' state={{modal: true}} className="print hover">
+      <div className="button glow font" style={{ position: 'absolute', bottom: '0', right: '20vw', background: '', padding: '2vh 2vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,2.5vw,3.2rem)', fontWeight:'900' }}>
+    Pick Up My Poop!
+      </div>
+      </Link>
+
     </>
   );
 };
