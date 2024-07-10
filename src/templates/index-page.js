@@ -791,15 +791,15 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
   <div className="" style={{position:'', top:'', width:'100vw', padding: '1vh 2vh', margin:'0 auto', maxHeight: '', fontSize: 'clamp(1.3rem, 3.5vw, 3.2rem)', textAlign:'center', textShadow: '0 2px 3px #000', background:'rgba(8, 44, 20, 0.9)', backdropFilter:'blur(12px)', color:'#fff' }}>
-    <h2 className="glow">Get Started Today!</h2>
+    <h2 className="glow">Size Your Yard</h2>
   </div>
+<br />
 
-
-<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none', position:'relative'
+{/* <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none', position:'relative'
  }}>
 <span>Size your yard using our Yard Stick technology</span>
-{/* <br />Open the Dog Pooper's yard sizing tool. */}
-</div>
+<br />Open the Dog Pooper's yard sizing tool.
+</div> */}
 
 
 

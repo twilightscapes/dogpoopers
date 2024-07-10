@@ -204,7 +204,7 @@ const Map = ({ location }) => {
           className="logo1"
           src="../../static/assets/dogpooper-logo-text.svg"
           alt="Default Image"
-          style={{ height: 'auto', maxWidth: '130px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0 2vw 0 1vw', opacity:'.8', }}
+          style={{ height: 'auto', maxWidth: '130px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0 2vw 0 2vw', opacity:'.8', }}
         />
         {/* </Link> */}
 
