@@ -827,7 +827,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <div style={{ padding: "0 10px", width:'100vw', maxWidth: "1000px", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'0', position:'relative' }}>
   
 <Link to='#plans' state={{modal: false}} className="print hover">
-      <div className="button glow font" style={{ position: 'absolute', bottom: '2vh', right: '5vw', background: '', padding: '1vh 1vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,1.5vw,3.2rem)', fontWeight:'900' }}>
+      <div className="button glow font" style={{ position: 'absolute', bottom: '2vh', right: '5vw', background: '', padding: '1vh 1vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,1.5vw,3.2rem)', fontWeight:'900', zIndex:'1' }}>
     Pick Up My Poop!
       </div>
       </Link>
