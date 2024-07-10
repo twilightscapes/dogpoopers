@@ -228,11 +228,11 @@ const Map = ({ location }) => {
 
 <input type="checkbox" id="help" name="help" className="questions" />
 
-<label htmlFor="help" className=" font plus help" style={{ width:'40px', fontSize:'34px', display:'grid', placeContent:'center', color:'#fff', border:'1px solid', borderRadius:'50%', padding:'2px 14px', position:'', left:'1%', top:'-20px',}}>?</label>
+<label htmlFor="help" className=" font plus help" style={{ width:'40px', fontSize:'34px', display:'grid', placeContent:'center', color:'#fff', border:'1px solid', borderRadius:'50%', padding:'2px 14px', position:'', left:'0', top:'-20px',}}>?</label>
 
 
 <div className="answers" style={{marginTop:'50px', position:'absolute'}}>
-<ul className="bullet panel" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)', color:'#fff'}} >
+<ul className="bullet panel" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)', color:'#fff', background:'rgba(0, 0, 0, 0.4)', borderRadius:'10px'}} >
 <li style={{ display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
 <li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'Yard Stick' button</li>
 <li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
@@ -245,7 +245,7 @@ const Map = ({ location }) => {
       
 
       
-      <div style={{ position: 'absolute', bottom: '-20px', left: '60px', background: '#fff', padding: '4px 10px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '1', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
+      <div style={{ position: 'absolute', bottom: '0', left: '60px', background: '#fff', padding: '4px 10px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '1', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
         <input type="checkbox" id="invertColor" checked={inverted} onChange={handleInvert} />
         <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Text</label>
       </div>
