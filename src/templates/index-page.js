@@ -824,7 +824,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
   <div className="flexbutt" style={{ padding: " 0", width:'100%', maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
-<div style={{ padding: "0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'0', position:'relative' }}>
+<div style={{ padding: "0 10px", width:'100vw', maxWidth: "1000px", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'0', position:'relative' }}>
   
 <Link to='#plans' state={{modal: false}} className="print hover">
       <div className="button glow font" style={{ position: 'absolute', bottom: '2vh', right: '5vw', background: '', padding: '1vh 1vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,1.5vw,3.2rem)', fontWeight:'900' }}>
@@ -851,9 +851,9 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 </div>
 
-    <div className="flexcheek" style={{maxWidth:'100%', gap:'', paddingRight:''}}>
+    {/* <div className="flexcheek" style={{maxWidth:'100%', gap:'', paddingRight:''}}>
     
-    {/* <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} /> */}
+    <StaticImage src="../../static/assets/measure-tool.png" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0',border:'1px solid #222', borderRadius:'8px', objectFit:'contain', margin:'0 auto'}} />
 
     <div style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 1vw', textDecoration:'none', width:'95%', borderRadius:'12px', margin:'50px auto 0 auto', textAlign:'center', fontSize:'clamp(1.5rem, 2vw, 1.8rem)', background: 'rgba(8, 44, 20, 0.9)',  backdropFilter: 'blur(4px)', border:'1px solid #333', color:'#fff' }}>
     <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
@@ -870,7 +870,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 <li style={{display:'flex', alignItems:'center', gap:'10px'}}><span style={{fontSize:'2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
 </ul>
   
-    </div>
+    </div> */}
 
   </div>
 

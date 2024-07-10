@@ -192,16 +192,21 @@ const Map = ({ location }) => {
     <>
       <div className="virtualtour" ref={mapRef} style={{ width: '100%', height: '100dvh', position: 'relative' }}></div>
 
+
       <div style={{ position: 'absolute', top: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', background:'rgba(0,0,0,0.50)', maxWidth:'', margin:'0 auto', padding:'0 0 4px 0' }}>
 
-      <Link to="/" aria-label="Link to Top" title="Back to Top" style={{textDecoration:'none', borderBottom:'0'}}>
+
+
+
+
+      {/* <Link to="/" aria-label="Link to Top" title="Back to Top" style={{textDecoration:'none', borderBottom:'0'}}> */}
         <StaticImage
           className="logo1"
           src="../../static/assets/dogpooper-logo-text.svg"
           alt="Default Image"
           style={{ height: 'auto', maxWidth: '130px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0 2vw 0 1vw', opacity:'.8', }}
         />
-        </Link>
+        {/* </Link> */}
 
         <input
           ref={searchRef}
@@ -217,7 +222,28 @@ const Map = ({ location }) => {
         <button className="button" style={{ padding: '.3vh 5px', fontSize: 'clamp(.7rem,1.2vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
 
 
+
+        <div className="faqblock" style={{width:'100%', maxWidth:'800px', display:'grid', placeContent:'center', margin:'0 auto', position:'absolute', top:'', left:'' }}>
+
+
+<input type="checkbox" id="help" name="help" className="questions" />
+
+<label htmlFor="help" className="question1 font plus" style={{ width:'40px', fontSize:'34px', display:'grid', placeContent:'center', color:'#fff', border:'1px solid', borderRadius:'50%', padding:'2px 14px', position:'', left:'1%', top:'10vh',}}>?</label>
+
+
+<div className="answers" style={{marginTop:'50px', position:'absolute'}}>
+<ul className="bullet" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)', color:'#fff'}} >
+<li style={{ display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
+<li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'Yard Stick' button</li>
+<li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
+<li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Once you've connected the dots, it will show you the total footage of your yard</li>
+</ul>
+</div>
+</div>
+
       </div>
+      
+
       
       <div style={{ position: 'absolute', bottom: '0', left: '1vw', background: '#fff', padding: '4px 10px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '1', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
         <input type="checkbox" id="invertColor" checked={inverted} onChange={handleInvert} />
