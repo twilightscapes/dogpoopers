@@ -797,7 +797,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 <div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none', position:'relative'
  }}>
-<span>Determine the size of your yard using our Yard Stick technology</span>
+<span>Size your yard using our Yard Stick technology</span>
 {/* <br />Open the Dog Pooper's yard sizing tool. */}
 </div>
 
