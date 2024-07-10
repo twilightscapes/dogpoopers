@@ -232,7 +232,7 @@ const Map = ({ location }) => {
 
 
 <div className="answers" style={{marginTop:'50px', position:'absolute'}}>
-<ul className="bullet panel" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)', color:'#fff', background:'rgba(0, 0, 0, 0.4)', borderRadius:'10px'}} >
+<ul className="bullet panel" style={{padding:'2%', fontSize:'clamp(1rem, 1.4vw, 1.8rem)', color:'#fff', background:'rgba(0, 0, 0, 0.7)', borderRadius:'10px'}} >
 <li style={{ display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Locate your property on the map and zoom in to 100%</li>
 <li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click the 'Yard Stick' button</li>
 <li style={{display:'flex', alignItems:'center', gap:'5px'}}><span style={{fontSize:'2rem'}}>💩</span> Click on the boundaries of your yard dropping points at each boundary</li>
@@ -241,11 +241,13 @@ const Map = ({ location }) => {
 </div>
 </div>
 
+
+
       </div>
       
 
       
-      <div style={{ position: 'absolute', bottom: '0', left: '60px', background: '#fff', padding: '4px 10px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '1', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
+      <div style={{ position: 'absolute', top: '80px', left: '55px', background: '#fff', padding: '4px 5px', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.8', zIndex: '1', color:'#222', fontSize: 'clamp(.7rem,1vw,2.2rem)' }}>
         <input type="checkbox" id="invertColor" checked={inverted} onChange={handleInvert} />
         <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Text</label>
       </div>
