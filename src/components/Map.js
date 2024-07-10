@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import { Link } from 'gatsby-plugin-modal-routing-4'
 const Map = ({ location }) => {
   const mapRef = useRef(null);
   const searchRef = useRef(null);
@@ -193,12 +193,14 @@ const Map = ({ location }) => {
       <div className="virtualtour" ref={mapRef} style={{ width: '100%', height: '100dvh', position: 'relative' }}></div>
 
       <div style={{ position: 'absolute', top: '1vh', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+      <Link to="/" aria-label="Link to Top" title="Back to Top">
         <StaticImage
           className="logo1"
           src="../../static/assets/dogpooper-logo-text.svg"
           alt="Default Image"
-          style={{ height: 'auto', maxWidth: '18vw', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0', opacity:'.8' }}
+          style={{ height: 'auto', maxWidth: '150px', position: '', top: '', left: '', zIndex: 1, borderRadius: '2%', opacity: '0.9', background: 'transparent', margin: '0', opacity:'.8' }}
         />
+        </Link>
         <input
           ref={searchRef}
           type="text"
@@ -208,7 +210,7 @@ const Map = ({ location }) => {
           onChange={handleSearchChange}
         />
         <button className="button" style={{ padding: '5px 10px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)' }} onClick={handleMeasureStart}>Yard Stick</button>
-        <button className="button" style={{ padding: '5px 5px', fontSize: 'clamp(.5rem,1.4vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
+        <button className="button" style={{ padding: '5px 5px', fontSize: 'clamp(.7rem,1.4vw,2.2rem)', background: '#222', color: '#fff', border: '1px solid #999' }} onClick={handleMeasureEnd}>Clear</button>
       </div>
       
       {/* <div style={{ position: 'absolute', bottom: '1vh', left: '1vw', background: '#fff', padding: '4px 10px', borderRadius: '3px', opacity: '.7', zIndex: '10' }}>
