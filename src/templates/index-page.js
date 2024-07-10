@@ -795,7 +795,8 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
   </div>
 
 
-<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none' }}>
+<div className="numblist1" style={{ display: 'flex', justifyContent: 'center', alignItems:'center', padding:'1vh 2%', textDecoration:'none', width:'100%', borderRadius:'12px', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1.6rem, 2.5vw, 2.8rem)',textShadow:'none', position:'relative'
+ }}>
 <span>Determine the size of your yard using our Yard Stick technology</span>
 {/* <br />Open the Dog Pooper's yard sizing tool. */}
 </div>
@@ -823,8 +824,14 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
   <div className="flexbutt" style={{ padding: " 0", width:'100%', maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'2vw', }}>
 
-<div style={{ padding: "0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'0', }}>
+<div style={{ padding: "0 10px", width:'100vw',maxWidth: "100vw", margin: "0 auto", display: "", flexDirection: "", justifyContent: "", alignItems:'', gap:'0', position:'relative' }}>
   
+<Link to='#plans' state={{modal: false}} className="print hover">
+      <div className="button glow font" style={{ position: 'absolute', bottom: '1vh', right: '5vw', background: '', padding: '1vh 2vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,1.5vw,3.2rem)', fontWeight:'900' }}>
+    Pick Up My Poop!
+      </div>
+      </Link>
+
 {/* <div style={{ display: 'flex', justifyContent: 'center', position:'relative', alignItems:'center', padding:'4px 1rem 0 1rem', textDecoration:'none', width:'80%', borderRadius:'12px 12px 0 0', margin:'0 auto 0 auto', textAlign:'center', fontSize:'clamp(1rem, 1vw, 1.8rem)', background:'rgba(8, 44, 20, 0.9)',  backdropFilter: 'blur(4px)', border:'0px solid #333', color:'#fff' , gap:''}}>
 
 <div style={{transform:'rotate(-45deg)', position:'relative', top:'-5px', right:'5px', }}>Ruff!<br />|</div>
@@ -841,7 +848,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
     <iframe title="location map" className=" flexcheek" width="100%" height="500" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="/map" allowFullScreen={true} loading="lazy" origin="https://dogpoopers.com" style={{maxWidth:'100%', minWidth:'100%', minHeight:'60vh', margin:'0 auto', border:'.5vw solid rgba(0,0,0,0.60)', borderRadius:'12px'}}></iframe>
     
-    
+
 </div>
 
     <div className="flexcheek" style={{maxWidth:'100%', gap:'', paddingRight:''}}>
@@ -892,7 +899,7 @@ style={{height:'auto', width:'100dvw', maxHeight:'100dvh', position:'relative', 
 
 
 <div style={{borderRadius:'12px', padding:'5px', background:'rgba(8, 44, 20, 0.9)', width:'99vw', margin:'0 auto'}}>
-
+<a id="plans">&nbsp;</a>
 <span className="vartext" style={{color:'#fff', fontWeight:'', fontSize:'clamp(1rem, 1.5vw, 2rem)', textAlign:'center', margin:'0', padding:'.4vh 4vw', fontFamily:'inherit', textShadow:'0 1px 0 #444'}}>Monthly and long-term plans include 2x weekly service and PoopSpray™ treatment.</span>
 
 <stripe-pricing-table pricing-table-id="prctbl_1PV0sNKHJvXfkmw38f8wPFG5"

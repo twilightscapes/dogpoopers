@@ -224,11 +224,7 @@ const Map = ({ location }) => {
         <label htmlFor="invertColor" style={{ marginLeft: '5px' }}>Invert Text</label>
       </div>
 
-      <Link to='/contact' state={{modal: true}} className="print hover">
-      <div className="button glow font" style={{ position: 'absolute', bottom: '0', right: '20vw', background: '', padding: '2vh 2vw', display:'flex', alignItems:'center', borderRadius: '3px', opacity: '.9', zIndex: '', color:'#222', fontSize: 'clamp(1.3rem,2.5vw,3.2rem)', fontWeight:'900' }}>
-    Pick Up My Poop!
-      </div>
-      </Link>
+    
 
     </>
   );
