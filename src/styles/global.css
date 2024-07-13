@@ -18,7 +18,7 @@ body.scroll footer{position:sticky !important;} */
 /* body.homepage{min-height: 100vh;} */
 
 
-body.install #gobacker1, body.install footer, body.install #pwabanner  {display:none !important; color: hsl(96, 42%, 29%);}
+body.install #gobacker1, body.install footer, body.install #pwabanner  {display:none !important; color: hsl(147, 61%, 26%); }
 
 body.install .topmenu{visibility: hidden;}
 
@@ -35,7 +35,7 @@ body.install .topmenu{visibility: hidden;}
   font-weight: 400;
   font-style: normal;
 }
-
+.test{background:linear-gradient(180deg, #1e6b18 1%, #59ca4376 80%);}
 
 /* .effects{position: relative; z-index: 1;} */
 
